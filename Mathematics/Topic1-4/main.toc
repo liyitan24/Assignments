@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Building Mathematical Models}{2}% 
+\contentsline {subsection}{\numberline {1.1}a}{2}% 
+\contentsline {section}{\numberline {2}Employ assumptions to simplify systems}{5}% 
+\contentsline {subsection}{\numberline {2.1}a}{5}% 
+\contentsline {subsection}{\numberline {2.2}b}{5}% 
+\contentsline {section}{\numberline {3}Matrices and vectors}{6}% 
+\contentsline {subsection}{\numberline {3.1}a}{6}% 
+\contentsline {subsection}{\numberline {3.2}b}{6}% 
+\contentsline {subsection}{\numberline {3.3}c}{7}% 
+\contentsline {subsection}{\numberline {3.4}d}{7}% 
+\contentsline {section}{\numberline {4}Complex numbers}{8}% 
+\contentsline {subsection}{\numberline {4.1}a}{8}% 
+\contentsline {subsection}{\numberline {4.2}b}{8}% 
+\contentsline {subsection}{\numberline {4.3}c}{8}% 
+\contentsline {subsection}{\numberline {4.4}d}{8}% 
