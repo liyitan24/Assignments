@@ -1,0 +1,72 @@
+Based on equation (\ref{eq:ConservationOfHeat}), we can find the heat lost by the cheese by calculating the heat gained by the brass cup and the water. We do so by utilising equation (\ref{eq:DeltaH}), demonstrated below with the median of our data set:
+\begin{equation}
+\begin{split}
+    &\Delta H = mc\Delta T \\
+    \therefore &\Delta H(brass) = m(brass)c(brass)( {T[brass]}_f - {T[brass]}_0 ) \\
+    \therefore &\Delta H(brass) = \SI{187.7}{\gram} \cdot \SI{0.380}{\joule\per\celsius\per\gram} \cdot (34.3 - 24.5) \si{\celsius} \\
+    \therefore &\Delta H(brass) = \SI{699.1}{\joule}
+\end{split}
+\end{equation}
+
+The calculation of the absolute uncertainty of the heat gained by the brass cup ($\Delta {}_{\Delta Hbrass}$) is done as follows:
+\begin{equation}
+\begin{split}
+    &\Delta(\Delta H[brass]) = \Delta H(brass) \cdot \left ( \frac{\Delta m}{m} + \frac{\Delta_{\Delta T}}{\Delta T} \right )\\
+    \therefore &\Delta(\Delta H[brass]) = 699.1 \cdot \left ( \frac{0.1}{187.7} + \frac{0.1}{9.8} \right ) \\
+    \therefore & \Delta(\Delta H[brass]) = \SI{8}{\joule}
+\end{split}
+\end{equation}
+
+The same is done for the water:
+\begin{equation}
+\begin{split}
+    &\Delta H(water) = \SI{47.3}{\gram} \cdot \SI{4.186}{\joule\per\celsius} \cdot (34.3 - 24.5) \si{\celsius} \\
+    \therefore &\Delta H(water) = \SI{1940.4}{\joule} \pm \SI{20.0}{\joule}
+\end{split}
+\end{equation}
+
+As per equation (\ref{eq:ConservationOfHeat}):
+\begin{equation}
+\begin{split}
+    &\Delta H(cheese) = -(\Delta H[brass] + \Delta H[water]) \\
+    \therefore &\Delta H(cheese) = -\SI{2639.5}{\joule} \pm \SI{28.0}{\joule}
+\end{split}
+\end{equation}
+
+Now applying equation (\ref{eq:DeltaH}) to $\Delta H(cheese)$, we can isolate $c(cheese)$:
+\begin{equation}
+\begin{split}
+    &c(cheese) = \frac{\Delta H(cheese)}{m(cheese) \cdot \Delta T(cheese)} \\
+    \therefore & c(cheese) = \frac{ \SI{-2639.5}{\joule} }{ \SI{-32.5}{\celsius} \cdot \SI{38.49}{g} } \pm (\frac{28.0}{2639.5} + \frac{0.1}{32.5} + \frac{0.20}{38.49})\\
+    \therefore & c(cheese) = (2.11 \pm  0.04) \ \si{\joule\per\celsius\per\gram}
+\end{split}
+\end{equation}
+
+We repeat the above calculations for the rest of the data and arrive at the following:
+
+\begin{table}[h]
+    \centering
+\begin{tabular}{c|c|c|c|c}
+    Index & $\Delta H(brass)$ & $\Delta H(water)$ & $\Delta H(cheese)$ & $c(cheese)$ \\ \hline
+    3    &    727.7 &   2,019.6  &	-2,747.3 & \textbf{2.81} \\
+    4    &    642.1 &   1,782.0  &	-2,424.1 & \textbf{2.11} \\
+    5    &    741.9 &   2,059.2  &	-2,801.1 & \textbf{2.23} \\
+    6    &    699.1 &   1,940.4  &	-2,639.5 & \textbf{2.11} \\
+    7    &    713.4 &   1,980.0  &	-2,693.4 & \textbf{2.34} \\
+    8    &    720.5 &   1,999.8  &	-2,720.3 & \textbf{2.44} \\
+    9    &    606.4 &   1,683.0  &	-2,289.4 & \textbf{2.18} \\
+
+
+\end{tabular}
+    \caption{Processed data}
+\end{table}
+
+Finally, we can calculate the mean value and the respective statistical/experimental uncertainty:
+\begin{equation}
+	\frac{2.81+2.11+2.23+2.11+2.34+2.44+2.18}{7} \pm \frac{2.81 - 2.11}{2}= 2.32 \pm 0.35
+\end{equation}
+
+Given that the statistical uncertainty, approximately 15\%, is much greater than the instrumental uncertainty, approximately 2\%, we can favour the former. Hence, the specific heat capacity of the cheese used in this experiment is:
+\[
+	c(cheese) = (2.32 \pm 0.40) \ \si{\joule\per\celsius\per\gram}
+\]

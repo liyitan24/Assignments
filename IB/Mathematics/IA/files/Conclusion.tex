@@ -1,0 +1,23 @@
+Given our model, we have found a simple expression that greatly approximates the time needed to make the sandwich.
+
+\begin{equation*}
+    2t_{\max} = 2\left(\frac{L}{k\pi}\right)^2 \ln \left( \frac{(2T_{melt} - [T_{\max} +T_{\min}])\pi }{(T_{\min} - T_{\max})(\pi + 2L)} \right)
+\end{equation*}
+
+Although we have reached a simple expression, our model is not a good reflection of the real world. 
+Foremost due to the simplifications that had to be made in order to be able to tackle the problem at all \textendash\ most importantly that the sandwich's hot side (side facing the pan) and a hot pan reach thermal equilibrium. 
+This is often not the case, although perhaps as we strive to balance temperature and time in order to not burn the toast before the cheese has melted, it makes this model a little more realistic.
+
+It was argued that $2T_{melt} < (T_{\max} + T_{\min})$ in order for there to be a solution to our problem, and this is definitely congruent with reality. 
+A grilled cheese being done usually implies that the toast has browned, a process called the Maillard reaction, thought to only occur above \SI{140}{\celsius}. 
+Thus, this must be the lowest acceptable value for $T_{\max}$. 
+Furthermore, I noted during my Physics internal assessment that cheese (of that specific variety) melted at \SI{50}{\celsius} to \SI{60}{\celsius}. 
+Finally, $T_{\min}$ is somewhere between fridge temperature and room temperature, \SI{2}{\celsius} to \SI{20}{\celsius}. 
+Plugging in the maximum value for $T_{melt}$ and lowest of $T_{\min}$ gives us: $120 < 142$, which is, of course, true.
+
+Overall, the study could be greatly improved in two ways: 
+By simplyfing the number of variables that were being used; and by having the pan be an infinite source of heat. 
+The former could be done with non-dimensionalisation of the variables: 
+Although we did not express any of the physical units, this is the process of tying multiple of our dimensional variables into non-dimensional numbers. 
+Indeed, this is often done in solutions of similar problems. 
+Having the pan as an infinite source of heat would present an even greater challenge \textendash\ so while it would provide a much more realistic reflection of the real world, the complexity of unsteady state conduction, as these problems are called, is far above what is reasonable for a study of this format.

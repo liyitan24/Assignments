@@ -1,0 +1,194 @@
+The extremities of the raw data include a period before the kettle is fully operating and after it has turned off, as well as other oddities, so it is trimmed. Furthermore we normalise our graphs by 1) multiplying the temperature at each data point by the sample's mass, and 2) shifting the graphs to have the same initial normalised temperature. This not only corrects for the variation in mass of each sample, but it allows us to use the slope of the curves to calculate the specific heat capacity. This can be seen in the figures below.
+\begin{figure}[h]
+	\begin{tikzpicture}[scale=0.5]
+	\begin{axis} [xlabel=Time (\si{\second}), ylabel= Temperature (\si{\celsius}), ymin=0, title=(a)]
+	\addplot [green]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 0, y index = 1] {\SalinityZero};
+	\addplot [red]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 5, y index = 6] {\SalinityZero};
+	\addplot [blue]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 10, y index = 11] {\SalinityZero};
+	\addplot [cyan]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 15, y index = 16] {\SalinityZero};
+	\end{axis}
+	\end{tikzpicture}
+	\hfil
+	\begin{tikzpicture}[scale=0.5]
+	\begin{axis} [xlabel=Time (\si{\second}), ylabel= Normalised Temperature (\si{\gram\celsius}), title=(b)]
+	\addplot [green]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 0, y index = 2] {\SalinityZero};
+	\addplot [red]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 5, y index = 7] {\SalinityZero};
+	\addplot [blue]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 10, y index = 12] {\SalinityZero};
+	\addplot [cyan]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 15, y index = 17] {\SalinityZero};
+	\end{axis}
+	\end{tikzpicture}
+	\hfil
+	\begin{tikzpicture}[scale=0.5]
+	\begin{axis} [xlabel=Time (\si{\second}), ylabel=Normalised Temperature (\si{\gram\celsius}), title=(c)]
+	\addplot [green]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 0, y index = 3] {\SalinityZero};
+	\addplot [red]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 5, y index = 8] {\SalinityZero};
+	\addplot [blue]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 10, y index = 13] {\SalinityZero};
+	\addplot [cyan]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 15, y index = 18] {\SalinityZero};
+	\addplot [cyan]
+		plot [error bars/.cd, y dir=both, y explicit]
+		table [x index = 15, y index = 18] {\SalinityZero};
+	\end{axis}
+	\end{tikzpicture}
+\caption{0\% Salinity data being normalised. (a) we have the removal of end points; (b), multiplication by the mass of sample. (c), shift the graph to have a same initial normalised temperature. }
+\end{figure}
+\clearpage
+
+Thus is the fully processed data:
+\begin{figure}[h] \centering
+	\begin{tikzpicture}[scale=0.75]
+		\begin{axis}[xlabel=Time (\si{\second}), ylabel=Normalised Temperature (\si{\gram\celsius}), legend pos = south east, title={Salinity: 0\%.}]
+			\addplot [green]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 0, y index = 3] {\SalinityZero};
+			\addplot [red]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 5, y index = 8] {\SalinityZero};
+			\addplot [blue]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 10, y index = 13] {\SalinityZero};
+			\addplot [cyan]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 15, y index = 18] {\SalinityZero};
+			\legend{765.3g+0.0g,778.7g+0.0g,836.2g+0.0g,696.3g+0.0g}
+		\end{axis}
+		\begin{axis}[legend pos = north west, ticks=none]
+		\addplot [dashed, domain=0:120] {405*x};
+			\legend{y=405x};
+		\end{axis}
+	\end{tikzpicture}
+	\hfil
+	\begin{tikzpicture}[scale=0.75]
+	\begin{axis}[xlabel=Time (\si{\second}), ylabel=Normalised Temperature (\si{\gram\celsius}), legend pos = south east, title={Salinity: 1\%.}]
+		\addplot [green]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 0, y index = 3] {\SalinityOne};
+		\addplot [red]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 5, y index = 8] {\SalinityOne};
+		\addplot [blue]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 10, y index = 13] {\SalinityOne};
+		\addplot [cyan]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 15, y index = 18] {\SalinityOne};
+		\addplot []
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 20, y index = 23] {\SalinityOne};
+		\legend{738.3g+7.8g,746.0g+7.9g,778.2g+8.4g,784.5g+8.3g,777.0g+8.3g}
+	\end{axis}
+	\begin{axis}[legend pos = north west, ticks=none]
+		\addplot [dashed, domain=0:120] {438*x};
+		\legend{y=438x};
+	\end{axis}
+	\end{tikzpicture}
+	
+\vspace{0.5cm}
+	\begin{tikzpicture}[scale=0.75]
+	\begin{axis}[xlabel=Time (\si{\second}), ylabel=Normalised Temperature (\si{\gram\celsius}), legend pos = south east, title={Salinity: 2\%.}]
+		\addplot [green]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 0, y index = 3] {\SalinityTwo};
+		\addplot [red]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 5, y index = 8] {\SalinityTwo};
+		\addplot [blue]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 10, y index = 13] {\SalinityTwo};
+		\addplot [cyan]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 15, y index = 18] {\SalinityTwo};
+		\addplot []
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 20, y index = 23] {\SalinityTwo};			
+		\legend{797.9g+17.0g,823.6g+17.0g,745.6g+15.4g,758.3g+15.8g,814.9g+16.9g}
+	\end{axis}
+	\begin{axis}[legend pos = north west, ticks=none]
+		\addplot [dashed, domain=0:120] {443*x};	
+		\legend{y=443x};
+	\end{axis}
+	\end{tikzpicture}
+	\hfil
+	\begin{tikzpicture}[scale=0.75]
+	\begin{axis}[xlabel=Time (\si{\second}), ylabel=Normalised Temperature (\si{\gram\celsius}), legend pos = south east, title={Salinity: 3\%.}]
+		\addplot [green]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 0, y index = 3] {\SalinityThree};
+		\addplot [red]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 5, y index = 8] {\SalinityThree};
+		\addplot [blue]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 10, y index = 13] {\SalinityThree};
+		\addplot [cyan]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 15, y index = 18] {\SalinityThree};
+		\addplot []
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 20, y index = 23] {\SalinityThree};
+		\legend{816.4g+25.6g,747.1g+23.5g,769.9g+24.3g,751.7g+24.2g,755.2g+23.6g}			
+	\end{axis}
+	\begin{axis}[legend pos = north west, ticks=none]
+		\addplot [dashed, domain=0:120] {482*x};
+		\legend{y=482x};
+	\end{axis}
+	\end{tikzpicture}
+\caption{Processed data for each sample. The slope is a linear regression done utilising LoggerPro. Note that legends are in the format mass of water + mass of salt.}
+\end{figure}
+
+From equation (\ref{eq:Power}) we had
+\begin{equation*}
+\begin{split}
+P &= \frac{m\Delta T}{\Delta t}c\\
+{\underbrace{\textstyle
+		m\Delta T
+	}_{y}} &= \frac{P}{c} \cdot
+{\underbrace{\textstyle
+		\Delta t
+	}_{x}} \\
+\therefore slope &= \frac{P}{c}
+\end{split}
+\end{equation*}
+
+We calculate the effective power output ($P_e$), which we can compare to the one indicated by the manufacturer ($P$) to find the efficiency (e). As mentioned before, the main sources of systematic error are being kept under the umbrella of efficiency, however we could compare this efficiency to expected values and attempt to quantify the other systematic errors.
+\begin{equation}\begin{split}
+	P_e = slope \cdot c = \SI{405}{\gram\celsius\per\second} \cdot \SI{4.18}{\joule\per\gram\per\celsius} = \SI{1700 \pm 100}{\watt} \\
+	e=\frac{P_e}{P} = \frac{ \SI{1700 \pm 100}{\watt} }{ \SI{1900 \pm 150}{\watt} } = 0.89 \pm 0.01
+\end{split}
+\end{equation}
+
+From which we may determine the specific heat capacity of water for the other samples:
+
+\begin{table}[h] \centering
+\begin{tabular}{ccc} 
+	Salinity & Slope  & Specific heat capacity \\
+	(\si{\gram\per\gram}) & (\si{\gram\celsius\per\second})	& (\si{\joule\per\gram\per\celsius}) \\ \hline
+	1\%	& 438 &	 $3.88\pm 0.40$\\
+	2\%	& 443 & $3.83\pm 0.40$\\
+	3\% & 482 & $3.53\pm 0.40$\\
+\end{tabular}
+\caption{Determining the specific heat capacity from the effective power output and slope of the graphs.}
+\end{table}

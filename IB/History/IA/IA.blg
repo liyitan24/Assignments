@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: IA.aux
+The style file: abbrvnat.bst
+Database file #1: bibliography.bib
+Warning--entry type for "ManifestoRep" isn't style-file defined
+--line 52 of file bibliography.bib
+Warning--empty journal in Par1996
+You've used 6 entries,
+            2773 wiz_defined-function locations,
+            629 strings with 5372 characters,
+and the built_in function-call counts, 1831 in all, are:
+= -- 147
+> -- 60
+< -- 6
++ -- 24
+- -- 18
+* -- 95
+:= -- 303
+add.period$ -- 21
+call.type$ -- 6
+change.case$ -- 20
+chr.to.int$ -- 6
+cite$ -- 13
+duplicate$ -- 114
+empty$ -- 191
+format.name$ -- 24
+if$ -- 378
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 41
+num.names$ -- 24
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 18
+quote$ -- 0
+skip$ -- 75
+stack$ -- 0
+substring$ -- 12
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 46
+warning$ -- 1
+while$ -- 18
+width$ -- 0
+write$ -- 84
+(There were 2 warnings)

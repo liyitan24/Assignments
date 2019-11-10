@@ -1,0 +1,6 @@
+PWD /Users/jjholt/Documents/Assignments/English/Adichie-Mukarami
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/jjholt/Documents/Assignments/English/Adichie-Mukarami/main.tex
+OUTPUT main.log

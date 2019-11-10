@@ -1,0 +1,33 @@
+For 0th titration, we can find the amount of sodium thiosulfate(n) from its concentration (c) and volume (V):
+\begin{equation*}
+ n(\ce{Na2S2O3}) = V \cdot c = \SI{0.003040}{\mol}
+\end{equation*}
+
+From (\ref{eq:Indicator}) we can calculate the amount of \ce{I2} reacted:
+\begin{equation*}
+ n(\ce{I2})(reacted) = \frac{1}{2}n(\ce{Na2S2O3}) = \SI{0.001520}{\mol}
+\end{equation*}
+
+Equation (\ref{eq:KIO3toI2}) tells us that each mol of \ce{I2} came from a 1:3 ratio from \ce{KIO3}, which we can then divide by the initial volume and find our concentration:
+\begin{equation*}
+\begin{split}
+ &n(\ce{KIO3}) = 3\cdot n(\ce{I2}) = \SI{0.004560}{\mol} \\
+ &\therefore c(\ce{KIO3}) = \frac{ \SI{0.004560}{\mol} }{ \SI{5.00}{ml} } = \SI{0.9120}{\molar}
+\end{split}
+\end{equation*}
+
+Finally, we may add the relative uncertainties in the volume of the titrant and volume of \ce{KIO3}:
+\begin{equation*}
+\frac{\SI{0.20}{ml} }{ \SI{30.40}{ml} } + \frac{ \SI{0.05}{ml} }{ \SI{5.00}{ml} } = 0.016
+\end{equation*}
+
+Repeating this process for all titrations:
+\begin{table}[h] \centering
+\begin{tabular}{c c}
+	Index & c(\ce{KIO3}) \si{\molar}\\ \hline
+	0	&	\SI{0.91\pm0.01}{\molar}\\
+	1	&	\SI{0.94\pm0.02}{\molar}\\
+	2	&	\SI{0.89\pm0.01}{\molar}\\
+	3	&	\SI{0.89\pm0.01}{\molar}\\
+\end{tabular}
+\end{table}

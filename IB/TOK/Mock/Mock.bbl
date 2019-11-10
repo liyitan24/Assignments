@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kestenbaum and Goldstein(2016)]{PlanetMoney677}
+D.~Kestenbaum and J.~Goldstein.
+\newblock Planet money - episode 677: The experiment experiment, January 2016.
+\newblock URL
+  \url{https://www.npr.org/sections/money/2016/01/15/463237871/episode-677-the-experiment-experiment}.
+
+\end{thebibliography}

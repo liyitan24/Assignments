@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Essay}{2}
+\contentsline {section}{\numberline {2}Bibliography}{6}

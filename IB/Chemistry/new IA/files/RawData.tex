@@ -1,0 +1,84 @@
+\begin{figure}[h] \centering
+	\begin{tikzpicture}[scale=0.75]
+		\begin{axis}[xlabel=Time (\si{\second}), ylabel=Temperature (\si{\celsius}), legend pos = south east, title={Salinity: 0\%.}]
+			\addplot [green]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 0, y index = 1] {\rawZero};
+			\addplot [red]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 2, y index = 3] {\rawZero};
+			\addplot [blue]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 4, y index = 5] {\rawZero};
+			\addplot [cyan]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 6, y index = 7] {\rawZero};
+			\legend{765.3g+0.0g,778.7g+0.0g,836.2g+0.0g,696.3g+0.0g}
+		\end{axis}
+	\end{tikzpicture}
+	\hfil
+	\begin{tikzpicture}[scale=0.75]
+	\begin{axis}[xlabel=Time (\si{\second}), ylabel=Temperature (\si{\celsius}), legend pos = south east, title={Salinity: 1\%.}]
+		\addplot [green]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 0, y index = 1] {\rawOne};
+		\addplot [red]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 2, y index = 3] {\rawOne};
+		\addplot [blue]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 4, y index = 5] {\rawOne};
+		\addplot [cyan]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 6, y index = 7] {\rawOne};
+		\addplot []
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 8, y index = 9] {\rawOne};
+		\legend{738.3g+7.8g,746.0g+7.9g,778.2g+8.4g,784.5g+8.3g,777.0g+8.3g}
+	\end{axis}
+	\end{tikzpicture}
+	
+\vspace{0.5cm}
+	\begin{tikzpicture}[scale=0.75]
+	\begin{axis}[xlabel=Time (\si{\second}), ylabel=Temperature (\si{\celsius}), legend pos = south east, title={Salinity: 2\%.}]
+		\addplot [green]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 0, y index = 1] {\rawTwo};
+		\addplot [red]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 2, y index = 3] {\rawTwo};
+		\addplot [blue]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 4, y index = 5] {\rawTwo};
+		\addplot [cyan]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 6, y index = 7] {\rawTwo};
+		\addplot []
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 8, y index = 9] {\rawTwo};			
+		\legend{797.9g+17.0g,823.6g+17.0g,745.6g+15.4g,758.3g+15.8g,814.9g+16.9g}
+	\end{axis}
+	\end{tikzpicture}
+	\hfil
+	\begin{tikzpicture}[scale=0.75]
+	\begin{axis}[xlabel=Time (\si{\second}), ylabel=Temperature (\si{\celsius}), legend pos = south east, title={Salinity: 3\%.}]
+		\addplot [green]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 0, y index = 1] {\rawThree};
+		\addplot [red]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 2, y index = 3] {\rawThree};
+		\addplot [blue]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 4, y index = 5] {\rawThree};
+		\addplot [cyan]
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 6, y index = 7] {\rawThree};
+		\addplot []
+			plot [error bars/.cd, y dir=both, y explicit]
+			table [x index = 8, y index = 9] {\rawThree};
+		\legend{816.4g+25.6g,747.1g+23.5g,769.9g+24.3g,751.7g+24.2g,755.2g+23.6g}			
+	\end{axis}
+	\end{tikzpicture}
+\caption{Raw data for each salinity. Note that legends are in the format mass of water + mass of salt.}
+\end{figure}

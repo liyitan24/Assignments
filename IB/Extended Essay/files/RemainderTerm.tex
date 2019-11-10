@@ -1,0 +1,97 @@
+\subsection{The Weighted Prime Counting Function} \label{The Weighted Prime Counting Function}
+The last piece of the puzzle is the weighted prime counting function $J(n)$ which Riemann expressed in relation to the zeta function. The mathematics to reach the expression for $\pi(n)$ in terms of $J(n)$ are incredible, though far too complex to be reasonably discussed. In short what will be presented is $\pi(n)$ expressed in terms of $J(n)$, and $J(n)$ expressed in terms of $\zeta(s)$, and therefore $\pi(n)$ expressed in terms of $\zeta(s)$ \citep[pp.249, 302, 328]{derbyshire2003prime}. 
+
+\begin{equation} \label{eq:pi(n)fromJ(n)}
+\pi(n) = \sum_{k} \frac{\mu(k)}{k} J(\sqrt[k]{n})
+\end{equation}
+such that:
+\begin{equation*}\label{eq:mu}
+\begin{split}
+\mu(k) &= 0 \text{ if $k$ has a square factor} \\
+\mu(k) &= -1 \text{ if $k$ is prime, or the product of an odd number of different primes} \\
+\mu(k) &= 1 \text{ for $k = 1$, or if $k$ is the product of an even number of different primes} \\
+\end{split}
+\end{equation*}
+and
+\begin{equation*} 
+	J(n) = Li(n) - \sum_{\rho}Li(n^{\rho}) - \ln 2 + \int_{n}^{\infty}\frac{1}{t(t^2-1)\ln t} dt
+\end{equation*}
+
+\begin{equation} \label{eq:ExampleOfFinalPi(n)}
+\begin{split}
+	\therefore \pi(n) &= \left (Li(n) - \sum_{\rho}Li(n^{\rho}) - \ln 2 + \int_{n}^{\infty}\frac{1}{t(t^2-1)\ln t} dt \right )\\
+	& - \frac{1}{2} \left (Li(\sqrt{n}) - \sum_{\rho}Li(n^{\frac{\rho}{2}}) - \ln 2 + \int_{\sqrt{n}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt \right )\\
+	& - \frac{1}{3} \left (Li(\sqrt[3]{n}) - \sum_{\rho}Li(n^{\frac{\rho}{3}}) - \ln 2 + \int_{\sqrt[3]{n}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt \right )\\
+	& - \frac{1}{5} \left (Li(\sqrt[5]{n}) - \sum_{\rho}Li(n^{\frac{\rho}{5}}) - \ln 2 + \int_{\sqrt[5]{n}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt \right )\\
+	&  + \frac{1}{6} \left (Li(\sqrt[6]{n}) - \sum_{\rho}Li(n^{\frac{\rho}{6}}) - \ln 2 + \int_{\sqrt[6]{n}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt \right )\\
+	&- \cdots
+\end{split}
+\end{equation}
+
+One characteristic of $J(n)$ we will utilise is that $J(n) = 0$ for $n < 2$. This\footnotemark means that if we look at Equation \ref{eq:pi(n)fromJ(n)}: for $k>6, \sqrt[k]{100} < 2$, so $J(\sqrt[k]{100}) = 0$. Therefore, the calculations will be done up to $k=6$
+
+\footnotetext{Appendix \ref{Equations} (\ref{eq:Appendix-Jn}) presents $J(n)$ with respect to $\pi(n)$, which shows each successive step when $n < 2$ results in $\pi(n) = 0$}
+
+With these equations we actually have the solution to our question of how many primes there are between $1$ and $n$. However, it is quite clear the equation is incredibly complex, and as such, it is worth breaking it into its constituent parts and discussing them individually, using the example of $\pi(100)$ to better understand it.
+
+In section \ref{Prime Number Theorem} we called $li(n)$ the principal term, and the rest to be the remainder term. The convention still stands, though now we subdivide the remainder term and consider the sum of each of these sub-terms, that is:
+\begin{equation*}
+\begin{split}
+	&\text{Principal term: } li(n) \\
+	&\text{Secondary term: } - \frac{1}{2} li(n^{\frac{1}{2}})
+		- \frac{1}{3} li(n^{\frac{1}{3}})
+		- \frac{1}{5} li(n^{\frac{1}{5}})
+		+ \cdots \\
+	&\text{Periodic term: } - \sum_{\rho}^{}li(n^{\rho})
+		+ \frac{1}{2} \sum_{\rho}li(n^{\frac{\rho}{2}})
+		+ \frac{1}{3} \sum_{\rho}li(n^{\frac{\rho}{3}})
+		+ \cdots\\
+	&\text{Log term: } - \ln 2
+		+ \frac{1}{2} \ln 2
+		+ \frac{1}{3} \ln 2
+		+ \cdots \\
+	&\text{Integral term: } \int_{n}^{\infty}\frac{1}{t(t^2-1)\ln t} dt
+		- \frac{1}{2} \int_{\frac{\sqrt{n}}{2}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt
+		- \frac{1}{3} \int_{\frac{\sqrt[3]{n}}{3}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt
+		- \cdots \\
+\end{split}
+\end{equation*}
+
+\subparagraph{Principal term}
+\begin{equation*}
+\begin{split}
+	li(100) = \int_{0}^{100} \frac{1}{\ln x} dx = 30.1261416
+\end{split}
+\end{equation*}
+
+\subparagraph{Secondary term}
+\begin{equation*}
+\begin{split}
+- \frac{1}{2} li(100^{\frac{1}{2}}) & = -3.08279975\\
+- \frac{1}{3} li(100^{\frac{1}{3}}) & = -1.13555052\\
+- \frac{1}{5} li(100^{\frac{1}{5}}) & = -0.33604670\\
++ \frac{1}{6} li(100^{\frac{1}{6}}) & = 0.20944495\\
+& = -4.34495202\\
+\end{split}
+\end{equation*}
+
+\subparagraph{Integral Term}
+\begin{equation*}
+\begin{split}
+	\frac{1}{6} \int_{\sqrt[6]{100}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt =
+		\frac{0.109093824}{6} &= 0.018182304\\
+	- \frac{1}{5} \int_{\sqrt[5]{100}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt =
+		-\frac{0.067237637}{5} &= -0.013447527\\
+	- \frac{1}{3} \int_{\sqrt[3]{100}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt =
+		-\frac{0.012254312}{3} &= -0.004084771\\
+	- \frac{1}{2} \int_{\sqrt{100}}^{\infty}\frac{1}{t(t^2-1)\ln t} dt =
+		-\frac{0.001839687}{2} &= -0.000919843\\
+	+ \int_{100}^{\infty}\frac{1}{t(t^2-1)\ln t} dt &= 0.000009876\\
+													&= -0.000259962 \\
+\end{split}
+\end{equation*}
+
+\subparagraph{Log term}
+\begin{equation*}
+	-\ln 2 + \frac{\ln 2}{2} + \frac{\ln 2}{3} + \frac{\ln 2}{5} - \frac{\ln 2}{6} = -0.092419624
+\end{equation*}

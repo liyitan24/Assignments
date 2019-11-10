@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[separate-uncertainty=true]{siunitx}
+\usepackage{mhchem}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{import}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{width=10cm, compat=1.9}
+\usepackage[makeroom]{cancel}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{titlesec}
+\usepackage{hhline}
+
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+
+
+%RAW DATA IMPORT
+\pgfplotstableread{0Salinity.dat}{\SalinityZero}
+\pgfplotstableread{1Salinity.dat}{\SalinityOne}
+\pgfplotstableread{2Salinity.dat}{\SalinityTwo}
+\pgfplotstableread{3Salinity.dat}{\SalinityThree}
+
+\pgfplotstableread{raw0.dat}{\rawZero}
+\pgfplotstableread{raw1.dat}{\rawOne}
+\pgfplotstableread{raw2.dat}{\rawTwo}
+\pgfplotstableread{raw3.dat}{\rawThree}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries Chemistry Internal Assessment\par}
+	\vspace{1cm}
+	{\scshape\Large Relationship between salinity of water and specific heat capacity\par}
+	{word count:---}
+\end{titlepage}
+
+\tableofcontents
+
+\section{Introduction}
+\subimport{files/}{Introduction}
+
+\section{Background knowledge}
+\subimport{files/}{BackgrondKnowledge}
+
+\section{Procedure}
+\subimport{files/}{Procedure}
+
+\section{Data}
+\subimport{files/}{RawData}
+
+\section{Analysis}
+\subimport{files/}{Analysis}
+
+\section{Conclusion}
+\subimport{files/}{Conclusion}
+
+\section{Evaluation}
+\subimport{files/}{Evaluation}
+
+\bibliography{bibliography}
+
+\end{document}

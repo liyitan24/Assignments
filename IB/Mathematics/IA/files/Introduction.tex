@@ -1,0 +1,152 @@
+When making a grilled cheese sandwich, one is often faced with the challenge of balancing the temperature of the pan as to not burn the bread and the time it takes to melt the cheese. 
+This study aims to mathematically model \textbf{the least amount of time in which a grilled cheese sandwich can be made}. 
+Originally, the topic was chosen in jest, though in attempting to research an answer, it became clear the problem was far more interesting and complex than I anticipated. 
+In physics terms, this is a clear example of three-dimensional heat conduction, which requires a level of mathematics far beyond what could expected from a study of this format. 
+Therefore a few over-simplifications had to be made in order approach it. 
+Finally, in order to tackle our model, we will define heterogeneous boundaries, and transform them into homogeneous \textendash\ meaning that the temperature at the borders (the top and bottom of the sandwich) are zero.
+
+First let us tackle the practical definitions of our modelled grilled cheese: 
+There are two parts to our sandwich \textendash\ two slices of toast and one slice of cheese in-between them, and it is prepared on a hot pan such that only one slice of toast can touch the pan at a time. 
+Finally, the definition of how much time is acceptable is completely arbitrary, so for discussion purposes, 10 minutes will be used. The process that is being modelled is as follows:
+
+\begin{enumerate}
+	\item the entire sandwich has a uniform initial temperature throughout it, $t_{\min}$;
+	\item Once the sandwich is placed on the pan at $t = 0$, one boundary (surface) will touch the pan, which we define as the hot surface ($x = 0$) and is at temperature $T_{\max}$;
+	\item Given that the sandwich has a thickness of $L$, the other boundary (the cold surface) which does not face the pan must still be at the initial temperature. That is, at position $x = L$ we have temperature $T_{\min}$;
+	\item After $t_{\max}$ time elapses, the middle of the sandwich (that is, $x = \frac{L}{2}$) will reach the cheese's melting temperature, $T_{melt}$. The sandwich is then flipped, heated for the same amount of time $t_{\max}$, and the sandwich is done;
+	\item Thus, the answer we search for is twice the time it takes for the temperature at $\frac{L}{2}$ to reach $T_{melt}$.
+\end{enumerate}
+
+If enough time elapses we could expect the cold surface to reach $T_{melt}$ or even $T_{\max}$, but from personal experience this would not happen within our acceptable time-frame. 
+As such, our model may be simplified by suggesting that the temperature on the cold surface \textendash\ the boundary where $x=L$ \textendash\ must be at a constant $T_{\min}$. 
+This is an important definition that will allow us to greatly simplify the model.
+
+A visualisation of the conditions can be seen in figure \ref{fig:cheeseHotToCold}.
+
+\begin{figure}[h] \centering
+	\newcommand{\Width}{5}
+	\newcommand{\Height}{1.5}
+	\newcommand{\Depth}{3}
+	\begin{tikzpicture}
+		\coordinate (O) at (0,0,0);
+		\coordinate (A) at (0,\Height,0);
+		\coordinate (B) at (0,\Height,\Depth);
+		\coordinate (C) at (0,0,\Depth);
+		\coordinate (D) at (\Width,0,0);
+		\coordinate (E) at (\Width,\Height,0);
+		\coordinate (F) at (\Width,\Height,\Depth);
+		\coordinate (G) at (\Width,0,\Depth);
+		
+		\coordinate (H) at (0, \Height/2, \Depth);
+		\coordinate (I) at (0, \Height/2, 0);
+		\coordinate (M) at (\Width, 0, \Depth/2);
+		\coordinate (N) at (\Width, \Height/2, 0);
+		\coordinate (J) at (\Width, \Height/2, \Depth);
+		
+		
+		\draw[black,fill=yellow!30] (O) -- (C) -- (G) -- (D) -- cycle;% Bottom Face
+		\draw[black,] (O) -- (A) -- (E) -- (D) -- cycle;% Back Face
+		\draw[black,] (O) -- (A) -- (B) -- (C) -- cycle;% Left Face
+		\draw[black,opacity=0.8] (D) -- (E) -- (F) -- (G) -- cycle;% Right Face
+		\draw[black,opacity=0.6] (C) -- (B) -- (F) -- (G) -- cycle;% Front Face
+		\draw[black,opacity=0.8, fill=blue!30] (A) -- (B) -- (F) -- (E) -- cycle;% Top Face
+		\draw (I) -- (N) -- (J) -- (H) -- cycle;
+		
+		\path [every edge/.append style={|->}]
+		(H)+(-5pt,-22pt) coordinate (C) edge ["Heating to $x=\frac{L}{2}$"] (H -| C);
+		
+		\node[below right = -1mm and -1mm of G]{$x=0$};
+		\node[above right = 1mm of E]{$x=L$};
+	\end{tikzpicture}
+
+%\begin{subfigure}[b]{0.2\textwidth}
+%	\newcommand{\Width}{5}
+%	\newcommand{\Height}{1.5}
+%	\newcommand{\Depth}{3}
+%	\begin{tikzpicture}
+%		\coordinate (O) at (0,0,0);
+%		\coordinate (A) at (0,\Height,0);
+%		\coordinate (B) at (0,\Height,\Depth);
+%		\coordinate (C) at (0,0,\Depth);
+%		\coordinate (D) at (\Width,0,0);
+%		\coordinate (E) at (\Width,\Height,0);
+%		\coordinate (F) at (\Width,\Height,\Depth);
+%		\coordinate (G) at (\Width,0,\Depth);
+%		
+%		\coordinate (H) at (0, 0, \Depth);
+%		\coordinate (Q) at (0, \Height/2, \Depth);
+%		\coordinate (I) at (0, \Height/2, 0);
+%		\coordinate (M) at (\Width, 0, \Depth);
+%		\coordinate (P) at (\Width, 0, 0);
+%		\coordinate (N) at (\Width, \Height/2, 0);
+%		\coordinate (X) at (\Width, \Height/2, \Depth);
+%		
+%		\draw (I) -- (N) -- (X) -- (Q) -- cycle;
+%		\draw[black,] (O) -- (A) -- (E) -- (D) -- cycle;% Back Face
+%		\draw[black,] (O) -- (A) -- (B) -- (C) -- cycle;% Left Face
+%		\draw[black,fill=yellow!30] (O) -- (C) -- (G) -- (D) -- cycle;% Bottom Face
+%		\draw[black,fill=yellow!30] (O) -- (I) -- (N) -- (D) -- cycle;% Back-middle
+%		\draw[black,fill=yellow!30] (H) -- (Q) -- (I) -- (O) -- cycle; %left-middle
+%		\draw[black,fill=yellow!30] (D) -- (N) -- (X) -- (M) -- cycle; %right-middle
+%		\draw[black,fill=yellow!30] (M) -- (X) -- (Q) -- (H) -- cycle; %front-middle
+%		
+%		
+%		\draw[black,opacity=0.8] (D) -- (E) -- (F) -- (G) -- cycle;% Right Face
+%		
+%		\draw[black,opacity=0.8, fill=blue!30] (A) -- (B) -- (F) -- (E) -- cycle;% Top Face
+%		
+%		
+%		\path [every edge/.append style={|-|}]
+%		(H)+(-5pt,20pt) coordinate (C) edge ["$\frac{L}{2}$"] (H -| C);
+%		
+%		\node[below right = -1mm and -1mm of G]{$x=0$};
+%		\node[above right = 1mm of E]{$x=L$};
+%	\end{tikzpicture}
+%\end{subfigure}
+%
+
+	\caption{Simplified model of a grilled cheese sandwich of thickness $L$ wherein the cheese is at $\frac{L}{2}$. Yellow represents the hot side and blue, the cold.}
+	\label{fig:cheeseHotToCold}
+\end{figure}
+
+We formalise this description through a function that describes the temperature in accordance to space (x) and time (t), $u(x,t)$, with the following initial and boundary conditions:
+\begin{equation}\label{eq:BoundaryConditions}
+\begin{split}
+	\text{Initial: }&u(x,0) = T_{\min}, \forall x \ne 0 \quad \text{and} \quad u(0,0) = T_{\max} \\
+	\text{Boundary: }& u(L,t) = T_{\min} \quad\quad\quad\quad\text{  and}\quad \ u(0,t) = T_{\max}  \\
+\end{split}
+\end{equation}
+
+And with this function we can formalise the conditions for the answer we seek, from which we must then isolate $t_{\max}$, and multiply it by 2:
+\begin{equation*}
+\begin{split}
+u(\frac{L}{2}, t_{\max}) = T_{melt} ,\ T_{\min} < T_{melt} < T_{\max} \\
+\text{Finally, find an expression for }2t_{\max}
+\end{split}
+\end{equation*}
+
+\subsection{Physics}\label{Physics}
+Consider the physics of the sandwich in a pan: The cheese may melt due to the conduction of the heat going through the bread, the convection of the warm air inside the pan, the radiation of heat from the pan itself, or \textendash\ more appropriately \textendash\ a combination of all of them, plus many more nuances on the edges of the sandwich. 
+This leads us to the following simplifications for our model which tackle all of the above.
+\begin{itemize}
+	\item The sandwich is infinitely long and wide, and so all of concepts discussed are implicitly ``per unit area''. This allows us to ignore the vertical boundaries.
+	\item The sandwich is in space, hence there is only conduction;
+	\item The heat taken into consideration is purely one-dimensional, across the x-axis.
+\end{itemize}
+
+We must also introduce Fourier's heat conduction equation, relating the rate of temperature change to the gradient, such that $k$ is a constant of proportionality related physical properties we are simply lumping together. \citep[pp.17-19]{Lienhard2001Heat}.
+\begin{equation}\label{eq:Fourier}
+	\frac{\partial u}{\partial t} = k \frac{\partial ^2 u}{\partial x^2}
+\end{equation}
+
+What is important to understand about partial derivatives (denoted by $\partial$) is that we treat the other function's variables as constants, so that $\frac{\partial u}{\partial t}$ evaluates the change in $u$ due to $t$, while $x$ is kept constant. 
+This means that the partial derivative of a single-variable function is the same as an ordinary derivative.
+
+Finally, there is a well-established solution for so-called homogeneous boundary conditions \textendash\ that is, $u(0,t) = u(L,t) = 0$, stemming from Fourier's work \citep{Lamar2018Dawkins} as described below. 
+From (\ref{eq:BoundaryConditions}) we can see our boundaries are not homogeneous, so we must homogenise them.
+\begin{equation}
+\begin{split} \label{eq:FourierSolution}
+&u(x,t) = \sum_{n=1}^{\infty} B_n \sin \left (\frac{n\pi x}{L} \right) e^{-k(\frac{n\pi}{L})^2 t} \\
+\text{where }&B_n = \frac{2}{L} \int_0^L u(x,0) \sin \left( \frac{n\pi x}{L} \right) dx \quad \quad \text{for } n=1,2,3,\ldots 
+\end{split}
+\end{equation}

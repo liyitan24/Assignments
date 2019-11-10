@@ -1,0 +1,43 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bethell(1996)]{Par1996}
+L.~Bethell.
+\newblock The {P}araguayan {W}ar (1864-1870).
+\newblock 1996.
+
+\bibitem[Bettamio(2010)]{Brz10}
+A.~M. C. . P. R. T. . R.~L. Bettamio.
+\newblock \emph{Hist\'{o}ria do Brasil}.
+\newblock Pr\'{e}-vestibular comunit\'{a}rio Vetor, 2010.
+
+\bibitem[Bieber(1999)]{bieber1999power}
+J.~Bieber.
+\newblock \emph{Power, Patronage, and Political Violence: State Building on a
+  Brazilian Frontier, 1822-1889}.
+\newblock University of Nebraska Press, 1999.
+\newblock ISBN 9780803212978.
+\newblock URL \url{https://books.google.dk/books?id=Ol\_vXH75MqcC}.
+
+\bibitem[Freyre(1986)]{Frey86}
+G.~Freyre.
+\newblock \emph{Order and Progress - Brazil from Monarchy to Republic}.
+\newblock University of California Press, 1986.
+
+\bibitem[Peixoto(1944)]{Afr44}
+A.~Peixoto.
+\newblock \emph{Hist\'{o}ria do Brasil}.
+\newblock Cia Editora Nacional, 1944.
+
+\bibitem[{Q. Bocai\'{u}va, J.S. Marinho, et al}(1870)]{ManifestoRep}
+{Q. Bocai\'{u}va, J.S. Marinho, et al}.
+\newblock Manifesto republicano, 1870.
+\newblock URL
+  \url{http://www.cbg.org.br/novo/wp-content/uploads/2012/07/manifesto-republicano.pdf}.
+\newblock Annotated by Barata, Carlos. E. de A.
+
+\end{thebibliography}

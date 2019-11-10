@@ -1,0 +1,66 @@
+Given enough time, the sandwich would reach thermal equilibrium \textendash\ meaning that the temperature at any given position no longer changes with time. Under equilibrium, both our boundary conditions (\ref{eq:BoundaryConditions}) and Fourier's equation (\ref{eq:Fourier}) must be satisfied. Formally we define the equilibrium temperature, $u_e(x)$, such that:
+\begin{equation*}
+    u_e(x) = \lim_{t\to\infty} u(x,t)
+\end{equation*}
+\begin{equation}\label{eq:d2-ue-dx2}
+   u_e(0) = T_{\max} \quad \quad \quad u_e(L) = T_{\min} \quad \quad \quad \frac{d^2 u_e}{dx^2} = \frac{du_e}{dt} = 0 
+\end{equation}
+Solving the differential equation:
+\begin{equation*}
+\begin{split}
+	& \frac{d^2 u_e}{dx^2} \ dx = 0 \implies \int \frac{d^2 u_e}{dx^2} \ dx = \int 0 \ dx \\
+    & \implies \frac{d u_e}{dx} = c_1 \implies \int \frac{du_e}{dx} \ dx = \int c_1 \ dx\\
+    &\therefore u_e(x) = c_1x + c_2 \\
+\end{split}
+\end{equation*}
+Applying boundary conditions from (\ref{eq:d2-ue-dx2}), we can find an expression for the equilibrium temperature:
+\begin{equation*}
+\begin{split}
+    & u_e(0) =  c_2 = T_{\max} \\
+    & u_e(L) = T_{\min} = c_1L + T_{\max}\\
+    &\therefore c_1 = \frac{ T_{\min}-T_{\max} }{ L } \\
+\end{split}
+\end{equation*}
+\begin{equation} \label{eq:u_e-expression}
+    \therefore u_e(x) = T_{\max} + x\frac{ T_{\min}-T_{\max} }{ L }
+\end{equation}
+
+We define a function $\psi(x,t)$ such that it represents the difference between a local temperature in time $u(x,t)$ and the equilibrium temperature ($u_e$)
+\begin{equation} \label{eq:u-psi-ue}
+    \psi(x,t) = u(x,t) - u_e(x)
+\end{equation}
+and take the partial derivatives with respect to time and with respect to space, it can be seen that $\psi(x,t)$ and $u(x,t)$ must satisfy the same partial differential equations
+\begin{equation*}
+\begin{split}
+    &\frac{ \partial}{ \partial t }\psi(x,t) = \frac{ \partial }{ \partial t }u(x,t) - \cancelto{0}{ \frac{ \partial }{ \partial t }u_e(x) } \quad \text{ \{from (\ref{eq:d2-ue-dx2})\} }\\
+    & \therefore \frac{ \partial}{ \partial t }\psi(x,t) = \frac{ \partial }{ \partial t } u(x,t)
+\end{split}
+\end{equation*}
+\begin{equation*}
+\begin{split}
+    &\frac{ \partial ^2 }{\partial x^2} \psi(x,t) = \frac{ \partial^2 }{\partial x^2} u(x,t) - \cancelto{0}{\frac{ \partial }{\partial x^2}u_e(x)} \quad \text{ \{from (\ref{eq:d2-ue-dx2})\} }\\
+    &\therefore \frac{ \partial ^2 }{\partial x^2} \psi(x,t) = \frac{ \partial^2 }{\partial x^2} u(x,t)
+\end{split}
+\end{equation*}
+
+Hence, we may establish the initial and boundary conditions for $\psi(x,t)$, which are in fact homogeneous.
+\begin{equation*}
+\begin{split}
+    \text{Initial: }& \psi(x,0) = u(x,0) - u_e(x) \\
+    \text{Boundary: }& \psi(0,t) = u(0,t) - u_e(0) = T_{\max} - T_{\max} = 0 \\
+                     & \psi(L,t)= u(L,t) - u_e(L) = T_{\min} - T_{\min} = 0 \\
+\end{split}
+\end{equation*}
+
+Thus we may restate the equations described in (\ref{eq:FourierSolution}) appropriately describing our homogeneous boundary function, $\psi(x,t)$.
+\begin{equation}
+\begin{split} \label{eq:psi-general-solution}
+	&\psi(x,t) = \sum_{n=1}^{\infty} B_n \sin \left (\frac{n\pi x}{L} \right) e^{-k(\frac{n\pi}{L})^2 t} \\
+	\text{where }&B_n = \frac{2}{L} \int_0^L \psi(x,0) \sin \left( \frac{n\pi x}{L} \right) dx \quad \quad \text{for } n=1,2,3,\ldots 
+\end{split}
+\end{equation}
+
+Replacing (\ref{eq:u_e-expression}) and (\ref{eq:u-psi-ue}):
+\begin{equation}\label{eq:u-solution}
+u(x,t) = T_{\max} + x\frac{ T_{\min}-T_{\max} }{ L } +  \sum_{n=1}^{\infty} B_n \sin \left (\frac{n\pi x}{L} \right) e^{-k \left( \frac{n\pi}{L} \right)^2 t} \quad n=1,2,3,\ldots
+\end{equation}

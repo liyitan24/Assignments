@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Extended Essay.aux
+The style file: unsrtnat.bst
+Database file #1: bibliography.bib
+I was expecting a `,' or a `}'---line 13 of file bibliography.bib
+ :  
+ :  note={visited 2017-10-22}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty publisher in GimpsMath
+Warning--empty publisher in GimpsFoundNumbers
+Warning--empty title in WikiSieve
+Warning--empty publisher in WikiSieve
+Warning--empty publisher in oeisNumPrimes
+Warning--empty publisher in oeisLn
+Warning--empty publisher in oeisLi
+Warning--empty publisher in Grime2014Youtube
+You've used 15 entries,
+            2481 wiz_defined-function locations,
+            642 strings with 6551 characters,
+and the built_in function-call counts, 4261 in all, are:
+= -- 356
+> -- 113
+< -- 15
++ -- 63
+- -- 32
+* -- 225
+:= -- 699
+add.period$ -- 63
+call.type$ -- 15
+change.case$ -- 16
+chr.to.int$ -- 14
+cite$ -- 23
+duplicate$ -- 285
+empty$ -- 458
+format.name$ -- 49
+if$ -- 910
+int.to.chr$ -- 2
+int.to.str$ -- 16
+missing$ -- 29
+newline$ -- 101
+num.names$ -- 45
+pop$ -- 165
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 150
+stack$ -- 0
+substring$ -- 51
+swap$ -- 31
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 63
+warning$ -- 8
+while$ -- 31
+width$ -- 0
+write$ -- 217
+(There was 1 error message)

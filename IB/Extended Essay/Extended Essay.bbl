@@ -1,0 +1,109 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Joyce}(1996)]{EuclidElements}
+D.~E. {Joyce}.
+\newblock \emph{Euclid's Elements}.
+\newblock Department of Mathematics and Computer Science, Clark University,
+  1996.
+\newblock URL
+  \url{https://mathcs.clarku.edu/~djoyce/java/elements/elements.html}.
+
+\bibitem[Horsley(1772)]{Horsley1772Sieve}
+S.~Horsley.
+\newblock The sieve of eratosthenes. being an account of his method of finding
+  all the prime numbers.
+\newblock \emph{Philo Transactions (1683-1775)}, 62:\penalty0 327--347, 1772.
+\newblock ISSN 02607085.
+
+\bibitem[{Mersenne Research Inc.}(2009)]{GimpsMath}
+{Mersenne Research Inc.}
+\newblock \emph{Mathematics and Research Strategy}.
+\newblock 2009.
+\newblock URL \url{https://mersenne.org/various/math.php}.
+
+\bibitem[{Mersenne Research Inc.}(2016)]{GimpsFoundNumbers}
+{Mersenne Research Inc.}
+\newblock \emph{List of Known Mersenne Prime Numbers}.
+\newblock 2016.
+\newblock URL \url{https://www.mersenne.org/primes/}.
+
+\bibitem[{``Sieve of Eratosthenes"}(n.d.)]{WikiSieve}
+{``Sieve of Eratosthenes"}.
+\newblock n.d.
+\newblock URL
+  \url{https://en.wikipedia.org/wiki/Sieve\_of\_Eratosthenes\#Pseudocode}.
+\newblock visited on 2017-05-25.
+
+\bibitem[{Caldwell}(n.d.)]{CaldwellTableOfPi}
+C.~K. {Caldwell}.
+\newblock \emph{How Many Primes Are There?}
+\newblock University of Tennessee, n.d.
+\newblock URL \url{https://primes.utm.edu/howmany.html}.
+\newblock visited on 2017-10-19.
+
+\bibitem[{Clawson}(1996)]{ClawsonMathMysteries}
+C.~C. {Clawson}.
+\newblock \emph{Mathematical mysteries: The beauty and magic of numbers}.
+\newblock Basic Books, 1996.
+
+\bibitem[Shanks(1979)]{Shanks1962NumTheory}
+D.~Shanks.
+\newblock \emph{Solved and unsolved problems in number theory}.
+\newblock Chelsea Publishing Company, 1979.
+
+\bibitem[{Derbyshire}(2003)]{derbyshire2003prime}
+J.~{Derbyshire}.
+\newblock \emph{Prime Obsession: Bernhard Riemann and the Greatest Unsolved
+  Problem in Mathematics}.
+\newblock National Academies Press, 2003.
+\newblock ISBN 9780309085496.
+
+\bibitem[{Sloane} and {Plouffe}(2016)]{oeisNumPrimes}
+N.~J.~A. {Sloane} and S.~{Plouffe}.
+\newblock \emph{A0068880 - Number of primes $< 10^n$}.
+\newblock 2016.
+\newblock URL \url{https://oeis.org/A006880}.
+\newblock visited on 2017-05-25.
+
+\bibitem[{Wilson v}(2000{\natexlab{a}})]{oeisLn}
+R.~G. {Wilson v}.
+\newblock \emph{A057835 - Difference between $\pi(10^n)$ and the integer
+  nearest to $\frac{10^n}{log(10^n)}$}.
+\newblock 2000{\natexlab{a}}.
+\newblock URL \url{https://oeis.org/A057835}.
+\newblock visited on 2017-05-25.
+
+\bibitem[{Wilson v}(2000{\natexlab{b}})]{oeisLi}
+R.~G. {Wilson v}.
+\newblock \emph{A057752 - Difference between nearest integer to $Li(10^n)$ and
+  $\pi(10^n)$}.
+\newblock 2000{\natexlab{b}}.
+\newblock URL \url{https://oeis.org/A057752}.
+\newblock visited on 2017-05-25.
+
+\bibitem[{Grime}(2014)]{Grime2014Youtube}
+J.~{Grime}.
+\newblock \emph{The Riemann Hypothesis}.
+\newblock 2014.
+\newblock URL \url{https://www.youtube.com/watch?v=rGo2hsoJSbo}.
+\newblock visited on 2017-05-25.
+
+\bibitem[{Odlyzko}(n.d.)]{UMNZetaZeros}
+A.~{Odlyzko}.
+\newblock \emph{The first 100 zeros of the Riemann zeta function, accurate to
+  over 1000 decimal places.}
+\newblock University of Minnesota, Digital Technology Center, n.d.
+\newblock URL \url{http://www.dtc.umn.edu/$\sim$odlyzko/zeta\_tables/zeros2}.
+
+\bibitem[Wagon(1999)]{wagon1999mathematica}
+S.~Wagon.
+\newblock \emph{Mathematica in Action}.
+\newblock Springer, 1999.
+\newblock ISBN 9780387986845.
+
+\end{thebibliography}

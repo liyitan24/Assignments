@@ -1,0 +1,84 @@
+\subsection{Calculations}
+By working from the back-titration backwards we are able to determine the initial conditions:
+
+\paragraph{Titration}
+
+Using $V_{S}$ to represent the volume of Ferrous Ammonium Sulphate (FAS), and our previously determined values for the concentration of the prepared solutions, we can find find the amount of titrant used, n(FAS):
+\begin{equation}
+\begin{split}
+	&n = c \cdot V \\
+	&\therefore n(FAS) = (3.7181 \cdot V_{S}  \pm 0.0040)  \cdot 10^{-4} \ \si{\mole}
+\end{split}	
+\end{equation}
+
+The back-titration, as per (\ref{eq:Titration}), is a reaction between the ions $\ce{Cr2O7^{2-}}$ and $\ce{Fe^{2+}}$ with ratio 1:6, respectively, so after the alcohol was oxidised there must have been $\frac{1}{6} \cdot n(FAS) \ \si{\mole}$ dichromate available for titration ($n_f$):
+\begin{equation}
+\begin{split}
+	&n_f(\ce{Cr2O7^{2-}}) = \frac{1}{6} n(FAS) \\
+	&\therefore n_f(\ce{Cr2O7^{2-}}) = (0.61968 V_{S} \pm 0.0006) \cdot 10^{-4} \ \si{\mole}
+\end{split}
+\end{equation}. 
+
+\paragraph{Analyte before titration}
+
+A solution of 200ml of $\ce{Cr2O7^{2-}}$ (c = $(1.1486 \pm 0.0006 )\cdot 10^{-4} \si{\mol\per\milli\litre}$, as found before) was mixed with 40ml of the wine + water solution. Then $10.0 \pm \SI{0.1}{\milli\litre}$ from it was used as analyte, thus the amount ($n_0$) of dichromate before the titration is:
+\begin{equation}\begin{split}
+	&n_{0}(\ce{Cr2O7^{2-}}) = \frac{(0.200 \pm 0.001)\si{\litre}\cdot (0.11846 \pm 0.0006) \ \si{\mole\per\litre} }{(240 \pm 1)\si{\milli\litre}} \cdot (10.0 + 0.1)\si{\milli\litre} \\
+	&\therefore n_{0}(\ce{Cr2O7^{2-}}) = (9.8717 \pm 0.3) \cdot 10^{-4} \ \si{\mole}
+\end{split} 
+\end{equation}
+
+So the amount of dichromate used as oxidising agent to the alcohol is given by:
+\begin{equation}
+\begin{split}
+	&n(\ce{Cr2O7^{2-}}) = n_0(\ce{Cr2O7^{2-}}) - n_f(\ce{Cr2O7^{2-}}) \\
+	&\therefore n(\ce{Cr2O7^{2-}}) = (9.8717 - 0.61967 \cdot V_{S}) \cdot 10^{-4} \ \si{\mole} \pm 0.3 \cdot 10^{-4} \ \si{\mole}
+\end{split}
+\end{equation}
+
+\paragraph{Alcohol before oxidation}
+As per equation (\ref{eq:EthanolToAcid}), the ratio of $\ce{Cr2O7^{2-}}$ : $ \ce{C2H5OH} $ is 2:3, therefore:
+\begin{equation}
+\begin{split}
+	n(\ce{C2H5OH}) = \frac{3}{2} \cdot (9.8717 - 0.61967 \cdot V_{S}) \cdot 10^{-4} \ \si{\mole} \pm 0.3 \cdot 10^{-4} \ \si{\mole} \\
+	\therefore n(\ce{C2H5OH}) = (14.808 - 0.92951 \cdot V_{S}) \cdot 10^{-4} \ \si{\mole} \pm 0.5 \cdot 10^{-4} \ \si{\mole}
+\end{split}
+\end{equation}
+
+Now we find the volume of ethanol in the analyte based on the density ($\rho(\ce{C2H5OH})$) of \SI{0.789}{g\per\ml} (disregarding the uncertainty on molar mass and density):
+\begin{equation}
+\begin{split}
+	V = \frac{M}{\rho}n\\
+	V(\ce{C2H5OH}) &= \frac{\SI{46.068}{g\per\mole}}{\SI{0.789}{g\per\ml}} (14.808 - 0.92951 \cdot V_{S}) \cdot 10^{-4} \ \si{\mole})\\
+	\therefore V(\ce{C2H5OH}) &= (8.6461 - 0.54272 \cdot V_{S}) \cdot 10^{-2} \ \si{\milli\litre} \pm 0.1 \cdot 10^{-2} \ \si{\milli\litre}
+\end{split}
+\end{equation}
+
+We must find the volume of wine ($V(wine)$) in the dichromate-alcohol solution so we can find the Ethanol/Wine percentage. We originally had 20.0 ml of wine, which was dilluted by a factor of 5, forming 100.0 ml $ \pm 0.1$ of water+wine. Out of which, 40.0ml $\pm 0.3$ ml went in to form the 240.0 ml solution with the dichromate. Finally, the analyte consisted of 10 ml of the dichromate-alcohol solution:
+\begin{equation}
+\begin{split}
+	V(wine) = \frac{\SI{20}{\ml}}{\SI{100}{\ml}} \cdot \frac{\SI{40}{ml}}{\SI{240}{ml}} \cdot \SI{10}{ml} \\
+	\therefore V(wine) = \SI{0.33333}{\milli\litre} \pm \SI{0.003}{\milli\litre}
+\end{split}
+\end{equation}
+
+So the percentage of ethanol in wine can be given by the following formula based on the volume of the titrant ($V_S$) in $\si{\milli\litre}$:
+\begin{equation}
+\begin{split}
+\frac{V(\ce{C2H5OH})}{V(wine)} &= \frac{\SI{0.086461}{\ml}}{\SI{0.33333}{\ml}} - \frac{0.0054272 \cdot V_{S} \ \si{\ml}}{\SI{0.33333}{\ml}} \\
+\therefore \frac{V(\ce{C2H5OH})}{V(wine)} &= (0.25939 - 0.016282 \cdot V_{S}) \pm 0.004
+\end{split}
+\end{equation}
+
+or more appropriately, considering our degree of confidence:
+
+\begin{equation}
+	\frac{V(\ce{C2H5OH})}{V(wine)} = (0.260 - 0.0160 \cdot V_{S}) \pm 0.004
+\end{equation}
+
+Finally, by replacing $V_S$ for our average values from Table 1 we can find the percentage of alcohol in both our distilled and undistilled samples:
+
+\begin{itemize}
+	\item Undistilled: $(15.6  \pm 2.0)\%$
+	\item Distilled: $(10.8 \pm 1.0)\%$
+\end{itemize}

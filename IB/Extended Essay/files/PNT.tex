@@ -1,0 +1,41 @@
+\subsection{Prime Number Theorem} \label{Prime Number Theorem}
+In the late 18th and early 19th centuries both Gauss and Legendre independently conjectured a similar relationship to the one which we arrived and described in equation \ref{eq:FindingsFromSieve} \citep[pp. 15-17]{Shanks1962NumTheory}. This body of work, plus the advents we will be discussing in this paper form what later, when proven, will be called prime number theorem.
+
+\begin{Thm}
+	the \textbf{Prime Number Theorem} describes the asymptotic distribution of prime numbers.
+\end{Thm}
+
+In other words, the prime number theorem is the name for the most accurate equation for $\pi(n)$ possible. As it has presently been proven and the name is often used by mathematicians, we will utilise it, however, it is important to acknowledge that in the early 19th century it had not yet been proven. In order to formalise our findings (and Gauss' work), we will be calling this function \textbf{Ln(n)}. Our stipulation from (\ref{eq:FindingsFromSieve}) of needing large values of $n$ remains true, though we utilise the standard asymptotic notation ($\sim$), as seen below.
+\begin{equation}\label{eq:ln}
+	\pi(n) \sim Ln(n) := \frac{n}{\ln n}
+\end{equation}
+
+There were other attempts at improving the accuracy and describing the magnitude of  $\pi(n)$, including some by famous mathematicians, such as Legendre and Chebyshev \citep[pp. 55,124-125]{derbyshire2003prime}. However, the most interesting and important one is heavily used in Riemann's unproven work \citep[p.116]{derbyshire2003prime} \textendash\ describing $\pi(n)$ as the area under the curve of the $\frac{1}{\ln n}$ graph from $0$ to $n$. This second major step in prime number theorem will henceforth be called \textbf{li(n)}, and a calculus description of it will be used\footnotemark:
+\footnotetext{Though originally opting for ``the European notation'', denoted by $Li(n) = \int_{2}^{n}\frac{1}{\ln x}dx $, the ``American notation'', $ li(n) $, will ultimately be utilised. A discussion of why will be in the Conclusion section as a part of further considerations.}
+
+\begin{equation} \label{eq:Li}
+	 \pi(n) \sim li(n) := \int_{0}^{n} \frac{1}{\ln x}dx
+\end{equation}
+
+By comparing the magnitude of the error between the respective functions and known values of $\pi(n)$ \citep{oeisNumPrimes,oeisLn,oeisLi} we have the following table:
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|cc|cc}
+		$n$ & $\pi(n)$	& $|Ln(n) - \pi(n)|$ & Percentage error & $|li(n) - \pi(n)|$ & Percentage error \\ \hline
+		$10^3$      & 168         & 23			& 13.69\%	& 10	& 5.95\%  \\ 
+		$10^6$      & 78498       & 6116		& 7.79\%	& 130	& 0.17\%   \\ 
+		$10^9$		& 50847534    & 2592592		& 5.10\%	& 1701	& 0.0033\%  \\ 
+		$10^{12}$	& 37607912018 & 1416705193	& 3.77\%	& 38263	& 0.0001\% \\ 
+	\end{tabular}
+\caption{Comparison between prime counting functions \citep{oeisNumPrimes,oeisLn,oeisLi}}
+\label{tb:CountingFunctions}
+\end{table}
+
+Table \ref{tb:CountingFunctions} very clearly shows the trend of accuracy improvement for larger values of $n$ that was discussed. In fact, the difference in accuracy between the functions is so large that by $n=10^{24}$ the margin of error for $Ln(n)$ is $\frac{1}{10^{2}}\%$ \textendash\ compared to $li(n)$'s $\frac{1}{10^{10}}\%$.
+
+At this stage, we can quite successfully describe the number of primes between 1 and $n$ for large values of $n$ through the \textbf{principal term} $li(n)$. Accordingly, the final step in describing a satisfactorily accurate function is to introduce an equation that qualifies the difference between $Li(n)$ and $\pi(n)$, which we will call the \textbf{remainder term}, $\Delta(n)$, formalised below. In order to do so, we discuss the Zeta function and the Riemann Hypothesis.
+
+\begin{equation}
+	\pi(n) = li(n) \pm \Delta(n)
+\end{equation}

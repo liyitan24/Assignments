@@ -1,0 +1,72 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+
+\usepackage{algorithm2e}
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage[makeroom]{cancel}
+\makeatletter
+% #1, #2 offset of label   #6 extra width to clear arrowhead
+% #3, #4 vector direction  #7 superscript label style
+% #5 vector width          #8 superscript label
+\def\cantox@vector#1#2#3#4#5#6#7#8{%
+  \dimen@.5\p@
+  \setbox\z@\vbox{\boxmaxdepth.5\p@
+   \hbox{\kern-1.2\p@\kern#1\dimen@$#7{#8}\m@th$}}%
+  \ifx\canto@fil\hidewidth  \wd\z@\z@ \else \kern-#6\unitlength \fi
+  \ooalign{%
+    \canto@fil$\m@th \CancelColor
+    \vcenter{\hbox{\dimen@#6\unitlength \kern\dimen@
+      \multiply\dimen@#4\divide\dimen@#3 \vrule\@depth\dimen@\@width\z@
+      \vector(#3,-#4){#5}%
+    }}_{\raise-#2\dimen@\copy\z@\kern-\scriptspace}$%
+    \canto@fil \cr
+    \hfil \box\@tempboxa \kern\wd\z@ \hfil \cr}}
+\def\bcancelto#1#2{\let\canto@vector\cantox@vector\cancelto{#1}{#2}}
+\makeatother
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{quotes,arrows.meta, positioning,patterns}
+\usepackage{pgfplots}\pgfplotsset{compat=1.13}
+
+\numberwithin{equation}{section}
+\newtheorem{Def}{Definition}
+
+\begin{document} 
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries Mathematics Internal Assessment \par}
+		\vspace{1cm}
+		{\scshape\Large How long does it take to make a grilled cheese sandwich?\par}
+		{word count: 1566}
+	\end{titlepage}
+	
+\tableofcontents
+	
+\section{Introduction}
+\subimport{files/}{Introduction}
+
+\section{Solution}
+\subimport{files/}{GeneralSolution}
+
+\section{Conclusion}
+\subimport{files/}{Conclusion}
+
+\section{Bibliography}
+\bibliography{bibliography}
+
+\section{Appendix}
+\subimport{files/}{Appendix}
+\end{document}

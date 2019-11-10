@@ -1,0 +1,34 @@
+\textbf{Write in more details:}
+\begin{enumerate}
+	\item Known mass of water and salt added to kettle. Put Logger pro or other software thermometer inside kettle tracking every 5 seconds.
+	\item Run until water boils
+\end{enumerate}
+
+\subsection{Variables}
+\paragraph{Independent} Salinity of solution (\si{\gram\per\litre})
+\paragraph{Dependent} Change in temperature over change in time. (\si{\celsius\per\second}).
+\paragraph{Control Variables} Power output of kettle: \SI{1900 \pm 150}{\watt}. Mass of water: \SI{766\pm70}{\gram}. 
+
+
+\subsection{Procedural concerns}
+The masses of water need not be exactly the same, as we will produce ``normalised'' graphs. That is, by multiplying each temperature data point by the mass, we use the graph to better compare the data. This also means that the mass of salt must be changed accordingly as to produce the salinity of each sample.
+
+By comparing the found specific heat capacity for 0\% salinity, we can establish the systematic error, which consists of the efficiency of the kettle and the collection of salts still present in the water and in accumulated on the kettle. It is suspected that the former is of greater importance than the latter, so both will be mostly accounted for with our calculation for efficiency.
+
+The power output range of kettles varies greatly, therefore it is crucial to find one with the smallest range possible. The overwhelming majority of the instrumental uncertainty comes from the kettle (8\% compared to less than 0.1\% for the mass), hence the uncertainty for the latter will not be considered throughout this study.
+
+Finally, an improved sampling rate does not help to reduce uncertainty. As can be seen on the graph below, the trends remain similar. This also means that although the data is discreet, the graphs will have continuous lines for better clarity.
+\begin{figure}[h]
+	\begin{tikzpicture}[scale=0.75]
+		\begin{axis}[xlabel=Time (\si{\second}), ylabel=Temperature (\si{\celsius}), legend pos = south east, title={Salinity: 1\%.}]
+			\addplot [blue]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 10, y index = 11] {\SalinityOne};
+			\addplot [cyan]
+				plot [error bars/.cd, y dir=both, y explicit]
+				table [x index = 20, y index = 21] {\SalinityOne};
+			\legend{5 seconds/sample, 0.5 seconds/sample}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Sampling rate comparison shows that 5 seconds/sample is appropriate to accurately display the trend.}
+\end{figure}

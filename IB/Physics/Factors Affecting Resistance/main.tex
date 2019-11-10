@@ -1,0 +1,134 @@
+\documentclass[]{article}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+
+
+\begin{document}
+\section{Procedure}
+Equipment:
+\begin{itemize}
+	\item Ohmmeter
+	\item Two different thickness metal wires
+\end{itemize}
+
+Attach Ohmmeter to wire using the clips. Record resistance (R) for varying distance between clips (L).
+
+Independent variable: distance between clips (L).
+
+Dependent variable: resistance (R).
+
+Control variable: room temperature, thickness (diameter D) of wire.
+\section{Data Collection}
+\begin{table}[h]
+\begin{tabular}{c|c}
+	\multicolumn{2}{c}{\textbf{Wire 1}} \\
+	\multicolumn{2}{c}{Diameter (D): $1.25mm \pm 0.03mm$} \\
+	Length (L) $10^{-3}m \pm 1\cdot10^{-4}m$ & Resistance (R) $  10^{-3} \Omega \pm 1\cdot10^{-5}\Omega$\\
+	19.2 & 1.6\\
+	36.2 & 2.8\\
+	55.4 & 4.3\\
+	77.3 & 5.8\\
+	88.0 & 6.6\\
+\end{tabular}
+\caption{Raw data Wire 1}
+\vspace{2cm}
+
+\begin{tabular}{c|c}
+	\multicolumn{2}{c}{\textbf{Wire 2}} \\
+	\multicolumn{2}{c}{Diameter (D): $0.70mm \pm 0.03 mm$}\\	Length (L) $10^{-3}m \pm 1\cdot10^{-4}m$ & Resistance (R) $  10^{-3} \Omega \pm 1\cdot10^{-5} \Omega$\\
+	18.4 & 6.0\\
+	33.6 & 9.6\\
+	43.7 & 12.0\\
+	59.7 & 15.8\\
+	83.6 & 22.1\\
+\end{tabular}
+\caption{Raw data Wire 2}
+\end{table}
+\section{Data Analysis}
+
+The data suggests that the relationship between length and resistance is:
+\begin{equation*}
+R \propto L
+\end{equation*}
+
+When attempting to establish a relationship between the area of the cross-section of the wires (A) and the resistance (R), we would have to switch the variables: The length (L) becomes the control variable, and diameter (D) becomes the independent variable. The data collected did not take into consideration more than two wires, but despite not comparing precisely the same lengths for wires 1 and 2, because the difference in values for the resistance is so large, we can still observe and suggest the following relationship.
+\begin{equation*}
+	R \propto \frac{1}{A}
+\end{equation*}
+
+Based on these two relationships, we have:
+
+\begin{equation} \label{eq:R=rhoLA}
+	R = \rho\frac{L}{A}
+\end{equation}
+where $\rho$ is the resistivity.
+\begin{figure}[h]
+\begin{tikzpicture}
+\begin{axis}[
+xlabel={Length $10^{-3} m$},
+ylabel={Resistance $10^{-3} \Omega$},
+only marks, xmin=0, ymin=0
+]
+\addplot+[error bars/.cd,y dir=both,y fixed=1, x fixed=1] 
+coordinates {
+	(18.4,6)
+	(33.6,9.6)
+	(43.7,12)
+	(59.7,15.8)
+	(83.6,22.1)
+};
+\draw (axis cs:18.4,60) -- (axis cs:83.6,221);
+\end{axis}
+\end{tikzpicture}
+\caption{Length $\times$ Resistance based on data from Wire \textbf{2}.}
+\end{figure}
+
+The slope of the line is $\frac{\rho}{A}$, but based on this graph alone we can't confirm whether they are directly proportional, as it does not necessarily go through the origin.
+
+Cross-sectional area: $A = \pi(\frac{D}{2})^2$
+
+Uncertainty in cross-sectional area ($\Delta D$ represents error on Diameter (D)): $\frac{\Delta A}{A}=(\frac{\Delta D}{D}){}^2 \therefore \Delta A = 2 \frac{\Delta D}{D}A \therefore \Delta A = \frac{\pi D \Delta D}{2} $
+
+Resistivity: $ \rho = \frac{RA}{L}$
+
+Uncertainty in resistivity: $\frac{\Delta \rho}{\rho} = \frac{\Delta R}{R} + \frac{\Delta A}{A} + \frac{\Delta L}{L}$
+
+\vspace{2cm}
+The data set is not large enough to reliably graph and compare the cross-sectional area to resistance, however we can present the data and uncertainty. Based on equation \ref{eq:R=rhoLA},  the graph would be a hyperbola with slope $\rho L$
+\begin{table}[h]
+\begin{tabular}{ccc}
+Diameter $10^{-3} m \pm 0.03\cdot 10^{-3}m$ & Area $10^{-6} m^{2}$ &  Area Uncertainty $10^{-6} m^{2}$\\
+1.25 & 1.23 & 0.06\\
+0.70 & 0.38 & 0.03 \\
+\end{tabular}
+\caption{Relationship between Diameter and Cross-sectional area}
+\end{table}
+
+\subsection{Example calculations}
+Utilising the following data point for Wire 2
+\begin{equation*}
+\begin{split}
+L = 1.84\cdot 10^{-4} m \pm 1\cdot10^{-3}m\\
+R = 6 \cdot 10^{-3} \Omega \pm 1\cdot10^{-3} \Omega\\
+A = 3.8 \cdot 10^{-5} m^2 \pm 3.3 \cdot 10^{-5} m^2 \\
+\end{split}
+\end{equation*}
+We have
+\begin{equation*}
+\begin{split}
+	&\rho = \frac{(6 \cdot 10^{-3} \cdot 3.8 \cdot 10^{-5})}{1.84 \cdot 10^{-4}} \pm \big( \frac{1}{6} + \frac{3.3}{3.8} + \frac{1}{18.4}\big) \\
+	&\therefore \rho = 1.2 \cdot 10^{-5} \Omega.m \pm 1 \cdot 10^{-6}\Omega.m
+\end{split}
+\end{equation*}
+
+\section{Conclusion}
+
+We can observe a proportionality between length and resistance, though with the data acquired we cannot confirm whether it is directly proportional or not. This is due to the graph not necessarily going through the origin.
+
+As for the relationship between cross-sectional area and resistance, our data seems to suggest an inverse proportionality between them, though we did not have enough data points to reliably graph and analyse it.
+
+The improvements that need to be made are self evident: First and foremost, better collection of data \textendash\ both for smaller lengths (so we can establish that the graph does, indeed, go through the origin) and multiple diameter of wires.
+
+\end{document}

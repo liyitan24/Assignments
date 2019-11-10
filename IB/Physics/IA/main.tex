@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{pgfplots}
+\usepackage{amssymb, amsmath}
+\usepackage{algorithm2e}
+\usepackage{siunitx}
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+\usepackage{import}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries Physics Internal Assessment\par}
+		\vspace{1cm}
+		{\scshape\Large Determining the specific heat capacity of cheese\par}
+		\vspace{0.5cm}
+		{word count: 1400}
+	\end{titlepage}
+
+	\tableofcontents
+\section{Introduction}
+	\subimport{files/}{Introduction}
+\section{Background Knowledge}
+	\subimport{files/}{BackgroundKnowledge}
+\section{Procedure}
+	\subimport{files/}{Procedure}
+\section{Raw Data}
+	\subimport{files/}{RawData}
+\section{Analysis}
+		\subimport{files/}{Analysis}
+\section{Conclusion}
+	\subimport{files/}{Conclusion}
+\section{Evaluation}
+	\subimport{files/}{Evaluation}
+\section{Bibliography}
+	\bibliography{bibliography}
+\end{document}

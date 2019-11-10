@@ -1,0 +1,32 @@
+The research question of ``how many primes there are between 1 and $n$?'' did not invite an answer that is a number, but rather an expression \textendash\ which mathematicians call $\pi(n)$ and later on, the prime number theorem. The study began by contrasting trial-and-error and the sieve of Eratosthenes. The former consisted of checking the primality of each number as we counted up to $n$, whilst the latter consisted of removing the composites of every prime smaller than $\sqrt{n}$. The sieving technique led us to a preliminary distribution of primes and a prime counting function, called $Ln(n)$ that is equivalent to that of 18th and early 19th century Mathematicians. This function was later improved into $ li(n) $. At this stage, we had a reasonably good expression for $\pi(n)$ \textendash\ and consequently an answer \textendash\ though only for large values of $n$, and we sought the answer for any value of $n$.
+
+Thus Riemann's zeta function and the Riemann Hypothesis were introduced and discussed as deeply as possible, with the objective of perfecting what we called the remainder term, the difference between $li(n)$ and known values of $pi(n)$. This led us to the answer to our question, namely:
+\begin{equation*}
+	\pi(n) = \sum_{k} \frac{\mu(k)}{k} J(\sqrt[k]{n})
+\end{equation*}
+This expression, however, was so complicated that it had to be broken down and each portion individually examined. The largest amount of focus put on the so-called periodic term, which presented the largest challenge in its calculation. Not only was it mathematically complicated, consisting of an infinite sum of complex integrals, but also generated the most amount of discussion: This showed a limitation in the software used to make the calculations (Mathematica), though a solution was found in utilising $Ei(\ln n)$ instead of $li(n)$.
+
+\subparagraph{Further considerations}
+Originally, instead of $li(n)$, the function used was the so-called ``European notation'' (Li(n)):
+\begin{equation*}
+	Li(n) := \int_{2}^{n}\frac{1}{\ln x} dx = li(n) - li(2)
+\end{equation*}
+The final equation that describes both function are similar to each other, so while performing the final calculations to show the example of $\pi(100)$, an interesting problem arose with the periodic term. If, according to the equation, the periodic term ($P$) with respect to $Li(n)$ could be given by \citep{Grime2014Youtube}:
+\begin{equation*}
+\begin{split}
+	&P = \sum_{\rho} Li(n^{\rho}) \\
+	&\therefore P = \sum_{\rho} (li(n^\rho) - li(2)) = \sum_{\rho} li(n^\rho) - \sum_{\rho} li(2)
+\end{split}
+\end{equation*}
+This implies that if we count forty zeros, then the first term alone would be offset by $40\cdot li(2)$, or if we count to $10^{100}$ zeros, the term will be offset by $10^{100} \cdot li(2)$. Granted that some terms are negative and others positive and that compensates somewhat, but the second term, for instance, only has the weight of $ \frac{1}{2} $, the third, $ \frac{1}{3} $ and so on. The hypothesis is that when calculating the periodic term, the sum must be offset by $ li(2) $ only, however no literature was found on the subject, and no amount of discussion led to a mathematically rigorous proof. Instead, the American notation was ultimately utilised in place of the European.
+
+Another fruitful further investigation regards Riemann's number theory work. The requirement of understanding analytic continuation and other highly complex mathematics meant they had to be oversimplified or ignored. The most fascinating of them comes from the calculation of $\zeta(-1)$, which is actually used in physics and implies that the sum of all natural numbers is negative as seen below. The interesting dialogue comes from whether $\zeta(-1)$ before and after the analytical continuation do indeed refer to the same thing.
+\begin{equation*}
+\begin{split}
+\zeta(-1) &= \sum_{n=1}^{\infty} \frac{1}{n^{-1}} = \sum_{n=1}^{\infty}n \\
+\zeta(s) &:= 2^s\pi^{s-1}\ \sin\left(\frac{\pi s}{2}\right)\ \Gamma(1-s)\ \zeta(1-s) \\
+&\Gamma(2) = 1; \quad \zeta(2) = \frac{\pi^2}{6}\\
+\therefore \zeta(-1) &= 2^{-1}\pi^{-2}\ \sin\left(\frac{-\pi}{2}\right)\ \Gamma(2)\ \zeta(2) \\
+&= \frac{-1}{2\pi^2}\ \zeta(2) = \frac{-1}{2\pi^2}\ \frac{\pi^2}{6} = -\frac{1}{12}
+\end{split}
+\end{equation*}

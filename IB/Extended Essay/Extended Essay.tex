@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+
+\setcounter{secnumdepth}{4}
+\usepackage{subcaption}
+\usepackage[latin1]{inputenc}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+\usepackage{ulem}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{width=10cm, compat=1.9}
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+\usepackage{hhline}
+
+\usepackage{algorithm2e}
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+
+
+\newtheorem{Thm}{Theorem}
+\newtheorem{Def}{Definition}
+\newtheorem{Fun}{Function}
+\newtheorem{Pro}{Proof}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries Mathematics Extended Essay\par}
+	\vspace{1cm}
+	{\Large How many primes are there between 1 and $n$?\par}
+	\vspace{1cm}
+	{word count: 3500}
+	\vfill
+
+\end{titlepage}
+	
+\tableofcontents
+
+\section{Introduction}
+From Euclid proving there were infinitely many prime numbers circa 300 BC, to formulas that were thought to guarantee prime numbers, to the prime number theorem proven in 1896, prime numbers have been an intriguing field that has seen many of its breakthroughs through what was in the forefront of mathematics. The incredibly long history of the topic, as well as my personal curiosity led me to the following research question: \textbf{How many primes are there between $1$ and any integer $n$?}. \par
+
+Surprisingly, various fields of mathematics are required in order to tackle the question \textendash\ from number theory to calculus to complex analysis. The research will consequently be divided into two discreet sections: prime finding functions and counting functions. The former consists of more traditional methods based in number theory that require each prime between 1 and $n$ to be found and counted. We discuss trial divisions and its importance; the sieve of Erastothenes; and finally, build a preliminary distribution of primes for somewhat large values of $n$. The second section, prime counting functions, is largely based on Derbyshire's book ``Prime Obsession'' discussing the work of German mathematician Bernhard Riemann, and in it we will discuss some of the body of work which led to the prime number theorem. It focuses on presenting the largest developments in the field, and the move away from the ``simple'' number theory. Finally, it presents a function, and shows an example calculation, that, based on the (possible) proof of the Riemann Hypothesis, can reliably answer how many primes there are between $1$ and $n$.
+
+
+
+\section{Prime Finding}
+\subimport{files/}{TrialAndError}
+\subimport{files/}{SieveOfErathosthenes}
+\section{Prime Counting}
+\subimport{files/}{PNT}
+\section{Remainder Term}
+\subimport{files/}{zetaFunction}
+\subimport{files/}{RemainderTerm}
+\subimport{files/}{PeriodicTerm}
+\section{Conclusion}
+\subimport{files/}{Conclusion}
+
+\section{Bibliography}
+\bibliography{bibliography}.
+
+\section{Appendix}
+\subimport{files/}{Appendix}
+
+\end{document}

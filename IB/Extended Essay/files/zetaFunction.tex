@@ -1,0 +1,27 @@
+\subsection{The Zeta Function} \label{The Zeta Function}
+In 1859, in ``On the number of primes less than a given magnitude" \textendash\ his only contribution to number theory \citep{derbyshire2003prime}, Riemann extended Euler's work in the Zeta Function and conjectured the now Millennium Prize worthy Riemann hypothesis. His work in analytic number theory was central to the quantifying of the remainder term, and de la Vall\'{e} Poussin and Hadamard's proof to the prime number theorem. Indeed, there are many interesting aspects to the Zeta function going far beyond the scope of its link to the distribution of prime numbers, including unexpected results for some of its arguments \citep[p.153]{derbyshire2003prime}.
+
+The function has its origins as a specific case of a Dirichlet series \textendash\ namely any series of the form:
+	\begin{equation*}
+		\sum_{n=1}^{\infty} \frac{a_n}{n^s}
+	\end{equation*}
+Euler was famously quite interested in infinite series, and among his work there is a specific case of a Dirichlet series for which $a_n = 1$, and $s \in \mathbb{R}$ which he called the zeta function. Furthermore, Euler proved an extremely important link between the function and prime numbers \citep[p.135]{derbyshire2003prime}.
+	\begin{equation} \label{eq:EulerZeta}
+		\zeta(s) := \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p} \frac{1}{1- \frac{1}{p^s}} \ \ \  \text{for } s > 1, p \text{ prime}
+	\end{equation}
+
+One of the important portions of Riemann's work is the expansion of the domain of $\zeta(s)$ to the complex plane, specifically $ \mathbb{C} \ \backslash \ \{1\}$. The equations that resulted from his analytic continuation can be seen in Appendix \ref{Equations}, equations \ref{eq:Appendix-RiemannModifiedSum} and \ref{eq:Appendix-RiemannFunctional}. The full details of Riemann's work are far too complex and go beyond what is reasonable in this study, so we must take as \textit{fait accompli} that the so-called non-trivial zeros of the function define the magnitude of the remainder term, $\Delta(n)$, \citep{Grime2014Youtube}.
+
+There are infinitely many so-called trivial zeros\footnotemark, thus, we must specify the concept of non-trivial zeros, $\rho$. Furthermore, it is important to note that from this point on, the knowledge that is discussed is based on the veracity of the still unproven Riemann Hypothesis.
+\footnotetext{That is, values of $s$ such that $\zeta(s) = 0$. This is easy to see from Appendix \ref{Equations}(\ref{eq:Appendix-RiemannFunctional}), from $\sin(\frac{\pi s}{2})$ being 0 for every even negative value of the argument (-2, -4, -6, $\cdots$).}
+
+\begin{Def} \label{def:RhoSimmetry}
+	$\rho$ refers to the non-trivial zeros of $\zeta(s)$, that is: \par
+	$\rho \subset \{s \in \mathbb{C} \setminus \{1\} \mid \zeta(s) = 0\ \cap s \ne -2, -4,-6,\cdots\} $
+\end{Def}
+
+\begin{Def} \label{def:RiemannHypothesis}
+	\textbf{Riemann Hypothesis} states that ``All non-trivial zeros of the zeta function, $\zeta(s)$, have $\Re(s ) = \frac{1}{2}$.''
+\end{Def}
+
+An important aspect of the Riemann Hypothesis which will be utilised later in the study is that if $\rho$ is a zero to the zeta function, then so is its conjugate, $\bar{\rho}$. This will be emphasised later in the study.

@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+Database file #1: bibliography.bib
+Warning--entry type for "Flowers2014Keg" isn't style-file defined
+--line 8 of file bibliography.bib
+Warning--entry type for "FergSirromet" isn't style-file defined
+--line 15 of file bibliography.bib
+I was expecting a `,' or a `}'---line 20 of file bibliography.bib
+ :  
+ :  note={retrieved on 2017-09-23}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 3 entries,
+            2481 wiz_defined-function locations,
+            571 strings with 4861 characters,
+and the built_in function-call counts, 864 in all, are:
+= -- 71
+> -- 29
+< -- 3
++ -- 14
+- -- 8
+* -- 43
+:= -- 140
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 6
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 47
+empty$ -- 91
+format.name$ -- 13
+if$ -- 184
+int.to.chr$ -- 1
+int.to.str$ -- 4
+missing$ -- 2
+newline$ -- 24
+num.names$ -- 9
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 35
+stack$ -- 0
+substring$ -- 6
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 46
+(There was 1 error message)

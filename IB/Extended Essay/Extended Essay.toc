@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Prime Finding}{3}
+\contentsline {subsection}{\numberline {2.1}Trial and error}{3}
+\contentsline {subsection}{\numberline {2.2}Sieve of Erathosthenes}{7}
+\contentsline {section}{\numberline {3}Prime Counting}{11}
+\contentsline {subsection}{\numberline {3.1}Prime Number Theorem}{11}
+\contentsline {section}{\numberline {4}Remainder Term}{13}
+\contentsline {subsection}{\numberline {4.1}The Zeta Function}{13}
+\contentsline {subsection}{\numberline {4.2}The Weighted Prime Counting Function}{14}
+\contentsline {subparagraph}{Principal term}{16}
+\contentsline {subparagraph}{Secondary term}{16}
+\contentsline {subparagraph}{Integral Term}{17}
+\contentsline {subparagraph}{Log term}{17}
+\contentsline {subparagraph}{Periodic Term}{17}
+\contentsline {subparagraph}{Calculations}{18}
+\contentsline {section}{\numberline {5}Conclusion}{21}
+\contentsline {subparagraph}{Further considerations}{22}
+\contentsline {section}{\numberline {6}Bibliography}{24}
+\contentsline {section}{\numberline {7}Appendix}{26}
+\contentsline {subsection}{\numberline {7.1}Data}{26}
+\contentsline {subsubsection}{\numberline {7.1.1}Primes up to $10^8$}{26}
+\contentsline {subsubsection}{\numberline {7.1.2}$Li(100^{\rho }) + Li(100^{\mathaccentV {bar}016{\rho }})$}{26}
+\contentsline {subsubsection}{\numberline {7.1.3}$Ei(100^{\rho }) + Ei(100^{\mathaccentV {bar}016{\rho }})$}{27}
+\contentsline {subsection}{\numberline {7.2}Algorithms}{27}
+\contentsline {subsubsection}{\numberline {7.2.1}Sieve of Eratosthenes in Typescript}{27}
+\contentsline {subsubsection}{\numberline {7.2.2}Mathematica}{28}
+\contentsline {paragraph}{\numberline {7.2.2.1}Li}{28}
+\contentsline {paragraph}{\numberline {7.2.2.2}Ei}{28}
+\contentsline {paragraph}{\numberline {7.2.2.3}Sum of forty zeros of $Ei(\qopname \relax o{ln}100^{\rho })$ to $Ei(\qopname \relax o{ln}100^\frac {\rho }{6})$.}{28}
+\contentsline {subsection}{\numberline {7.3}Equations}{29}
+\contentsline {subsubsection}{\numberline {7.3.1}Complex plain zeta function}{29}
+\contentsline {subsubsection}{\numberline {7.3.2}Weighted prime counting function}{29}

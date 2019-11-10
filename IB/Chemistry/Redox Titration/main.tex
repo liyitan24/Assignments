@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[separate-uncertainty=true]{siunitx}
+\usepackage{mhchem}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{import}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{width=10cm, compat=1.9}
+\usepackage[makeroom]{cancel}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{titlesec}
+\usepackage{hhline}
+
+\DeclareSIUnit{\molar}{\mol\per\deci\metre\cubed}
+
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+\begin{document}
+
+\tableofcontents
+
+\section{Introduction}
+\subimport{files/}{Introduction}
+
+\section{Procedure}
+\subimport{files/}{Procedure}
+
+\section{Data}
+\subimport{files/}{RawData}
+
+
+\section{Analysis}
+\subimport{files/}{Analysis}
+
+
+\section{Conclusion and reflection}
+\subimport{files/}{Conclusion}
+
+\bibliography{bibliography}
+
+\end{document}

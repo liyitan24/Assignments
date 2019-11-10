@@ -1,0 +1,71 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[version=4]{mhchem}
+\begin{document}
+\subsection*{Procedure and data}
+A small piece of steel wool is added to sulphuric acid \ce{H2SO4}. The solution is heated until the wool is dissolved, then passed through paper filter, approximately 200 ml of water is added and the solution goes to a thermostatic bath.
+Finally the solution is diluted to 250 ml and titrated.\par
+The titration utilises potassium permanganate \ce{KMnO4}, which also acts as the indicator.
+\begin{itemize}
+\item Half Equations
+	\begin{equation*}
+	\begin{aligned}
+	\ce{Fe^{2+} -> Fe^{3+} + e-} \\
+	\ce{MnO4- + 5e- -> Mn2+}
+	\end{aligned}
+	\end{equation*}
+\item Balanced equation
+	\begin{equation} \label{eq:BalancedFeMN}
+		\ce{
+			5Fe^{2+}{}_{(aq)} + MnO4^{-}{}_{(aq)} + 8H+{}_{(aq)}
+			->
+			5Fe^{3+}{}_{(aq)} + Mn^{2+}{}_{(aq)} + 4H2O{}_{(l)}
+		}
+	\end{equation}
+\item Data \\
+Mass of steel wool: 0,945 g
+	\begin{center}\title{Volume of \ce{KMnO4}}
+	\begin{tabular}{|c|c|}
+		\hline
+		Solution & Volume \ce{KMnO4} $\pm$ 0,1 ml\\
+		\hline
+		0 & 16,6 \\
+		1 & 16,3 \\
+		2 & 15,9 \\
+		\hline
+		\textbf{Average} & \textbf{16,3 $\pm 0,4$} \\
+		\hline
+	\end{tabular}
+\end{center}
+\end{itemize}
+
+\subsection*{Calculations}
+$$ \text{Amount = Volume} \cdot \text{Molar concentration} \Rightarrow n = 16,3 ml \cdot 0,0197 mol/l = 3,21 \cdot 10^{-4} mol. $$ \\
+As per equation \ref{eq:BalancedFeMN}, the ratio of \ce{Fe$^{2+}$} to \ce{MnO4-} is 5:1, so the solution must contain following amount of \ce{Fe$^{2+}$}:
+\begin{equation}
+	n(\ce{Fe^{2+}}) = 3,21 \cdot 10^{-4} mol \cdot 5 = 1,60 \cdot 10^{-3} mol
+\end{equation}
+
+Given the molar mass of Fe, M(Fe) = 55,8 g/mol, $n(\ce{Fe}^{2+})$ found previously, and only a tenth of the solution being utilised, we can calculate the estimated mass of Fe in the steel wool, m($\ce{Fe}^{2+}$):
+\begin{equation}
+	m(\ce{Fe}^{2+}) = M\cdot n = 55,8 \cdot 1,60 \cdot 10^{-3} \cdot 10 = 0,893 g
+\end{equation}
+Repeating the process for Solutions 0, 1 and 2 in order to establish margins of error, we have:
+
+\begin{center}\title{Volume of \ce{KMnO4}}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	Solution & Volume \ce{KMnO4} $\pm$ 0,1(ml) & \ce{Fe} mass $\pm$ 0,001(g) & \ce{Fe} mass percentage\\
+	\hline
+	0 & 16,6 & 0,912 & 96,6\% \\
+	1 & 16,3 & 0,893 & 94,5\% \\
+	2 & 15,9 & 0,874 & 92,5\% \\
+	\hline 
+	\textbf{Average} & \textbf{16,3 $\pm 0,4$} & \textbf{0,893} $\pm 0,019 $ & \textbf{94,5}\% \\
+	\hline
+	\end{tabular}
+	\end{center}
+
+\subsection*{Considerations}
+The most obvious issue is the accuracy of our data, which presents an error of about 4\% compared to the expected result 98,5\%, however the precision of measurements of both the volume and mass is around 2\% \textendash\ well within the acceptable range.\par
+One of the considerations as to why the percentage of mass of iron is lower than expected is a mistake in our procedure: wherein we did pour water through the filter in order to flush any leftover iron stuck on the filter.
+\end{document}
