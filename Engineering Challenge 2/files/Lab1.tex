@@ -79,6 +79,10 @@
 		;
 		%
 		\draw [<->] (0,\Radius*0.5) arc (90:120:\Radius*0.5) node[pos=0.5,anchor=south]{$30º$};
+		\matrix [draw, matrix of math nodes] at (current bounding box.north east) {
+    		 \color{cyan}* & \text{Driving electrodes} \\
+			 \color{red}* & \text{Sensing electrodes} \\
+	 	};
 	\end{tikzpicture}
 	\caption{Orientation of electrodes}
 	\label{fig:ElectrodeOrientation}
