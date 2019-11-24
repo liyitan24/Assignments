@@ -44,5 +44,44 @@
 \end{minipage}
 \end{figure}
 
+
+\begin{figure}[]
+	\newcommand{\Radius}{3}
+	\newcommand{\RadPow}{0.5}
+	\newcommand{\RadVolt}{0.5}
+	\centering
+	\begin{tikzpicture}[legend entries = {Sensing electrodes, Driving electrodes}]
+		\draw (0,0) circle (\Radius cm);
+		%Driving electrodes
+		\draw [dashed,cyan] (0,-\Radius) node{*} -- (0,\Radius) node{*};
+		\node at (0.3,-\Radius-0.3) {-$V_x$};
+		\node at (0.3,\Radius+0.3) {$V_x$}
+		\draw [cyan]
+			(0,\Radius) -- ++ (0,\RadPow)
+			-- ++ ({-\Radius*1.3},0)
+			-- ++ (0,{-\Radius-\RadPow)}) 
+			++ (0,-\RadPow) circle (\RadPow) node{\mbox{\fontsize{25}{21.6}\selectfont\( \sim \)}} ++ (0,-\RadPow)
+			-- ++ (0,{-\Radius+\RadPow})
+			-- ++ ({\Radius*1.3},0)
+			-- ++ (0,{\RadPow})
+		; 
+		% Sensor electrodes
+		\draw[dashed, red] ({\Radius*cos(60)},{-\Radius*sin(60)}) node{*} -- ({-\Radius*cos(60)},{\Radius*sin(60)}) node{*} coordinate (a);
+		\draw [red]
+			(a) -- ++ (-{(2*\RadVolt*0.8)*cos(60)}, {(2*\RadVolt*0.8)*sin(60)}) coordinate (a)
+			-- ++ (0,0) arc (-60:120:0.2)
+			-- ++ ({1.3*\Radius*cos(30)},{1.3*\Radius*sin(30)})
+			-- ++ ({(\Radius+\RadVolt)*cos(60)},{-(\Radius+\RadVolt)*sin(60)})
+			++ ({\RadVolt*cos(60)},{-\RadVolt*sin(60)}) circle (\RadVolt) node{V} ++ ({\RadVolt*cos(60)},{-\RadVolt*sin(60)})
+			-- ++ ({(\Radius+\RadVolt)*cos(60)},{-(\Radius+\RadVolt)*sin(60)})
+			-- ++ ({-1.3*\Radius*cos(30)},-{1.3*\Radius*sin(30)})
+			-- ++ ({(-2*\RadVolt*0.8)*cos(60)}, {(2*\RadVolt*0.8)*sin(60)})
+		;
+		%
+		\draw [<->] (0,\Radius*0.5) arc (90:120:\Radius*0.5) node[pos=0.5,anchor=south]{$30º$};
+	\end{tikzpicture}
+	\caption{Orientation of electrodes}
+	\label{fig:ElectrodeOrientation}
+\end{figure}
 \subsection{Analysis}
 PBS numbers must be compared to yeast to tell us something meaningful regarding the frequency. At the moment, there is not much we can do.
