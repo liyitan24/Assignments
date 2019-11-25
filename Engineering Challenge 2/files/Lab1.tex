@@ -24,6 +24,8 @@ Due to a limited power input into the amplifier, a gain ratio of 1000 led to \te
 
 Although we define probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
 
+With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000. Suspect to be related to the percentage error being too large.
+
 \subsection{Raw data}
 \begin{figure}[h]
 \begin{minipage}{0.48\textwidth}
@@ -41,11 +43,11 @@ Although we define probe orientation, there are two factors we are disregarding:
 \begin{minipage}{0.48\textwidth}
 	\centering
 	\begin{tikzpicture}[scale=0.85]
-	\begin{semilogxaxis}[
-	title={Yeast 20g/L solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$
-	]
-%	\addplot[] table{};
-	\end{semilogxaxis}
+		\begin{semilogxaxis}[
+			title={Yeast 20g/L solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$
+		]
+		\addplot[] table{20gL.dat};
+		\end{semilogxaxis}
 	\end{tikzpicture}
 	\caption{}
 	\label{}
