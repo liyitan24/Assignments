@@ -30,9 +30,9 @@ With gain of 10, the maxima appeared in different frequencies as to those of 100
 \begin{figure}[h]
 \begin{minipage}{0.48\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.85]
+    \begin{tikzpicture}[scale=0.8]
 	    \begin{semilogxaxis}[
-	    	title={PBS solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$, ymin=10, ymax=30, %axis x line = bottom, axis y line=left,
+	    	title={PBS solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$, ymin=0, ymax=120,
 	    ]
 	    	\addplot[] table{PBS.dat};
 	    \end{semilogxaxis}
@@ -46,7 +46,7 @@ With gain of 10, the maxima appeared in different frequencies as to those of 100
 		\begin{semilogxaxis}[
 			title={Yeast 20g/L solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$
 		]
-		\addplot[] table{20gL.dat};
+		\addplot[] table{20gLGainOf100.dat};
 		\end{semilogxaxis}
 	\end{tikzpicture}
 	\caption{}
