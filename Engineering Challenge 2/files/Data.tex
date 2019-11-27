@@ -1,0 +1,29 @@
+\begin{figure}[h]
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.85]
+	    \begin{semilogxaxis}[
+	    	title={PBS solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$, ymin=0, ymax=130, %axis x line = bottom, axis y line=left,
+	    ]
+	    	\addplot[] table{PBS.dat};
+	    \end{semilogxaxis}
+    \end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\begin{tikzpicture}[scale=0.85]
+		\begin{semilogxaxis}[
+			title={Yeast 20g/L solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$,
+			ymin=0, ymax=130,
+		]
+		\addplot[] table{20gLGainOf100.dat};
+		\end{semilogxaxis}
+	\end{tikzpicture}
+\end{minipage}
+\caption{Amplitude based on frequency. Note the dip at \SI{50}{\hertz} due to the filter.}
+\end{figure}
+
+\paragraph{Assess performance of reactor prototype; cell density with final design}
+\paragraph{Uncertainties} Consider trends vs values? Probably most important for the calibration curve.
+\paragraph{important comments on results, relate to theory and knowledge}
+\paragraph{Limitations and improvements}
