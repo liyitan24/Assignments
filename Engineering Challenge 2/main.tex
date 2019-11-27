@@ -20,11 +20,19 @@
 \usetikzlibrary{matrix,calc, angles, quotes}
 \usepackage{pgfplots}
 \begin{document}
-	\tableofcontents
+    \tableofcontents
+    \section{Summary}
+        \subimport{files/}{Summary}
+    \section{Introduction}
+        \subimport{files/}{Introduction}
+    \section{Procedure}
+        \subimport{files/}{Procedure}
+    \section{Raw Data}
+	    \subimport{files/}{RawData}
+    \section{Analysis}
+		\subimport{files/}{Analysis}
+    \section{Conclusion}
+	    \subimport{files/}{Conclusion}
     \section{Lab 1}
-    \subimport{files/}{Lab1}
-    \section{Lab 2}
-    \subimport{files/}{Lab2}
-    \section{Lab 3}
-    \subimport{files/}{Lab3}
+        \subimport{files/}{Lab1}
 \end{document}
