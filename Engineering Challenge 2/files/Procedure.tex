@@ -1,5 +1,3 @@
-\subsection{Experimental Setup}
-\paragraph{Procedure}
 \begin{enumerate}
 	\item 
 	\item 
@@ -18,6 +16,7 @@
 	\item Dependent: Voltage peak-to-peak
 \end{itemize}
 
+<<<<<<< HEAD:Engineering Challenge 2/files/Lab1.tex
 \paragraph{Considerations}
 
 Due to a limited power input into the amplifier, a gain ratio of 1000 led to \textit{gain saturation}, where we no longer observed the expected amplification.
@@ -55,12 +54,14 @@ With gain of 10, the maxima appeared in different frequencies as to those of 100
 \end{figure}
 
 
+=======
+>>>>>>> 2544e85dfba9b8c2a4cb72a9d48d7796db5bc51d:Engineering Challenge 2/files/Procedure.tex
 \begin{figure}[h]
 	\newcommand{\Radius}{3}
 	\newcommand{\RadPow}{0.5}
 	\newcommand{\RadVolt}{0.5}
 	\centering
-	\begin{tikzpicture}[scale=1]
+	\begin{tikzpicture}[scale=0.85]
 		\draw (0,0) circle (\Radius cm);
 		%Driving electrodes
 		\draw [dashed,cyan] (0,-\Radius) node{*} -- (0,\Radius) node{*};
@@ -87,7 +88,7 @@ With gain of 10, the maxima appeared in different frequencies as to those of 100
 			-- ++ ({(-2*\RadVolt*0.8)*cos(60)}, {(2*\RadVolt*0.8)*sin(60)})
 		;
 		%
-		\draw [<->] (0,\Radius*0.5) arc (90:120:\Radius*0.5) node[pos=0.5,anchor=south]{$30º$};
+		\draw [<->] (0,\Radius*0.5) arc (90:120:\Radius*0.5) node[pos=0.5,anchor=south]{30º};
 		\matrix [draw, matrix of math nodes] at (current bounding box.north east) {
     		 \color{cyan}* & \text{Driving electrodes} \\
 			 \color{red}* & \text{Sensing electrodes} \\
@@ -96,5 +97,11 @@ With gain of 10, the maxima appeared in different frequencies as to those of 100
 	\label{fig:ElectrodeOrientation}
 	\caption{Orientation of electrodes}
 \end{figure}
-\subsection{Analysis}
-PBS numbers must be compared to yeast to tell us something meaningful regarding the frequency. At the moment, there is not much we can do.
+
+\paragraph{Considerations}
+
+Due to a limited power input into the amplifier, a gain ratio of 1000 led to \textit{gain saturation}, where we no longer observed the expected amplification.
+
+Although we define probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
+
+With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000. Suspect to be related to the percentage error being too large.
