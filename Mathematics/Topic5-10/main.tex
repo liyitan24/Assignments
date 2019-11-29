@@ -1,0 +1,46 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+
+\usepackage{algorithm2e}
+\usepackage[round, comma, authoryear]{natbib}
+\bibliographystyle{unsrtnat}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage[T1]{fontenc}
+\lstset{
+	style              = Matlab-editor,
+	basicstyle         = \fontsize{10}{9}\mlttfamily,
+	escapechar         = ",
+	mlshowsectionrules = true,
+}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{quotes,arrows.meta, positioning,patterns}
+\usepackage{pgfplots}\pgfplotsset{compat=1.13}
+
+\begin{document}
+	\tableofcontents
+    \section{Building Mathematical Models}
+    \subimport{files/}{Topic1}
+    \section{Employ assumptions to simplify systems}
+    \subimport{files/}{Topic2}
+    \section{Matrices and vectors}
+    \subimport{files/}{Topic3}
+    \section{Complex numbers}
+    \subimport{files/}{Topic4}
+\end{document}
