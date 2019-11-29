@@ -16,6 +16,46 @@
 	\item Dependent: Voltage peak-to-peak
 \end{itemize}
 
+<<<<<<< HEAD:Engineering Challenge 2/files/Lab1.tex
+\paragraph{Considerations}
+
+Due to a limited power input into the amplifier, a gain ratio of 1000 led to \textit{gain saturation}, where we no longer observed the expected amplification.
+
+Although we define probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
+
+With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000. Suspect to be related to the percentage error being too large.
+
+\subsection{Raw data}
+\begin{figure}[h]
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+	    \begin{semilogxaxis}[
+	    	title={PBS solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$, ymin=0, ymax=120,
+	    ]
+	    	\addplot[] table{PBS.dat};
+	    \end{semilogxaxis}
+    \end{tikzpicture}
+    \caption{Amplitude based on frequency. Note the dip at \SI{50}{\hertz} due to the filter.}
+    \label{fig:}
+\end{minipage}
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\begin{tikzpicture}[scale=0.85]
+		\begin{semilogxaxis}[
+			title={Yeast 20g/L solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$
+		]
+		\addplot[] table{20gLGainOf100.dat};
+		\end{semilogxaxis}
+	\end{tikzpicture}
+	\caption{}
+	\label{}
+\end{minipage}
+\end{figure}
+
+
+=======
+>>>>>>> 2544e85dfba9b8c2a4cb72a9d48d7796db5bc51d:Engineering Challenge 2/files/Procedure.tex
 \begin{figure}[h]
 	\newcommand{\Radius}{3}
 	\newcommand{\RadPow}{0.5}
@@ -65,3 +105,12 @@ Due to a limited power input into the amplifier, a gain ratio of 1000 led to \te
 Although we define probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
 
 With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000. Suspect to be related to the percentage error being too large.
+
+Maximum amplitude for PBS around 3000hz, maximum amplitude for yeast at 5000hz. We pick 4000 Hz.
+There is no concern for cell disruption at the range of frequencies we are analysing (Yerworth, R., 2019 November 28)
+
+Uncertainty of about +/- 2ml with our beakers. Relevant in the construction of the calibration curve.
+
+We are creating the calibration curve without the impeller. Because it's plastic, we assume very little effects in the condutance
+
+The frequency we inputed was also observed in mydaq's oscilloscope. 
