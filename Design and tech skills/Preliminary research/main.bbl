@@ -1,0 +1,65 @@
+\begin{thebibliography}{10}
+
+\bibitem{SNUBioRobotics2016}
+K.-J. Cho et~al.
+\newblock {[SNU BioRobotics]. Exo-Glove Poly (Extended) (Seoul National
+  University)}.
+\newblock \url{youtube.com/watch?v=oNEFXcWRIG8}, 2016-02-15.
+\newblock Accessed: 2019-11-25.
+
+\bibitem{CianchettiMatteo2018Baos}
+M.~Cianchetti, C.~Laschi, A.~Menciassi, and P.~Dario.
+\newblock Biomedical applications of soft robotics.
+\newblock {\em Nature Reviews. Materials}, 3(6):143--153, 2018.
+
+\bibitem{ConnellyLauri2010APGa}
+L.~Connelly, Y.~Jia, M.~L. Toro, M.~E. Stoykov, R.~V. Kenyon, and D.~G. Kamper.
+\newblock A pneumatic glove and immersive virtual reality environment for hand
+  rehabilitative training after stroke.
+\newblock {\em IEEE Transactions on Neural Systems and Rehabilitation
+  Engineering}, 18(5):551--559, 2010.
+
+\bibitem{DelphMichaelA2013Asre}
+M.~A. Delph, S.~A. Fischer, P.~W. Gauthier, C.~H.~M. Luna, E.~A. Clancy, and
+  G.~S. Fischer.
+\newblock A soft robotic exomusculature glove with integrated semg sensing for
+  hand rehabilitation.
+\newblock In {\em 2013 IEEE 13th International Conference on Rehabilitation
+  Robotics (ICORR)}, volume 2013, pages 1--7. IEEE, 2013.
+
+\bibitem{InHyunki2011Jsau}
+H.~In, K.-J. Cho, K.~Kim, and B.~Lee.
+\newblock Jointless structure and under-actuation mechanism for compact hand
+  exoskeleton.
+\newblock {\em 2011 IEEE International Conference on Rehabilitation Robotics},
+  2011:5975394, 2011.
+
+\bibitem{KangB.B2016IIC}
+B.~B. Kang et~al.
+\newblock In {\em 2016 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 3750--3755. IEEE, 2016.
+
+\bibitem{KangB.B2012Ftij}
+B.~B. Kang, H.~In, and K.~Cho.
+\newblock Force transmission in joint-less tendon driven wearable robotic hand.
+\newblock In {\em 2012 12th International Conference on Control, Automation and
+  Systems}, pages 1853--1858. IEEE, 2012.
+
+\bibitem{DanielaRus2015Dfac}
+D.~Rus and M.~T. Tolley.
+\newblock Design, fabrication and control of soft robots.
+\newblock {\em Nature}, 521(7553):467, 2015.
+
+\bibitem{ShahidTalha2018MtSR}
+T.~Shahid, D.~Gouwanda, S.~G. Nurzaman, and A.~A. Gopalai.
+\newblock Moving toward soft robotics: A decade review of the design of hand
+  exoskeletons.
+\newblock {\em Biomimetics}, 3(3), 2018.
+
+\bibitem{YeoJooChuan2016SRFS}
+J.~C. Yeo, H.~K. Yap, W.~Xi, Z.~Wang, R.~C.-H. Yeow, and C.~Lim.
+\newblock Soft robotics: Flexible and stretchable strain sensing actuator for
+  wearable soft robotic applications.
+\newblock {\em Advanced Materials Technologies}, 1, 2016.
+
+\end{thebibliography}
