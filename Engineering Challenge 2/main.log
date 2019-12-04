@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.28)  25 NOV 2019 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.28)  28 NOV 2019 10:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1097,50 +1097,63 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./files/Lab1.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+(./files/Summary.tex) [2
+
+] (./files/Introduction.tex) [3
+
+] (./files/Procedure.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
 PGFPlots: reading {PBS.dat}
 PGFPlots: reading {20gLGainOf100.dat}
-[2
+ [4
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <25> on input line 72.
+LaTeX Font Info:    Calculating math sizes for size <25> on input line 73.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.5> not available
-(Font)              size <12> substituted on input line 72.
+(Font)              size <12> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.5> not available
-(Font)              size <12> substituted on input line 72.
+(Font)              size <12> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.5> not available
-(Font)              size <12> substituted on input line 72.
+(Font)              size <12> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <12.5> not available
-(Font)              size <12> substituted on input line 72.
+(Font)              size <12> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <12.5> not available
-(Font)              size <12> substituted on input line 72.
+(Font)              size <12> substituted on input line 73.
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 90.
-
+Overfull \hbox (9.8664pt too wide) in paragraph at lines 57--100
+[]\OT1/cmr/m/n/12 ======= >>>>>>> 2544e85dfba9b8c2a4cb72a9d48d7796db5bc51d:Engi
+neering Chal-lenge
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [3] [4] (./files/Lab2.tex) [5
+[5]) [6] (./files/Data.tex
+PGFPlots: reading {PBS.dat}
+PGFPlots: reading {20gLGainOf100.dat}
+PGFPlots: reading {50gLGainOf100.dat}
+) [7
 
-] (./files/Lab3.tex) [6
+] [8] (./files/Analysis.tex) [9
+
+]
+(./files/Conclusion.tex) [10
 
 ] (./main.aux)
 
@@ -1149,13 +1162,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 37289 strings out of 492616
- 892129 string characters out of 6129481
- 1039511 words of memory out of 5000000
- 40703 multiletter control sequences out of 15000+600000
+ 37322 strings out of 492616
+ 892801 string characters out of 6129481
+ 1040511 words of memory out of 5000000
+ 40725 multiletter control sequences out of 15000+600000
  545748 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,96p,716b,2544s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,96p,716b,2544s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -1164,10 +1177,10 @@ r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
 l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (6 pages, 88702 bytes).
+Output written on main.pdf (10 pages, 100503 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
