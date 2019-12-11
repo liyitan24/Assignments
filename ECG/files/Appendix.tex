@@ -1,0 +1,13 @@
+\begin{table}
+    \pgfplotstabletypeset[
+        columns/Status/.style = { string replace*={2}{Normal}, string replace*={1}{PR $\ge 200$ ms} },
+        every head row/.style={before row=\toprule,after row=\midrule},
+        every last row/.style={after row=\bottomrule},
+        precision=3, fixed zerofill, fixed, string type,
+    ]{PR intervals.dat}
+\caption{Consecutive PR intervals, average and patient classification}
+\label{tb:patient-classification}
+\end{table}
+
+\lstinputlisting[caption={Import data and generate plots},label={ls:genData}]{"./run.m"}
+\lstinputlisting[caption={Specificity and Sensitivity}]{"./sensitivityAndSpecificity.m"}

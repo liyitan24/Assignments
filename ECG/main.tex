@@ -10,27 +10,31 @@
 \usepackage{algorithm2e}
 \usepackage{siunitx}
 \usepackage{tikz}
+\usepackage{circuitikz}
 \usepackage{pgfplots}
-\usepackage[round, comma, authoryear]{natbib}
+\usepackage{pgfplotstable, booktabs, array}
+\pgfplotsset{compat=1.16}
+\usepackage[authoryear, round, comma]{natbib}
 \bibliographystyle{unsrtnat}
 \usepackage{import}
 
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage[T1]{fontenc}
+\lstset{
+	style              = Matlab-editor,
+	basicstyle         = \fontsize{10}{9}\mlttfamily,
+	escapechar         = ",
+	mlshowsectionrules = true,
+}
+
 \begin{document}
-\tableofcontents
-\section{Introduction}
-	\subimport{files/}{Introduction}
-\section{Background Knowledge}
+	\tableofcontents
+\section{Filters}
 	\subimport{files/}{BackgroundKnowledge}
-\section{Procedure}
-	\subimport{files/}{Procedure}
-\section{Raw Data}
-	\subimport{files/}{RawData}
 \section{Analysis}
-		\subimport{files/}{Analysis}
-\section{Conclusion}
-	\subimport{files/}{Conclusion}
-\section{Evaluation}
-	\subimport{files/}{Evaluation}
+	\subimport{files/}{Analysis}
+\section{Appendix}
+	\subimport{files/}{Appendix}
 	
 	\bibliography{bibliography}
 \end{document}
