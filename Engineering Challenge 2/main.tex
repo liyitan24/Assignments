@@ -3,8 +3,8 @@
 \geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
 \usepackage{setspace} \doublespacing
 \usepackage{algorithm2e}
-\usepackage[round, comma, authoryear]{natbib}
-\bibliographystyle{unsrtnat}
+\usepackage[]{natbib}
+\bibliographystyle{abbrv}
 
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
@@ -16,21 +16,21 @@
 \usepackage{cancel}
 \usepackage{siunitx}
 \usepackage{graphicx}
+\usepackage{circuitikz}
 \usepackage{tikz}
 \usetikzlibrary{matrix,calc, angles, quotes}
-\usepackage{pgfplots}
+\usepackage{pgfplots, pgfplotstable}
+
 \begin{document}
-    \tableofcontents
     \section{Summary}
         \subimport{files/}{Summary}
     \section{Introduction}
         \subimport{files/}{Introduction}
-    \section{Procedure}
-        \subimport{files/}{Procedure}
-    \section{Data}
-	    \subimport{files/}{Data}
-    \section{Analysis}
-		\subimport{files/}{Analysis}
+    \section{Materials and Methods}
+        \subimport{files/}{MaterialsAndMethods}
+    \section{Results and Discussion}
+		\subimport{files/}{ResultsAndDiscussion}
     \section{Conclusion}
-	    \subimport{files/}{Conclusion}
+        \subimport{files/}{Conclusion}
+    \bibliography{bibliography}
 \end{document}
