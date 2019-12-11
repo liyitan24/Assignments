@@ -1,0 +1,54 @@
+\begin{figure}[h]
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.85]
+            \begin{semilogxaxis}[
+                title={PBS solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$, ymin=0, ymax=130, axis x line = bottom, axis y line=left,
+            ]
+                \addplot[] table{PBS.dat};
+            \end{semilogxaxis}
+        \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.85]
+            \begin{semilogxaxis}[
+                title={Yeast 20g/L solution}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\milli\volt})$,
+                ymin=0, ymax=130, axis x line = bottom, axis y line=left,
+            ]
+            \addplot[] table{20gLGainOf100.dat};
+            \end{semilogxaxis}
+        \end{tikzpicture}
+    \end{minipage}
+    \caption{Amplitude based on frequency. Note the dip at \SI{50}{\hertz} due to the filter.}
+    \end{figure}
+    
+    \paragraph{Assess performance of reactor prototype; cell density with final design}
+    \paragraph{Uncertainties} Consider trends vs values? Probably most important for the calibration curve.
+    \paragraph{important comments on results, relate to theory and knowledge}
+    \paragraph{Limitations and improvements}
+
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        \begin{semilogxaxis}[axis x line = bottom, axis y line=left, ymin=0,
+            title={Callibration curve}, xlabel=Concentration \% , ylabel=Amplitude $(\si{\milli\volt})$,
+            legend pos = north west,
+            ]
+            \addplot[only marks] table{50gLGainOf100.dat};
+            \addplot [
+                dashed,
+            ] table[ x={x},
+                    y={ create col/linear regression = { y={y} } }
+                ] {50gLGainOf100.dat};
+            \addlegendentry{
+                $\pgfmathprintnumber{\pgfplotstableregressiona} \cdot x\pgfmathprintnumber[print sign]{\pgfplotstableregressionb}$
+            };
+        \end{semilogxaxis}
+    \end{tikzpicture}	
+\end{figure}
+
+We would want to have more data points in our callibration curve.
+
+We used 250ml to determine the frequency, and 300ml for the callibration curve. We don't expect The difference in ideal frequency per volume to be significant.
