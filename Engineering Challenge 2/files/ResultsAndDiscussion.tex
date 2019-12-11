@@ -32,8 +32,8 @@
 \begin{figure}
     \centering
     \begin{tikzpicture}
-        \begin{semilogxaxis}[axis x line = bottom, axis y line=left, ymin=0,
-            title={Callibration curve}, xlabel=Concentration \% , ylabel=Amplitude $(\si{\milli\volt})$,
+        \begin{semilogyaxis}[axis x line = bottom, axis y line=left,
+            title={Callibration curve}, ylabel=Concentration \% , xlabel=Amplitude $(\si{\milli\volt})$,
             legend pos = north west,
             ]
             \addplot[only marks] table{50gLGainOf100.dat};
@@ -45,7 +45,7 @@
             \addlegendentry{
                 $\pgfmathprintnumber{\pgfplotstableregressiona} \cdot x\pgfmathprintnumber[print sign]{\pgfplotstableregressionb}$
             };
-        \end{semilogxaxis}
+        \end{semilogyaxis}
     \end{tikzpicture}	
 \end{figure}
 
