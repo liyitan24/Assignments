@@ -1,5 +1,29 @@
-\paragraph{Background information on the topic.}
-\paragraph{State the problem, vision and purpose}
-\paragraph{status quo, technical problem, competing solution}
-\paragraph{obstacle, prognosis}
-\paragraph{background knowledge}
+% \paragraph{Background information on the topic.}
+
+
+Aim of the experiment is to establish a calibration curve against which we can track and compare the progress of our bioreactor.
+% \paragraph{background knowledge}
+% \paragraph{State the problem, vision and purpose}
+% \paragraph{Background knowledge, status quo, technical problem, competing solution}
+Impedance spectroscopy is a widely used modality to establish cell composition, diagnosis of lymphatic edema and, most importantly, biological cell suspensions \cite{LvovichVadimF2012Is, PolatAyfer2017EDoL}.
+Alternatively optical density can be used, which we in fact do use to verify our results.
+
+Impedance (Z) is effectively resistance in an AC electrical circuit, which means that it follows the same Ohm's Law definition; where V is potential difference and I is current:
+\begin{equation} \label{eq:Z}
+    Z = \frac{V}{I}
+\end{equation}
+
+We can represent a cell in extracellular liquid as capacitor in a electrical circuit, which allows us to use an important definition from AC theory; where $C$ is capacitance (the quality of a capacitor), $f$ is the frequency, $j$ is the imaginary unit.
+\begin{equation} \label{eq:Z_c}
+    Z_c = \frac{-j}{2\pi f C}
+\end{equation}
+
+In practice, we cannot determine $C$, but by combining equations (\ref{eq:Z}) and (\ref{eq:Z_c}), we know the following relationship
+\begin{equation}
+   V \propto \frac{1}{f}
+\end{equation}
+
+Which tells us we can alter a function generator's frequency such that the voltage output from the ``cell as an electrical circuit'' is the most meaningful, telling us information about its impedance, and consequently the cell growth.
+
+\textbf{Why do we run PBS?} comparison to cell 20g/l
+\textbf{why does an increase in frequency give us better results? theory says otherwise}
