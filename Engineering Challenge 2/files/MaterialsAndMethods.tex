@@ -1,6 +1,13 @@
+\subsection{Materials}
+\begin{itemize}
+	\item Combined amplifier, filter and driving circuit
+	\item Function generator and oscilloscope. NI myDAQ used for both.
+	\item Phosphate buffer solution (PBS)
+	\item Activated yeast (\textit{Saccharomyces cerevisiae})
+\end{itemize}
+
+\subsection{Methods}
 \begin{enumerate}
-	\item 
-	\item 
 	\item 
 \end{enumerate}
 \paragraph{Variables}
@@ -9,11 +16,11 @@
 		\begin{itemize}
 			\item Output voltage on function generator: 10V.
 			\item Probes 180º from each other. Sense leads 30º from the probe and 180º from each other. See Figure \ref{fig:ElectrodeOrientation}.
-			\item Gain $\frac{R_3}{R_2} = \frac{15k}{150} = 100$.
+			\item Amplifier gain $\frac{15k}{150} = 100$.
 			\item Liquid volume 250 ml, 60mm height measured from inside the cup.
 		\end{itemize}
 	\item Independent: Frequency.
-	\item Dependent: Voltage peak-to-peak
+	\item Dependent: Potential difference
 \end{itemize}
 \begin{figure}[h]
 	\newcommand{\Radius}{3}
@@ -53,24 +60,17 @@
 			 \color{red}* & \text{Sensing electrodes} \\
 	 	};
 	\end{circuitikz}
-	\label{fig:ElectrodeOrientation}
 	\caption{Orientation of electrodes}
+	\label{fig:ElectrodeOrientation}
 \end{figure}
 
 \paragraph{Considerations}
 
 Due to a limited power input into the amplifier, a gain ratio of 1000 led to \textit{gain saturation}, where we no longer observed the expected amplification.
+With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000, though we are unsure why this would happen.
 
-Although we define probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
-
-With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000.
-Suspect to be related to the percentage error being too large.
+Although we defined probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
+Instrumental uncertainty becomes largely irrelevant, as we expect there to be some movement in the probes as we  
 
 Maximum amplitude for PBS around 3000hz, maximum amplitude for yeast at 5000hz. We pick 4000 Hz.
 There is no concern for cell disruption at the range of frequencies we are analysing (Yerworth, R., 2019 November 28)
-
-Uncertainty of about +/- 2ml with our beakers. Relevant in the construction of the calibration curve.
-
-We are creating the calibration curve without the impeller. Because it's plastic, we assume very little effects in the condutance
-
-The frequency we inputed was also observed in mydaq's oscilloscope. 

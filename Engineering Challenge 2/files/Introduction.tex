@@ -1,29 +1,26 @@
 % \paragraph{Background information on the topic.}
 
-
-Aim of the experiment is to establish a calibration curve against which we can track and compare the progress of our bioreactor.
-% \paragraph{background knowledge}
 % \paragraph{State the problem, vision and purpose}
-% \paragraph{Background knowledge, status quo, technical problem, competing solution}
-Impedance spectroscopy is a widely used modality to establish cell composition, diagnosis of lymphatic edema and, most importantly, biological cell suspensions \cite{LvovichVadimF2012Is, PolatAyfer2017EDoL}.
+The aim of the experiment is to establish a calibration curve against which we can track and compare the progress of our bioreactor.
+We do so by defining the appropriate frequency for best potential difference output on a phosphate buffer solution, as well as a 20 g/l yeast solution.
+Finally, we produce the calibration curve by analysing the potential difference at a range of yeast concentrations.  
+
+\paragraph{Background knowledge.}
+Impedance spectroscopy is a widely used modality to establish cell composition, diagnosis of lymphatic edema and, most importantly for our purposes, quantify biological cell suspensions \cite{LvovichVadimF2012Is, PolatAyfer2017EDoL}.
 Alternatively optical density can be used, which we in fact do use to verify our results.
 
-Impedance (Z) is effectively resistance in an AC electrical circuit, which means that it follows the same Ohm's Law definition; where V is potential difference and I is current:
-\begin{equation} \label{eq:Z}
-    Z = \frac{V}{I}
-\end{equation}
-
-We can represent a cell in extracellular liquid as capacitor in a electrical circuit, which allows us to use an important definition from AC theory; where $C$ is capacitance (the quality of a capacitor), $f$ is the frequency, $j$ is the imaginary unit.
-\begin{equation} \label{eq:Z_c}
-    Z_c = \frac{-j}{2\pi f C}
-\end{equation}
-
-In practice, we cannot determine $C$, but by combining equations (\ref{eq:Z}) and (\ref{eq:Z_c}), we know the following relationship
+Impedance (Z) is effectively resistance in an AC electrical circuit, which means that it follows Ohm's Law.
+Furthermore, we can represent a cell in extracellular liquid as capacitor in a electrical circuit, which allows us to use an important definition from AC theory; where V is potential difference and I is current, $C$ is capacitance, $f$ is the frequency, $j$ is the imaginary unit:
 \begin{equation}
-   V \propto \frac{1}{f}
+    V = ZI \quad \quad \quad \quad Z_c = \frac{-j}{2\pi f C}
 \end{equation}
 
-Which tells us we can alter a function generator's frequency such that the voltage output from the ``cell as an electrical circuit'' is the most meaningful, telling us information about its impedance, and consequently the cell growth.
+In practice, we cannot determine $C$, but by combining both equations, we know the following relationship
+\begin{equation}
+   V_{cell} \propto \frac{1}{f}
+\end{equation}
 
-\textbf{Why do we run PBS?} comparison to cell 20g/l
-\textbf{why does an increase in frequency give us better results? theory says otherwise}
+Which tells us that as we increase the function generator's frequency, the potential difference ``lost'' to the cells is reduced, and therefore, the potential that we measure in the extracellular liquid is higher.
+\begin{equation}
+    V_{liquid} \propto f
+ \end{equation}
