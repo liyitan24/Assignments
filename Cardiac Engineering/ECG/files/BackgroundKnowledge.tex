@@ -1,0 +1,149 @@
+\subsection{Requirements}
+\begin{itemize}
+    \item Band-pass filter, consisting of a high-pass and a low-pass filter.
+    \begin{itemize}
+        \item High-pass blocks DC offsets
+        \item Low-pass high-frequency components not a part of the ECG signal
+    \end{itemize}
+    \item \SI{50}{\hertz} twin notch filter
+    	\begin{itemize}
+    		\item Filters out mains noise
+    	\end{itemize}
+\end{itemize}
+
+Given that normal ECG signals range from \SI{0.01}{\hertz} to \SI{100}{\hertz} \citep{JianqiangLi2017DoaR}, we may calculate the required circuit using equation (\ref{eq:F_c}). By having $C = \SI{1}{\micro\farad}$, we find $R$:
+
+\begin{equation}\label{eq:F_c}
+    F_c = \frac{1}{2\pi RC}
+\end{equation}
+\begin{equation*}
+\begin{split}
+	R_{low} &= \frac{1}{2\pi 10^{-6} 10^2} \simeq \SI{1.6}{\kilo\ohm}\\
+    R_{high} &= \frac{1}{2\pi 10^{-6} 10^{-2}} \simeq \SI{16}{\mega\ohm} \\
+    R_{notch} &= \frac{1}{2\pi 10^{-6} 50} \simeq \SI{3}{\kilo\ohm} \\
+\end{split}
+\end{equation*}
+
+Given the limitation in the range of resistors available, the following were chosen:
+\SI{2}{\kilo\ohm} and \SI{1}{\mega\ohm}, corresponding to a signal range of \SI{0.2}{\hertz} to \SI{80}{\hertz}.
+While much shorter than what is required, the utilised oscilloscope is not able to register values below \SI{0.2}{\hertz}, and $F_c$ refers to where $\frac{V_{out}}{V_{in}} = \SI{-3}{\deci\bel}$.
+As we are dealing with non-ideal filters, there will still be a strong enough signal in the important range.
+Finally, this also implies that the tolerances of the resistors are largely ignored, as those are expected to be minimal sources of error compared to all other factors, including our circuit's configuration.
+
+\pagebreak
+\subsection{Characterisation}
+
+\begin{figure}[h]
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{circuitikz}[scale=0.85]
+            \draw (0,0)node[ocirc]{} to[C=\SI{1}{\micro\farad}] (3,0) -- (6,0) node[ocirc]{};
+            \draw (3,0) to[resistor, R=\SI{1}{\mega\ohm}, *-*] (3,-3)
+            (0,-3) node[ocirc]{} to (6,-3) node[ocirc]{};
+            \draw [|->] (0,-2.85) -- (0,-0.15) node[midway, left]{$V_{in}$};
+            \draw [|->] (6,-2.85) -- (6,-0.15) node[midway, left]{$V_{out}$};
+        \end{circuitikz}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.85]
+            \begin{semilogxaxis}[
+                title={High pass}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\volt})$,
+            ]
+            \addplot[] table{highpass.dat};
+            \end{semilogxaxis}
+        \end{tikzpicture}
+    \end{minipage}
+    \caption{Circuit and characterisation of high pass filter.}
+    \end{figure}
+
+\begin{figure}[h]
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \begin{circuitikz}[scale=0.85]
+            \draw (0,0)node[ocirc]{} to[resistor, R=\SI{2}{\kilo\ohm}] (3,0) -- (6,0) node[ocirc]{};
+            \draw (3,0) to[C=\SI{1}{\micro\farad}, *-*] (3,-3)
+            (0,-3) node[ocirc]{} to (6,-3) node[ocirc]{};
+            \draw [|->] (0,-2.85) -- (0,-0.15) node[midway, left]{$V_{in}$};
+            \draw [|->] (6,-2.85) -- (6,-0.15) node[midway, left]{$V_{out}$};
+        \end{circuitikz}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+            \centering
+        \begin{tikzpicture}[scale=0.85]
+                \begin{semilogxaxis}[
+                    title={Low pass}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\volt})$,
+                    xmin=0.01
+                ]
+                \addplot[] table{lowpass.dat};
+            \end{semilogxaxis}
+        \end{tikzpicture}
+    \end{minipage}
+    \caption{Circuit and characterisation of low pass filter.}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{minipage}{0.48\textwidth}
+    \centering
+    \begin{circuitikz}[scale=0.85]
+        \draw (0,0.5)node[ocirc]{} -- (0.65,0.5) -- (0.65,1) -- (1.3,1) to[R=\SI{3}{\kilo\ohm}] (3.3,   1) node[]{}
+            to[R=\SI{3}{\kilo\ohm}] (6.3,1)
+            -- (6.3,0.5) -- (7,0.5) node[ocirc]{};
+        \draw (0.65,0.5) -- (0.65,0) to[capacitor,a=\SI{1}{\micro\farad}] (3.3,0)
+            to[capacitor,a=\SI{1}{\micro\farad}] (6.3,0) -- (6.3,0.5)
+            (0,-3.5) node[ocirc]{} to (7,-3.5) node[ocirc]{};
+        \draw (2.7,0) to[resistor, a=\SI{1.5}{\kilo\ohm}, *-*] (2.7,-3.5);
+        \draw (3.8,-3.5) node[circ]{} to[capacitor, a=\SI{2}{\micro\farad}] (3.8,-0.2) -- ++ (0,0) arc (-90:90:0.2) -- (3.8,1) node[circ]{};
+        \draw [|->] (0,-3.35) -- (0,0.35) node[midway, left]{$V_{in}$};
+        \draw [|->] (7,-3.35) -- (7,0.35) node[midway, left]{$V_{out}$};
+    \end{circuitikz}
+    \end{minipage}
+            \begin{minipage}{0.48\textwidth}
+                \centering
+                \begin{tikzpicture}[scale=0.85]
+                    \begin{semilogxaxis}[
+                        title={Twin-notch filter}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\volt})$,
+                    ]
+                    \addplot[] table{notch.dat};
+                    \end{semilogxaxis}
+                \end{tikzpicture}
+\end{minipage}
+    \caption{Circuit and characterisation of twin notch filter.}
+\end{figure}
+
+
+
+\begin{figure}[]
+    \begin{circuitikz}[scale=0.85]
+        \draw [|->] (0,-3.35) -- (0,0.35) node[midway, left]{$V_{in}$};
+        \draw (0,0.5)node[ocirc]{} -- (0.65,0.5) -- (0.65,1) -- (1.3,1) to[R=\SI{3}{\kilo\ohm}] (3.3, 1) node[]{}
+            to[R=\SI{3}{\kilo\ohm}] (6.3,1) -- (6.3,0.5);
+        \draw (0.65,0.5) -- (0.65,0) to[capacitor,a=\SI{1}{\micro\farad}] (3.3,0)
+            to[capacitor,a=\SI{1}{\micro\farad}] (6.3,0) -- (6.3,0.5);
+        \draw (2.7,0) to[resistor, a=\SI{1.5}{\kilo\ohm}, *-*] (2.7,-3.5);
+        \draw (3.8,-3.5) node[circ]{} to[capacitor, a=\SI{2}{\micro\farad}] (3.8,-0.2) -- ++ (0,0) arc (-90:90:0.2) -- (3.8,1) node[circ]{};
+        %high pass filter
+        \draw (6.3,0.5) to[resistor, R=\SI{2}{\kilo\ohm}, *-*] (9.3,0.5) to[capacitor, a=\SI{1}{\micro\farad}, *-*] (9.3,-3.5);
+        %end of high pass
+        %low pass
+        \draw (9.3,0.5) to[C=\SI{1}{\micro\farad}] (12.95,0.5) node[ocirc]{} -- (12.3,0.5) to[resistor, a=\SI{1}{\mega\ohm}, *-*] (12.3,-3.5);
+        %end of low pass
+          \draw [|->] (12.95,-3.35) -- (12.95,0.35) node[midway, right]{$V_{out}$};
+        %ground
+        \draw (0,-3.5) node[ocirc]{} to (12.95,-3.5) node[ocirc]{};
+        %end of ground
+    \end{circuitikz}
+    \caption{Combined filter circuit.}
+\end{figure}
+
+    \begin{figure}[h]
+    \centering
+        \begin{tikzpicture}[scale=0.85]
+            \begin{semilogxaxis}[
+                title={Combined filter}, xlabel=Frequency $(\si{\hertz})$, ylabel=Amplitude $(\si{\volt})$,
+            ]
+            \addplot[] table{combined.dat};
+            \end{semilogxaxis}
+        \end{tikzpicture}
+    \caption{Combined filter characterisation.}
+\end{figure}

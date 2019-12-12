@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{pgfplots}
+\usepackage{amssymb, amsmath}
+\usepackage{algorithm2e}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable, booktabs, array}
+\pgfplotsset{compat=1.16}
+\usepackage[authoryear, round, comma]{natbib}
+\bibliographystyle{unsrtnat}
+\usepackage{import}
+
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage[T1]{fontenc}
+\lstset{
+	style              = Matlab-editor,
+	basicstyle         = \fontsize{10}{9}\mlttfamily,
+	escapechar         = ",
+	mlshowsectionrules = true,
+}
+
+\begin{document}
+	\tableofcontents
+\section{Filters}
+	\subimport{files/}{BackgroundKnowledge}
+\section{Analysis}
+	\subimport{files/}{Analysis}
+\section{Appendix}
+	\subimport{files/}{Appendix}
+	
+	\bibliography{bibliography}
+\end{document}

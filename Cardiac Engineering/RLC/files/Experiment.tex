@@ -1,0 +1,36 @@
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{semilogxaxis}[ymin=0,
+	ylabel=voltage (\si{V}), xlabel=frequency(\si{\hertz}),
+	title=\SI{0}{\ohm} resistor
+	]
+		\addplot[] table{0Ohm.dat};
+	\end{semilogxaxis}
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{semilogxaxis}[
+	ylabel=voltage (\si{V}), xlabel=frequency(\si{\hertz}),
+	title=\SI{330}{\ohm} resistor
+	]
+	\addplot[] table{330Ohm.dat};
+	\end{semilogxaxis}
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{semilogxaxis}[
+	ylabel=voltage (\si{V}), xlabel=frequency(\si{\hertz}),
+	title=\SI{1}{\kilo\ohm} resistor
+	]
+	\addplot[] table{1kohm.dat};
+	\end{semilogxaxis}
+	\end{tikzpicture}
+\end{figure}
