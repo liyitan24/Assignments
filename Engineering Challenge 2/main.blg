@@ -3,46 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: bibliography.bib
+Warning--empty publisher in Doran2012
 Warning--empty publisher in LvovichVadimF2012Is
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            510 strings with 4121 characters,
-and the built_in function-call counts, 604 in all, are:
-= -- 50
-> -- 35
-< -- 0
-+ -- 14
-- -- 12
-* -- 45
-:= -- 113
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 11
+            516 strings with 4266 characters,
+and the built_in function-call counts, 831 in all, are:
+= -- 69
+> -- 42
+< -- 1
++ -- 17
+- -- 14
+* -- 58
+:= -- 151
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 23
-empty$ -- 45
-format.name$ -- 12
-if$ -- 117
+cite$ -- 5
+duplicate$ -- 35
+empty$ -- 67
+format.name$ -- 14
+if$ -- 164
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 15
+int.to.str$ -- 3
+missing$ -- 5
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 23
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 13
 quote$ -- 0
-skip$ -- 13
+skip$ -- 20
 stack$ -- 0
-substring$ -- 16
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 21
+swap$ -- 4
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 1
-while$ -- 5
-width$ -- 3
-write$ -- 22
-(There was 1 warning)
+type$ -- 8
+warning$ -- 2
+while$ -- 7
+width$ -- 4
+write$ -- 32
+(There were 2 warnings)

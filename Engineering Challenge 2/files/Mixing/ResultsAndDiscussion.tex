@@ -1,0 +1,18 @@
+Data from the four experiments were recorded and plotted in figures. The results were analyzed to propose mixing settings.
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[axis x line = bottom, axis y line=left,
+	title={Rotational Speed vs. Mixing time}, xlabel=Rotational Speed (RPM), ylabel=Mixing time (S), domain=0:500, ymin=0, ymax=14
+	]
+	\addplot[red] table[x={Rotational-Speed}, y={Paddle-Mixing-time}]{Mixing-data-1.dat};
+	\addplot[blue] table[x={Rotational-Speed}, y={Pitched-blade-Mixing-time}]{Mixing-data-1.dat};
+	\addplot[green] table[x={Rotational-Speed}, y={Rushton-mixing-time}]{Mixing-data-1.dat};
+	\legend{Paddle, Pitched-blade, Rushton}
+	\end{axis}
+	\end{tikzpicture}	
+	\caption{Rotational speed against liquid mixing time for paddle, pitched-blade, and Rushton turbine.}
+	\label{fig:RotationalSpeed-MixingTime}
+\end{figure}
+According to Figure \ref{fig:RotationalSpeed-MixingTime}, the minimum of each curve indicates the least mixing time for each impeller. Overall, Paddle’s mixing time is longer than that of Pitched-blade or Rushton for the various rotational speed tested. Thus, paddle has been eliminated from our choices of impellers. Comparing the curves of Pitched-blade to Rushton turbine, Pitch-blade achieves mixing under less time for all rotational speeds. This observation is consistent with our hypothesis that Pitched-blade would give the smallest mixing time due to its large impeller diameter. Both Pitched-blade and Rushton reach minimum mixing time at 280rpm, indicating that 280 is the optimal rotational speed that will be used in the final set up. 

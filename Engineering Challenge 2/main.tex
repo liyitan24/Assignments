@@ -5,6 +5,7 @@
 \usepackage{algorithm2e}
 \usepackage[]{natbib}
 \bibliographystyle{abbrv}
+\usepackage{wrapfig}
 
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
@@ -22,15 +23,28 @@
 \usepackage{pgfplots, pgfplotstable}
 
 \begin{document}
-    \section{Summary}
-        \subimport{files/}{Summary}
-    \section{Introduction}
-        \subimport{files/}{Introduction}
-    \section{Materials and Methods}
-        \subimport{files/}{MaterialsAndMethods}
-    \section{Results and Discussion}
-		\subimport{files/}{ResultsAndDiscussion}
-    \section{Conclusion}
-        \subimport{files/}{Conclusion}
+	\section{Appendix}
+	\subsection{Impedance}
+    \subsubsection{Summary}
+        \subimport{files/Impedance/}{Summary}
+    \subsubsection{Introduction}
+        \subimport{files/Impedance/}{Introduction}
+    \subsubsection{Materials and Methods}
+        \subimport{files/Impedance/}{MaterialsAndMethods}
+    \subsubsection{Results and Discussion}
+		\subimport{files/Impedance/}{ResultsAndDiscussion}
+    \subsubsection{Conclusion}
+        \subimport{files/Impedance/}{Conclusion}
+	\subsection{Mixing}
+    \subsubsection{Summary}
+        \subimport{files/Mixing/}{Summary}
+    \subsubsection{Introduction}
+        \subimport{files/Mixing/}{Introduction}
+    \subsubsection{Materials and Methods}
+        \subimport{files/Mixing/}{MaterialsAndMethods}
+    \subsubsection{Results and Discussion}
+		\subimport{files/Mixing/}{ResultsAndDiscussion}
+    \subsubsection{Conclusion}
+        \subimport{files/Mixing/}{Conclusion}
     \bibliography{bibliography}
 \end{document}

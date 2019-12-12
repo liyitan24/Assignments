@@ -1,0 +1,39 @@
+This lab attempts to design a prototype of an optimal bioreactor at the bench scale producing yeast cells to mimic vaccine production in the Uganda tuberculosis vaccine project.
+An optimal bioreactor should be able to achieve liquid homogeneity under minimum liquid mixing time,
+$\theta_{99\%} $
+which is defined in the following equation:  
+
+ \begin{equation} \label{eq:Theta_99}
+ 	\theta_{99\%} = \frac{6.34}{
+		N \left( \frac{D}{T} \right)^{2.3}
+		{\left( \frac{Z}{T} \right)}^{-0.5}
+	}
+ \end{equation}
+ 
+ $\theta_{99\%}$ = blend time (corresponding to 99\% uniformity)  
+ 
+ $N$ = rotational speed  
+ 
+ $D$ = impeller diameter  
+ 
+ $T$ = tank diameter  
+ 
+ $Z$ = liquid level 
+ 
+ According to equation (\ref{eq:Theta_99}), we can analyze the effects of rotational speed and impeller diameter on liquid mixing time, given that the tank diameter and liquid level remain unchanged throughout the lab.
+ 
+ \begin{enumerate}
+ 	\item Rotational speed is inversely proportional to mixing time, as shown below\begin{equation}
+ 		\theta_{99\%} \propto \frac{1}{N}
+ 	\end{equation}
+ 	Which means that a higher rotational speed will result in a shorter mixing time. However, this relationship is only valid until a certain point due to the formation of vortex which would increase the time to achieve homogeneity, thus would result in a longer mixing time. Therefore, we are conducting this experiment to find out the optimal speed which gives the least liquid mixing time.  
+ 	\item Impeller diameter is inversely proportional to mixing time, as shown below
+		\begin{equation}
+	 		\theta_{99\%} \propto \frac{1}{N}
+		\end{equation}
+ 	Pitched-blade has the largest diameter (4.0 cm) compared to Rushton impeller (2.5cm) and paddle impeller (2.3cm). Therefore, pitched-blade would achieve the least mixing time among all three types of impellers. Verifying this hypothesis would be vital for our prototype design as it will help us to determine other variables such as the liquid level which is affected by impeller diameter. 
+\end{enumerate}
+
+In order to optimize the rate of mixing, the distance between the bottom of the reactor and the impeller should equal the diameter of the impeller \cite{Doran2012}. Considering multiple impellers might be used, the liquid level should be above the top impeller without jeopardizing the aeration space. Since we do not have the equipment to sparge air into the liquid media, we will use the top impeller to create a disturbance on the surface, allowing oxygen to cross the barrier. Aeration system is important as healthy and stable cells can be produced hence maximizing the production \cite[p.245]{LvovichVadimF2012Is}.
+
+On the other hand, eliminating vortex is crucial. Vortex is the swirling of fluid that disrupts creating a homogenous mix. With the help of a four-petal baffles (obstructing panels) that are mounted vertically against the wall of the reactor, gross vortexing and swirling of the liquid can be reduced hence allowing us to achieve homogeneity of liquid within a shorter period of time.
