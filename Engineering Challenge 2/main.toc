@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}Appendix}{2}% 
+\contentsline {subsection}{\numberline {1.1}Impedance}{2}% 
+\contentsline {subsubsection}{\numberline {1.1.1}Summary}{2}% 
+\contentsline {subsubsection}{\numberline {1.1.2}Introduction}{2}% 
+\contentsline {subsubsection}{\numberline {1.1.3}Background knowledge}{3}% 
+\contentsline {subsubsection}{\numberline {1.1.4}Materials and Methods}{3}% 
+\contentsline {subsubsection}{\numberline {1.1.5}Materials}{3}% 
+\contentsline {subsubsection}{\numberline {1.1.6}Methods}{4}% 
+\contentsline {paragraph}{Variables}{4}% 
+\contentsline {paragraph}{Considerations}{5}% 
+\contentsline {subsubsection}{\numberline {1.1.7}Results and Discussion}{5}% 
+\contentsline {paragraph}{important comments on results, relate to theory and knowledge}{7}% 
+\contentsline {subsubsection}{\numberline {1.1.8}Conclusion}{7}% 
+\contentsline {subsection}{\numberline {1.2}Mixing}{8}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Summary}{8}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Introduction}{8}% 
+\contentsline {subsubsection}{\numberline {1.2.3}Materials and Methods}{10}% 
+\contentsline {subsubsection}{\numberline {1.2.4}Results and Discussion}{11}% 
+\contentsline {subsubsection}{\numberline {1.2.5}Conclusion}{15}% 
+\contentsline {subsection}{\numberline {1.3}Heating}{16}% 
+\contentsline {subsubsection}{\numberline {1.3.1}Summary}{16}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Introduction}{16}% 
+\contentsline {subsubsection}{\numberline {1.3.3}Materials and Methods}{17}% 
+\contentsline {subsubsection}{\numberline {1.3.4}Equipment}{17}% 
+\contentsline {subsubsection}{\numberline {1.3.5}Method}{18}% 
+\contentsline {subsubsection}{\numberline {1.3.6}Results and Discussion}{19}% 
+\contentsline {subsubsection}{\numberline {1.3.7}Calculations}{22}% 
+\contentsline {subsubsection}{\numberline {1.3.8}24 h run prototype results}{22}% 
+\contentsline {subsubsection}{\numberline {1.3.9}Fouling prevention techniques}{23}% 
+\contentsline {subsubsection}{\numberline {1.3.10}Conclusion}{24}% 

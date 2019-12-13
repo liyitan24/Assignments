@@ -1,10 +1,28 @@
 \begin{thebibliography}{1}
 
+\bibitem{DaianJeanFrancois2014}
+J.-F. Daian.
+\newblock Transport and transfer: From homogeneous phases to porous media.
+\newblock In {\em Equilibrium and Transfer in Porous Media 2: Transfer Laws},
+  pages 1--98. John Wiley \& Sons, Ltd, Chichester, UK, 2014.
+
 \bibitem{Doran2012}
 P.~M. Doran.
 \newblock {\em {Bioprocess engineering principles: Second edition}}, volume
   9780080917.
 \newblock 2012.
+
+\bibitem{Ibrahim12}
+H.~A.-H. Ibrahim.
+\newblock Fouling in heat exchangers.
+\newblock In V.~N. Katsikis, editor, {\em MATLAB}, chapter~3. IntechOpen,
+  Rijeka, 2012.
+
+\bibitem{LIU20191}
+C.-G. Liu, K.~Li, Y.~Wen, B.-Y. Geng, Q.~Liu, and Y.-H. Lin.
+\newblock Chapter one - bioethanol: New opportunities for an ancient product.
+\newblock volume~4 of {\em Advances in Bioenergy}, pages 1 -- 34. Elsevier,
+  2019.
 
 \bibitem{LvovichVadimF2012Is}
 V.~F. Lvovich.
@@ -12,10 +30,30 @@ V.~F. Lvovich.
   dielectric phenomena / Vadim F. Lvovich.}
 \newblock 2012.
 
+\bibitem{KillcrossMartin2012CPT}
+K.~Martin.
+\newblock Commissioning phase two - implement.
+\newblock In {\em Chemical and Process Plant Commissioning Handbook - A
+  Practical Guide to Plant System and Equipment Installation and
+  Commissioning}, pages 1--3. Elsevier, 2012.
+
 \bibitem{PolatAyfer2017EDoL}
 A.~K. Polat, U.~Karabacak, V.~Mutlu, L.~Tomak, and A.~Bilgici.
 \newblock Early diagnosis of lymphedema after breast cancer treatment:
   Bio-impedance spectroscopy.
 \newblock {\em The journal of breast health}, 13(2):83, 2017.
+
+\bibitem{doi:10.1063/1.555963}
+M.~L.~V. Ramires, C.~A. Nieto~de Castro, Y.~Nagasaka, A.~Nagashima, M.~J.
+  Assael, and W.~A. Wakeham.
+\newblock Standard reference data for the thermal conductivity of water.
+\newblock {\em Journal of Physical and Chemical Reference Data},
+  24(3):1377--1381, 1995.
+
+\bibitem{VerisovaMarcela2015Htia}
+M.~Verisova, M.~Dostal, T.~Jirout, and K.~Petera.
+\newblock Heat transfer in a jacketed agitated vessel equipped with multistage
+  impellers.
+\newblock {\em Chemical Papers}, 69(5):690--697, 2015.
 
 \end{thebibliography}

@@ -1,7 +1,7 @@
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[]
-        \begin{axis}[title={Optical density calibration curve}, ylabel=Absorbance , xlabel=Time (hour), legend pos = south east, domain=0:40]
+        \begin{axis}[title={Yeast growth during 24 h run}, ylabel=Absorbance , xlabel=Time (hour), legend pos = south east, domain=0:40]
             \addplot[only marks] table{OD.dat};
             \addplot[dashed]{ 3.05695/(1+e^(-0.164931*(x-17.6678)) )};
         \addlegendentry{}

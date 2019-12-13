@@ -4,46 +4,47 @@ The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: bibliography.bib
 Warning--empty publisher in Doran2012
+Warning--empty booktitle in LIU20191
 Warning--empty publisher in LvovichVadimF2012Is
-You've used 3 entries,
+You've used 9 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4266 characters,
-and the built_in function-call counts, 831 in all, are:
-= -- 69
-> -- 42
-< -- 1
-+ -- 17
-- -- 14
-* -- 58
-:= -- 151
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 14
+            566 strings with 5596 characters,
+and the built_in function-call counts, 3266 in all, are:
+= -- 310
+> -- 156
+< -- 6
++ -- 62
+- -- 53
+* -- 236
+:= -- 544
+add.period$ -- 31
+call.type$ -- 9
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 35
-empty$ -- 67
-format.name$ -- 14
-if$ -- 164
+cite$ -- 12
+duplicate$ -- 135
+empty$ -- 262
+format.name$ -- 53
+if$ -- 692
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 5
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 23
+int.to.str$ -- 9
+missing$ -- 11
+newline$ -- 48
+num.names$ -- 20
+pop$ -- 66
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 44
 quote$ -- 0
-skip$ -- 20
+skip$ -- 79
 stack$ -- 0
-substring$ -- 21
-swap$ -- 4
-text.length$ -- 1
+substring$ -- 161
+swap$ -- 29
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 2
-while$ -- 7
-width$ -- 4
-write$ -- 32
-(There were 2 warnings)
+type$ -- 32
+warning$ -- 3
+while$ -- 31
+width$ -- 10
+write$ -- 104
+(There were 3 warnings)

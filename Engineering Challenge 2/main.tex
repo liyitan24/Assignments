@@ -8,8 +8,9 @@
 \usepackage{wrapfig}
 
 \usepackage{titlesec}
-\newcommand{\sectionbreak}{\clearpage}
+% \newcommand{\sectionbreak}{\clearpage}
 
+\usepackage[utf8]{inputenc}
 \usepackage{import}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -21,8 +22,10 @@
 \usepackage{tikz}
 \usetikzlibrary{matrix,calc, angles, quotes}
 \usepackage{pgfplots, pgfplotstable}
+\usepackage{booktabs}
 
 \begin{document}
+\tableofcontents
 	\section{Appendix}
 	\subsection{Impedance}
     \subsubsection{Summary}
@@ -35,7 +38,9 @@
 		\subimport{files/Impedance/}{ResultsAndDiscussion}
     \subsubsection{Conclusion}
         \subimport{files/Impedance/}{Conclusion}
-	\subsection{Mixing}
+        \pagebreak
+    
+    \subsection{Mixing}
     \subsubsection{Summary}
         \subimport{files/Mixing/}{Summary}
     \subsubsection{Introduction}
@@ -46,5 +51,19 @@
 		\subimport{files/Mixing/}{ResultsAndDiscussion}
     \subsubsection{Conclusion}
         \subimport{files/Mixing/}{Conclusion}
+        \pagebreak
+        
+        \subsection{Heating}
+    \subsubsection{Summary}
+        \subimport{files/Heating/}{Summary}
+    \subsubsection{Introduction}
+        \subimport{files/Heating/}{Introduction}
+    \subsubsection{Materials and Methods}
+        \subimport{files/Heating/}{MaterialsAndMethods}
+    \subsubsection{Results and Discussion}
+		\subimport{files/Heating/}{ResultsAndDiscussion}
+    \subsubsection{Conclusion}
+        \subimport{files/Heating/}{Conclusion}
+\pagebreak
     \bibliography{bibliography}
 \end{document}

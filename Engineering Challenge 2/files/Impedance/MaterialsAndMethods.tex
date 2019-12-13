@@ -1,14 +1,17 @@
-\subsection{Materials}
+\subsubsection{Materials}
 \begin{itemize}
 	\item Combined amplifier, filter and driving circuit
 	\item Function generator and oscilloscope. NI myDAQ used for both.
 	\item Phosphate buffer solution (PBS)
-	\item Activated yeast (\textit{Saccharomyces cerevisiae})
+	\item Activated yeast (\textit{Saccharomyces cerevisiae}), a 20g/l and a 50 g/l solution.
 \end{itemize}
 
-\subsection{Methods}
+\subsubsection{Methods} \label{sec:Impedance-Method}
 \begin{enumerate}
-	\item 
+	\item Attach the probes to the cup, filled with 300 ml of each solution at a time.
+	\item For each solution measure the voltage output over the frequency range from 1 Hz to 20 kHz, using different gain ratios. Use this to establish the appropriate amplification.
+	\item Sweep the frequency range stated in step 2 by keeping function generator's peak-to-peak voltage input fixed at 10 V.
+	\item Finally, we generate the calibration curve using a 50g/l yeast solution, and repeating step 3 for a series of consecutive dilutions (expressed as \% from the original): 100\%, 20\%, 10\%, 4\%, 2\%, 1\%. 
 \end{enumerate}
 \paragraph{Variables}
 \begin{itemize}
@@ -17,7 +20,7 @@
 			\item Output voltage on function generator: 10V.
 			\item Probes 180º from each other. Sense leads 30º from the probe and 180º from each other. See Figure \ref{fig:ElectrodeOrientation}.
 			\item Amplifier gain $\frac{15k}{150} = 100$.
-			\item Liquid volume 250 ml, 60mm height measured from inside the cup.
+			\item Solution volume: 300 ml
 		\end{itemize}
 	\item Independent: Frequency.
 	\item Dependent: Potential difference
@@ -70,7 +73,3 @@ Due to a limited power input into the amplifier, a gain ratio of 1000 led to \te
 With gain of 10, the maxima appeared in different frequencies as to those of 100 and 1000, though we are unsure why this would happen.
 
 Although we defined probe orientation, there are two factors we are disregarding: the cup is not perfectly cylindrical, and the leads are not straight -- so the distance between electrodes is smaller than what the experimental setup implies.
-Instrumental uncertainty becomes largely irrelevant, as we expect there to be some movement in the probes as we  
-
-Maximum amplitude for PBS around 3000hz, maximum amplitude for yeast at 5000hz. We pick 4000 Hz.
-There is no concern for cell disruption at the range of frequencies we are analysing (Yerworth, R., 2019 November 28)
