@@ -26,9 +26,9 @@
 
 Because there is no concern for cell disruption at the range of frequencies we are analysing (Yerworth, R., 2019 November 28), we can use Figure \ref{gr:PBSand20gl}, to find the maximum amplitude. PBS is around 3 kHz, and the yeast solution, 5 kHz. We expect to see equally as reasonable results by picking a simple average of the two, 4 kHz.
 
-\begin{figure}[h!] %calibration curve
+\begin{figure}[] %calibration curve
     \centering
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=0.8]
         \begin{semilogyaxis}[axis x line = bottom, axis y line=left,
             title={Calibration curve}, ylabel=Concentration \% , xlabel=Amplitude $(\si{\milli\volt})$,
             legend pos = north west,
@@ -44,12 +44,12 @@ Because there is no concern for cell disruption at the range of frequencies we a
             };
         \end{semilogyaxis}
     \end{tikzpicture}
-    \caption{}
+    \caption{Calibration curve determined from initial experiments}
 \end{figure}
 
-\begin{figure}[h!] %24h run
+\begin{figure}[] %24h run
     \centering
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=0.8]
         \begin{axis}[xlabel=Time (hour), ymin=0, title={Impedance monitoring}, ylabel=Amplitude (\si{\milli\volt} ]
             \addplot[only marks] table{
                 1	402.5
@@ -68,6 +68,7 @@ Because there is no concern for cell disruption at the range of frequencies we a
     \caption{Impedance monitoring during 24h run. The large jumps in numbers are due to accidental movement of the probes, invalidating the results.}
     \label{gr:24hImpedance}
 \end{figure}
+
 Originally it was expected that the impeller would not affect our results, but during the 24h run, we saw that the magnetism that drives the impeller had a very large effect on the numbers seen.
 It is reasonable to take measurements while the impeller is in full use -- it is simply something to be account for in scaling up this project. 
 Furthermore, as can be seen in Graph \ref{gr:24hImpedance}, the very first reading of the 24h run was \SI{400}{\milli\volt}, far greater than any result we observed during calibration.
@@ -75,5 +76,3 @@ We suspect a few issues in addition to those described in section \ref{sec:Imped
 This was exacerbated by having to stir the solutions by agitating the cup, further displacing the electrodes.
 
 The 24 h setup was made ex novo, with the stirring and heating built in, and upon arrival there was a probe completely dislodged -- possibly it was bumped against while it was set up. No corrections were allowed, so adjusting the values to be in line with our calibration curve was not a possibility; and neither could we see through the dark liquid to adjust orientation. During the run, our magnetic stirrer would loosen out of its socket every few minutes, and in attempting to fix it, amplitude values ranged anywhere from \SI{200}{\milli\volt} to \SI{800}{\milli\volt}, completely hindering our ability to somehow normalise the data and compare to our calibration curve.
-
-\paragraph{important comments on results, relate to theory and knowledge}

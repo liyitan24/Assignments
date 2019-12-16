@@ -2,7 +2,7 @@ Data from the four experiments were recorded and plotted in figures. The results
 
 \begin{figure}[h] %Comparison between all
 	\centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 	\begin{axis}[axis x line = bottom, axis y line=left,
 	title={Rotational Speed vs. Mixing time}, xlabel=Rotational Speed (RPM), ylabel=Mixing time (S), domain=0:500, ymin=0, ymax=14
 	]
@@ -15,11 +15,12 @@ Data from the four experiments were recorded and plotted in figures. The results
 	\caption{Rotational speed against liquid mixing time for paddle, pitched-blade, and Rushton turbine.}
 	\label{fig:RotationalSpeed-MixingTime}
 \end{figure}
+
 According to Figure \ref{fig:RotationalSpeed-MixingTime}, the minimum of each curve indicates the least mixing time for each impeller. Overall, Paddle’s mixing time is longer than that of Pitched-blade or Rushton for the various rotational speed tested. Thus, paddle has been eliminated from our choices of impellers. Comparing the curves of Pitched-blade to Rushton turbine, Pitch-blade achieves mixing under less time for all rotational speeds. This observation is consistent with our hypothesis that Pitched-blade would give the smallest mixing time due to its large impeller diameter. Both Pitched-blade and Rushton reach minimum mixing time at 280rpm, indicating that 280 is the optimal rotational speed that will be used in the final set up.
 
 \begin{figure}[h] %Combinatination of Rushton
 	\centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 	\begin{axis}[axis x line = bottom, axis y line=left,
 	title={Comparison of different number of Rushton impellers}, xlabel=Rotational Speed (RPM), ylabel=Mixing time (S), xmin=250,
 	ymin=0, ymax=4.5, legend pos = south east
@@ -40,12 +41,9 @@ According to Figure \ref{fig:RotationalSpeed-MixingTime}, the minimum of each cu
 	\caption{Rotational speed against liquid mixing time for paddle, pitched-blade, and Rushton turbine.}
 	\label{fig:Rushton-comparison}
 \end{figure}
-
-According to Figure \ref{fig:Rushton-comparison}, 2 Rushton turbines take longer time to achieve homogeneity than 1 Rushton turbine. This result differs from our expectation that 2 impellers would be more effective. One explanation could be that when more impellers are used, larger vortex is generated, and since this experiment is conducted under unbaffled condition, vortex would hinder the mixing, hence slow down mixing time.
-
 \begin{figure}[h] %Different combinations
 	\centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 	\begin{axis}[axis x line = bottom, axis y line=left,
 	title={Comparison for different combination of 2 impellers}, xlabel=Rotational Speed (RPM), ylabel=Mixing time (S), xmin=250,
 	ymin=0, ymax=4.5, legend pos = south east
@@ -66,6 +64,8 @@ According to Figure \ref{fig:Rushton-comparison}, 2 Rushton turbines take longer
 	\caption{Comparison of 1 Rushton \& 1 Pitched-blade and 2 Rushtons under unbaffled conditions}
 	\label{fig:PitchedAndRushton_2Rushton}
 \end{figure}
+According to Figure \ref{fig:Rushton-comparison}, 2 Rushton turbines take longer time to achieve homogeneity than 1 Rushton turbine. This result differs from our expectation that 2 impellers would be more effective. One explanation could be that when more impellers are used, larger vortex is generated, and since this experiment is conducted under unbaffled condition, vortex would hinder the mixing, hence slow down mixing time.
+
 Figure \ref{fig:PitchedAndRushton_2Rushton} shows that when 2 impellers are used, the combination of 1 Rushton and 1 Pitched-blade is the most ideal since is achieves a homogeneous solution in the shortest amount of time. It is distinctive that the liquid mixing time of this combination is less than that of any other settings in the previous experiments. This figure also reassures that 280rpm is the optimal rotational speed because both curves reach minimum mixing time at 280rpm.
 
 \begin{figure}[h] %Different combinations

@@ -1,11 +1,14 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper]{report}
+
+\documentclass[12pt,a4paper]{report}
 \usepackage[letterpaper]{geometry}
 \geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
-\usepackage{setspace} \doublespacing
+\usepackage{setspace} \linespread{1.15}
 \usepackage{algorithm2e}
 \usepackage[]{natbib}
 \bibliographystyle{abbrv}
 \usepackage{wrapfig}
+\usepackage{caption}
 
 \usepackage{titlesec}
 % \newcommand{\sectionbreak}{\clearpage}
@@ -26,44 +29,57 @@
 
 \begin{document}
 \tableofcontents
-	\section{Appendix}
-	\subsection{Impedance}
-    \subsubsection{Summary}
-        \subimport{files/Impedance/}{Summary}
-    \subsubsection{Introduction}
-        \subimport{files/Impedance/}{Introduction}
-    \subsubsection{Materials and Methods}
-        \subimport{files/Impedance/}{MaterialsAndMethods}
-    \subsubsection{Results and Discussion}
-		\subimport{files/Impedance/}{ResultsAndDiscussion}
-    \subsubsection{Conclusion}
-        \subimport{files/Impedance/}{Conclusion}
-        \pagebreak
+    \chapter{Executive summary}
+    \section{Introduction}
+        \subimport{files/Summary/}{Introduction}
+    \section{Concerns}
+        \subimport{files/Summary/}{Concerns}
+    \section{Design of the bioreactor}
+         \subimport{files/Summary/}{DesignProcess}
     
-    \subsection{Mixing}
-    \subsubsection{Summary}
-        \subimport{files/Mixing/}{Summary}
-    \subsubsection{Introduction}
-        \subimport{files/Mixing/}{Introduction}
-    \subsubsection{Materials and Methods}
-        \subimport{files/Mixing/}{MaterialsAndMethods}
-    \subsubsection{Results and Discussion}
-		\subimport{files/Mixing/}{ResultsAndDiscussion}
-    \subsubsection{Conclusion}
-        \subimport{files/Mixing/}{Conclusion}
-        \pagebreak
+    \section{Design process}
+    \subimport{files/Summary/}{Design2}
+    \section{Scale-up and feasibility}
+        \subimport{files/Summary/}{ScaleUpAndFeasibility}
         
-        \subsection{Heating}
-    \subsubsection{Summary}
+	\chapter{Appendix}
+	\section{Impedance}
+    \subsection{Summary}
+        \subimport{files/Impedance/}{Summary}
+    \subsection{Introduction}
+        \subimport{files/Impedance/}{Introduction}
+    \subsection{Materials and Methods}
+        \subimport{files/Impedance/}{MaterialsAndMethods}
+    \subsection{Results and Discussion}
+		\subimport{files/Impedance/}{ResultsAndDiscussion}
+    \subsection{Conclusion}
+        \subimport{files/Impedance/}{Conclusion}
+        
+        \section{Mixing}
+    \subsection{Summary}
+        \subimport{files/Mixing/}{Summary}
+    \subsection{Introduction}
+        \subimport{files/Mixing/}{Introduction}
+    \subsection{Materials and Methods}
+        \subimport{files/Mixing/}{MaterialsAndMethods}
+    \subsection{Results and Discussion}
+		\subimport{files/Mixing/}{ResultsAndDiscussion}
+    \subsection{Conclusion}
+        \subimport{files/Mixing/}{Conclusion}
+        
+        \section{Heating}
+    \subsection{Summary}
         \subimport{files/Heating/}{Summary}
-    \subsubsection{Introduction}
+    \subsection{Introduction}
         \subimport{files/Heating/}{Introduction}
-    \subsubsection{Materials and Methods}
+    \subsection{Materials and Methods}
         \subimport{files/Heating/}{MaterialsAndMethods}
-    \subsubsection{Results and Discussion}
+    \subsection{Results and Discussion}
 		\subimport{files/Heating/}{ResultsAndDiscussion}
-    \subsubsection{Conclusion}
+    \subsection{Conclusion}
         \subimport{files/Heating/}{Conclusion}
+    \section{Scale up}
+        \subimport{files/Scaleup/}{Scaleup}
 \pagebreak
     \bibliography{bibliography}
 \end{document}
