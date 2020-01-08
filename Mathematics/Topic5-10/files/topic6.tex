@@ -1,0 +1,23 @@
+\section{a}
+Rearranging the equation and finding its characteristic equation:
+\begin{equation*}
+\begin{split}
+    &M \frac{d^2h}{dt^2} + c \frac{dh}{dt} + kh = 0 \implies
+        \frac{d^2h}{dt^2} + \frac{c}{M} \frac{dh}{dt} + \frac{k}{M}h = 0 \\
+    &\frac{d^2h}{dt^2} + 6 \frac{dh}{dt} + 25 h = 0 \\
+    & m^2 + 6m + 25 = 0 \implies m = -3 \pm 4i \\
+    \therefore \ & h(t) = e^{-3t} \left( Ae^{4it} + Be^{-4it} \right)
+\end{split}
+\end{equation*}
+We are given two initial conditions: $h(0) = 0.15$ and $h'(0) = -0.05$:
+\begin{equation*}\begin{split}
+    & h(0) = e^{-3\cdot 0} \left( Ae^{4i \cdot 0} + Be^{-4i \cdot 0} \right) = 0.15 \\
+    \implies \ &0.15 = A + B \\
+    & h(t) = e^{-3t} \left( Ae^{4it} + Be^{-4it} \right) \implies
+        \frac{d}{dt}h(t) = e^{-3t}4i \left( Ae^{4it} - Be^{-4it}\right) \\
+    & \frac{d}{dt}h(0) = e^{-3\cdot 0}4i \left( Ae^{4i \cdot 0} - Be^{-4i \cdot 0}\right) = -0.05 \\
+    \implies \ & 4i(A-B) = -0.05 \\
+    \implies &A = 0.075 + 0.00625i; B = 0.075 - 0.00625i \\
+    \therefore \ &h(t) = e^{-3t} \left( (0.075 + 0.00625i)e^{4it} + (0.075 - 0.00625i)e^{-4it} \right)
+\end{split}
+\end{equation*}
