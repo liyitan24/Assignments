@@ -1,11 +1,11 @@
 \documentclass[a4paper, 12pt]{article}
 \usepackage[letterpaper]{geometry}
-\geometry{top=0.2in, bottom=0.2in, left=0in, right=0in}
+\geometry{top=0.3in, bottom=0.2in, left=0in, right=0in}
 
 \usepackage{siunitx}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage{circuitikz}
+\usepackage[europeanresistors]{circuitikz}
 \usepackage{caption}
 \usepackage{amsmath}
 
@@ -25,7 +25,13 @@
     axis x line = bottom, axis y line=left,
 }
 
-\quad \quad \quad {\huge \textbf{Filters}} \hline
+% \quad \quad \quad {\huge \textbf{Passive Filters Datasheet}}
+\begin{center}
+	\section*{\quad Passive Filters Datasheet}
+\end{center}
+
+\hrule
+\vspace{2cm}
 \begin{figure}[h!] \caption*{\textbf{High pass RC filter (Differentiator)}}
     \centering
     \begin{minipage}{0.45\textwidth}
@@ -54,7 +60,8 @@
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
-\hline
+
+\hrule
 \begin{figure}[h!] \caption*{\textbf{Low pass RC filter (Integrator)}}
     \centering
     \begin{minipage}{0.45\textwidth}
@@ -83,7 +90,8 @@
         \end{tikzpicture}
     \end{minipage}
 \end{figure}
-\hline
+
+\hrule
 \begin{figure}[h!] \caption*{\textbf{Band stop}}
     \centering
     \begin{minipage}{0.30\textwidth}
@@ -115,7 +123,7 @@
         \end{equation*}
     \end{minipage}
 \end{figure}
-\hline
+\hrule
 
 \pagebreak
 \begin{figure}[h!] \caption*{\textbf{Band Pass}}
@@ -153,7 +161,7 @@
         \end{equation*}
     \end{minipage}
 \end{figure}
-\hline
+\hrule
 \begin{figure}[h!] \caption*{\textbf{Twin T notch filter}}
     \centering
     \begin{minipage}{0.32\textwidth}

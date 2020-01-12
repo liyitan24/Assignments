@@ -1,9 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1576512111 "/home/jj/Documents/Assignments/Filters Datasheet/main.tex" "/home/jj/Documents/Assignments/Filters Datasheet/main.pdf" "main" 1576512111
-  "/dev/null" 1576495583 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1576523120 "main.tex" "main.pdf" "main" 1576523135
+  "/dev/null" 1576522120 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/home/jj/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1574885207 3704430 ec1cc20c50cdb5b521082f510218a2c7 ""
-  "/home/jj/Documents/Assignments/Filters Datasheet/main.aux" 1576512111 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/jj/Documents/Assignments/Filters Datasheet/main.tex" 1576512109 8785 7b01ebbb76b4e30396c596a6c120f723 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1571529271 4705165 89f805375525bb3eb1f534beca7104e4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -209,11 +207,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty" 1559339174 8691 e154b4b39c7cd1cfa9301a391c44afdd ""
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1463002160 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1574088520 35594 9aef19174c178978f61d14961262af5d ""
-  "main.aux" 0 -1 0 "pdflatex"
-  "main.tex" 1576512109 8785 7b01ebbb76b4e30396c596a6c120f723 ""
+  "main.aux" 1576523121 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "main.tex" 1576523120 8912 d91bc7493491ea5f0e70da2435ab5d8d ""
   (generated)
-  "/home/jj/Documents/Assignments/Filters Datasheet/main.log"
-  "main.log"
   "main.aux"
+  "main.log"
   "main.pdf"
-  "/home/jj/Documents/Assignments/Filters Datasheet/main.pdf"

@@ -2,8 +2,8 @@ PWD /home/jj/Documents/Assignments/Filters Datasheet
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /home/jj/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/jj/Documents/Assignments/Filters Datasheet/main.tex
-OUTPUT /home/jj/Documents/Assignments/Filters Datasheet/main.log
+INPUT main.tex
+OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -248,9 +248,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /home/jj/Documents/Assignments/Filters Datasheet/main.aux
-INPUT /home/jj/Documents/Assignments/Filters Datasheet/main.aux
-OUTPUT /home/jj/Documents/Assignments/Filters Datasheet/main.aux
+INPUT main.aux
+INPUT main.aux
+OUTPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -312,15 +312,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-OUTPUT /home/jj/Documents/Assignments/Filters Datasheet/main.pdf
+OUTPUT main.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-INPUT /home/jj/Documents/Assignments/Filters Datasheet/main.aux
+INPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
