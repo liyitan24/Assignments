@@ -5,11 +5,11 @@ Assuming the container is a cone, its volume V(t) is \begin{equation} \label{eq:
 
 \subsection{b}
 \begin{equation}
-\begin{align}
+\begin{split}
     &h(\tau) = 0 \\
     \implies &h_0^{\frac{5}{2}} = \frac{ 5a^2 \sqrt{2g} }{ 2\tan^2\left(\frac{\pi}{2} - \theta\right) } \tau \\
-    \therefore \ &\tau = h_0^{\frac{5}{2}} \frac{ 2\tan^2\left(\frac{\pi}{2} - \theta\right) }{ 5a^2 \sqrt{2g} }
-\end{align}
+    \therefore \ &\tau = h_0^{\frac{5}{2}} \frac{ 2\tan^2\left(\frac{\pi}{2} - \theta\right) }{ 5a^2 \sqrt{2g} }\\
+\end{split}
 \label{eq:tau}
 \end{equation}
 Assuming $\theta = \frac{\pi}{4}; \ g=\SI{9.8}{\meter\per\second\squared}$ and replacing the given values:
@@ -49,7 +49,7 @@ Rearranging Equation (\ref{eq:tau}) and replacing it into the given expression:
     \frac{ 5a^2 \sqrt{2g} }{ 2\tan^2\left(\frac{\pi}{2} - \theta\right)} = \frac{h_0^{\frac{5}{2}}}{\tau}
 \end{equation*}
 \begin{equation}
-\begin{align}
+\begin{split}
     &h(t) = {\left[
         h_0^{\frac{5}{2}} - t \cdot \frac{
             h_0^{ \frac{5}{2} }
@@ -63,7 +63,7 @@ Rearranging Equation (\ref{eq:tau}) and replacing it into the given expression:
     \left(
         -\frac{ h_0^{ \frac{5}{2} }}{\tau}    
     \right)
-\end{align}
+\end{split}
 \end{equation}
 
 From the definitions given
@@ -91,5 +91,23 @@ Taking the derivative and replacing into Equation (\ref{eq:V}):
 \end{equation}
 
 \subsection{f}
+\lstinputlisting[caption={Topic 5. Question f}]{"./files/topic5/f.m"}
 
-\textbf{MISSING}
+\texttt{rsums(dVdt, [0,tau/2])} gives us an interactive riemann sum where we can define the step sizes.
+The step sizes of 10 and 1 can be visualised on Figures \ref{fig:Riemann10} and \ref{fig:Riemann1}.
+Finally, for step size of 0.01, it is expected that is small enough that given the number of significant figures, it is equivalent to matlab's \texttt{integral(dVdt, 0, tau/2) = -0.0159672}.
+
+The difference between the extremes is \SI{0.000013}{\cubic\meter}. There is largely no computational difference between the results at this scale, so using 0.01 over 1 will yield more accurate numbers, but it's arguably not necessary. Ultimately I would choose 0.01.
+
+\begin{figure}[]
+    \centering
+    \includegraphics[scale=0.60, center]{eps/stepsOf10.eps}
+    \caption{Step size of approximately 10}
+    \label{fig:Riemann10}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \includegraphics[scale=0.60, center]{eps/stepsOf1.eps}
+    \caption{Step size of approximately 1}
+    \label{fig:Riemann1}
+\end{figure}
