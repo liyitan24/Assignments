@@ -1,0 +1,21 @@
+$I_0$ is the intensity of the initial pulse that propagates through the first medium. $I_i$, the incident pulse between the media; and $I_r$, the reflected pulse.
+\begin{equation}
+    \begin{split}
+        \frac{I_{r}}{I_{i}} &= \frac{ {(Z_2 - Z_1)}^2 }{ {(Z_2 + Z_1)}^2 } = \frac{ {(1.8-1.2)}^2 }{ {(1.8+1.2)}^2}\\
+        \therefore I_r &= 0.04 \cdot I_i 
+    \end{split}
+\end{equation}
+\begin{equation}\begin{split}
+    \SI{30}{dB} = 10\log (I_0/I_r) \implies I_0 = 1000\cdot I_r \\
+    \therefore I_0 = 40 I_i    
+\end{split}
+\end{equation}
+We find the length of the tissue based on the time it takes for the ray to reach the boundary and be reflected:
+\begin{equation}
+    x = ct = 1540 \cdot \num{75e-6}/2 \implies x = \SI{0.057750}{m} = \SI{5.8}{cm}
+\end{equation}
+\begin{equation}\begin{split}
+    I_i = I_0 \exp(-\mu x) \implies \frac{I_i}{I_0} =\frac{I_i}{40I_i} = \frac{1}{40} = \exp(-5.8 \mu ) \\
+    \ln 40 = 5.8\mu \implies \mu = \SI{0.64}{cm^{-1}}
+\end{split}
+\end{equation}
