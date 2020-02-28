@@ -1,0 +1,13 @@
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}
+        \draw
+        (0, 0) node[op amp] (opamp) {}
+        (opamp.+) to[short, -o] (-3,-0.5)  node[left] {$V_{in}$}
+        (opamp.-) to[R, -o,a=\SI{22}{\ohm}] (-3, 0.5)
+        (opamp.-) to[short,*-] ++(0,1.5) coordinate (leftC)
+        to[R,R=\SI{200}{\ohm}] (leftC -| opamp.out)
+        to[short,-*] (opamp.out) to[short, -o] node[right] {$V_{out}$} ++ (1,0);
+    \end{circuitikz}
+    \caption{Non inverting op amp}
+\end{figure}

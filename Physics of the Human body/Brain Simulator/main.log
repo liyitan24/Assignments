@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.27)  2 DEC 2019 03:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.27)  28 FEB 2020 02:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/main.tex"
-(/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/main.tex
+**"/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/main.tex"
+(/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/main.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -60,7 +60,9 @@ Package: titlesec 2019/07/16 v2.11 Sectioning titles
 \titlewidth=\dimen113
 \titlewidthlast=\dimen114
 \titlewidthfirst=\dimen115
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -75,9 +77,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen116
 \Gin@req@width=\dimen117
-) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks17
 \pgfutil@tempdima=\dimen118
 \pgfutil@tempdimb=\dimen119
@@ -309,259 +309,384 @@ File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 File: tikzlibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-))) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-07-25 L3 programming layer (loader) 
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplotstable 2018/03/28 v1.16 Table typesetting and Pretty-printing (1.16)
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-07-25 L3 programming layer (code)
-\c_max_int=\count119
-\l_tmpa_int=\count120
-\l_tmpb_int=\count121
-\g_tmpa_int=\count122
-\g_tmpb_int=\count123
-\g__kernel_prg_map_int=\count124
-\c__ior_term_ior=\count125
-\c_log_iow=\count126
-\l_iow_line_count_int=\count127
-\l__iow_line_target_int=\count128
-\l__iow_one_indent_int=\count129
-\l__iow_indent_int=\count130
-\c_zero_dim=\dimen182
-\c_max_dim=\dimen183
-\l_tmpa_dim=\dimen184
-\l_tmpb_dim=\dimen185
-\g_tmpa_dim=\dimen186
-\g_tmpb_dim=\dimen187
-\c_zero_skip=\skip45
-\c_max_skip=\skip46
-\l_tmpa_skip=\skip47
-\l_tmpb_skip=\skip48
-\g_tmpa_skip=\skip49
-\g_tmpb_skip=\skip50
-\c_zero_muskip=\muskip10
-\c_max_muskip=\muskip11
-\l_tmpa_muskip=\muskip12
-\l_tmpb_muskip=\muskip13
-\g_tmpa_muskip=\muskip14
-\g_tmpb_muskip=\muskip15
-\l_keys_choice_int=\count131
-\l__intarray_loop_int=\count132
-\c__intarray_sp_dim=\dimen188
-\g__intarray_font_int=\count133
-\c__fp_leading_shift_int=\count134
-\c__fp_middle_shift_int=\count135
-\c__fp_trailing_shift_int=\count136
-\c__fp_big_leading_shift_int=\count137
-\c__fp_big_middle_shift_int=\count138
-\c__fp_big_trailing_shift_int=\count139
-\c__fp_Bigg_leading_shift_int=\count140
-\c__fp_Bigg_middle_shift_int=\count141
-\c__fp_Bigg_trailing_shift_int=\count142
-\c__kernel_randint_max_int=\count143
-\g__fp_array_int=\count144
-\l__fp_array_loop_int=\count145
-\l__sort_length_int=\count146
-\l__sort_min_int=\count147
-\l__sort_top_int=\count148
-\l__sort_max_int=\count149
-\l__sort_true_max_int=\count150
-\l__sort_block_int=\count151
-\l__sort_begin_int=\count152
-\l__sort_end_int=\count153
-\l__sort_A_int=\count154
-\l__sort_B_int=\count155
-\l__sort_C_int=\count156
-\l__str_internal_int=\count157
-\c__str_replacement_char_int=\count158
-\l__tl_analysis_normal_int=\count159
-\l__tl_analysis_index_int=\count160
-\l__tl_analysis_nesting_int=\count161
-\l__tl_analysis_type_int=\count162
-\l__regex_internal_a_int=\count163
-\l__regex_internal_b_int=\count164
-\l__regex_internal_c_int=\count165
-\l__regex_balance_int=\count166
-\l__regex_group_level_int=\count167
-\l__regex_mode_int=\count168
-\c__regex_cs_in_class_mode_int=\count169
-\c__regex_cs_mode_int=\count170
-\l__regex_catcodes_int=\count171
-\l__regex_default_catcodes_int=\count172
-\c__regex_catcode_D_int=\count173
-\c__regex_catcode_S_int=\count174
-\c__regex_catcode_L_int=\count175
-\c__regex_catcode_O_int=\count176
-\c__regex_catcode_A_int=\count177
-\c__regex_all_catcodes_int=\count178
-\l__regex_show_lines_int=\count179
-\l__regex_min_state_int=\count180
-\l__regex_max_state_int=\count181
-\l__regex_left_state_int=\count182
-\l__regex_right_state_int=\count183
-\l__regex_capturing_group_int=\count184
-\l__regex_min_pos_int=\count185
-\l__regex_max_pos_int=\count186
-\l__regex_curr_pos_int=\count187
-\l__regex_start_pos_int=\count188
-\l__regex_success_pos_int=\count189
-\l__regex_curr_char_int=\count190
-\l__regex_curr_catcode_int=\count191
-\l__regex_last_char_int=\count192
-\l__regex_case_changed_char_int=\count193
-\l__regex_curr_state_int=\count194
-\l__regex_step_int=\count195
-\l__regex_min_active_int=\count196
-\l__regex_max_active_int=\count197
-\l__regex_replacement_csnames_int=\count198
-\l__regex_match_count_int=\count199
-\l__regex_min_submatch_int=\count266
-\l__regex_submatch_int=\count267
-\l__regex_zeroth_submatch_int=\count268
-\g__regex_trace_regex_int=\count269
-\c_empty_box=\box40
-\l_tmpa_box=\box41
-\l_tmpb_box=\box42
-\g_tmpa_box=\box43
-\g_tmpb_box=\box44
-\l__box_top_dim=\dimen189
-\l__box_bottom_dim=\dimen190
-\l__box_left_dim=\dimen191
-\l__box_right_dim=\dimen192
-\l__box_top_new_dim=\dimen193
-\l__box_bottom_new_dim=\dimen194
-\l__box_left_new_dim=\dimen195
-\l__box_right_new_dim=\dimen196
-\l__box_internal_box=\box45
-\l__coffin_internal_box=\box46
-\l__coffin_internal_dim=\dimen197
-\l__coffin_offset_x_dim=\dimen198
-\l__coffin_offset_y_dim=\dimen199
-\l__coffin_x_dim=\dimen256
-\l__coffin_y_dim=\dimen257
-\l__coffin_x_prime_dim=\dimen258
-\l__coffin_y_prime_dim=\dimen259
-\c_empty_coffin=\box47
-\l__coffin_aligned_coffin=\box48
-\l__coffin_aligned_internal_coffin=\box49
-\l_tmpa_coffin=\box50
-\l_tmpb_coffin=\box51
-\g_tmpa_coffin=\box52
-\g_tmpb_coffin=\box53
-\l__coffin_bounding_shift_dim=\dimen260
-\l__coffin_left_corner_dim=\dimen261
-\l__coffin_right_corner_dim=\dimen262
-\l__coffin_bottom_corner_dim=\dimen263
-\l__coffin_top_corner_dim=\dimen264
-\l__coffin_scaled_total_height_dim=\dimen265
-\l__coffin_scaled_width_dim=\dimen266
-\c__coffin_empty_coffin=\box54
-\l__coffin_display_coffin=\box55
-\l__coffin_display_coord_coffin=\box56
-\l__coffin_display_pole_coffin=\box57
-\l__coffin_display_offset_dim=\dimen267
-\l__coffin_display_x_dim=\dimen268
-\l__coffin_display_y_dim=\dimen269
-\g__file_internal_ior=\read2
-\l__seq_internal_a_int=\count270
-\l__seq_internal_b_int=\count271
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2019-04-06 v L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count272
-\l__pdf_internal_box=\box58
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count273
-\g__xparse_grabber_int=\count274
-\l__xparse_m_args_int=\count275
-\l__xparse_v_nesting_int=\count276
-)
-Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
- (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable.coltype.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen182
+\ar@mcellbox=\box40
+\extrarowheight=\dimen183
+\NC@list=\toks33
+\extratabsurround=\skip45
+\backup@length=\skip46
+\ar@cellbox=\box41
+)) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen184
+\lightrulewidth=\dimen185
+\cmidrulewidth=\dimen186
+\belowrulesep=\dimen187
+\belowbottomsep=\dimen188
+\aboverulesep=\dimen189
+\abovetopsep=\dimen190
+\cmidrulesep=\dimen191
+\cmidrulekern=\dimen192
+\defaultaddspace=\dimen193
+\@cmidla=\count119
+\@cmidlb=\count120
+\@aboverulesep=\dimen194
+\@belowrulesep=\dimen195
+\@thisruleclass=\count121
+\@lastruleclass=\count122
+\@thisrulewidth=\dimen196
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks34
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks33
-\ex@=\dimen270
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen271
-\ar@mcellbox=\box59
-\extrarowheight=\dimen272
-\NC@list=\toks34
-\extratabsurround=\skip51
-\backup@length=\skip52
-\ar@cellbox=\box60
-) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
+\@emptytoks=\toks35
+\ex@=\dimen197
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen198
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\l__siunitx_tmp_box=\box61
-\l__siunitx_tmp_dim=\dimen273
-\l__siunitx_tmp_int=\count277
-\l__siunitx_number_mantissa_length_int=\count278
-\l__siunitx_number_uncert_length_int=\count279
-\l__siunitx_round_int=\count280
-\l__siunitx_process_decimal_int=\count281
-\l__siunitx_process_uncertainty_int=\count282
-\l__siunitx_process_fixed_int=\count283
-\l__siunitx_process_integer_min_int=\count284
-\l__siunitx_process_precision_int=\count285
-\l__siunitx_group_min_int=\count286
-\l__siunitx_angle_marker_box=\box62
-\l__siunitx_angle_unit_box=\box63
-\l__siunitx_angle_marker_dim=\dimen274
-\l__siunitx_angle_unit_dim=\dimen275
-\l__siunitx_unit_int=\count287
-\l__siunitx_unit_denominator_int=\count288
-\l__siunitx_unit_numerator_int=\count289
-\l__siunitx_unit_prefix_int=\count290
-\l__siunitx_unit_prefix_base_int=\count291
-\l__siunitx_unit_prefix_gram_int=\count292
-\l__siunitx_number_product_int=\count293
-\c__siunitx_one_fill_skip=\skip53
-\l__siunitx_table_unit_align_skip=\skip54
-\l__siunitx_table_exponent_dim=\dimen276
-\l__siunitx_table_integer_dim=\dimen277
-\l__siunitx_table_mantissa_dim=\dimen278
-\l__siunitx_table_marker_dim=\dimen279
-\l__siunitx_table_result_dim=\dimen280
-\l__siunitx_table_uncert_dim=\dimen281
-\l__siunitx_table_fill_pre_dim=\dimen282
-\l__siunitx_table_fill_post_dim=\dimen283
-\l__siunitx_table_fill_mid_dim=\dimen284
-\l__siunitx_table_pre_box=\box64
-\l__siunitx_table_post_box=\box65
-\l__siunitx_table_mantissa_box=\box66
-\l__siunitx_table_result_box=\box67
-\l__siunitx_table_number_align_skip=\skip55
-\l__siunitx_table_text_align_skip=\skip56
- (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
-)) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip57
-\bibsep=\skip58
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count294
+\inf@bad=\count123
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count124
+\leftroot@=\count125
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count126
+\DOTSCASE@=\count127
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box42
+\strutbox@=\box43
+\big@size=\dimen199
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count128
+\c@MaxMatrixCols=\count129
+\dotsspace@=\muskip10
+\c@parentequation=\count130
+\dspbrk@lvl=\count131
+\tag@help=\toks36
+\row@=\count132
+\column@=\count133
+\maxfields@=\count134
+\andhelp@=\toks37
+\eqnshift@=\dimen256
+\alignsep@=\dimen257
+\tagshift@=\dimen258
+\tagwidth@=\dimen259
+\totwidth@=\dimen260
+\lineht@=\dimen261
+\@envbody=\toks38
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count135
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip50
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count136
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip51
+\skiplinenumber=\skip52
+\skiprule=\skip53
+\skiphlne=\skip54
+\skiptext=\skip55
+\skiplength=\skip56
+\algomargin=\skip57
+\skipalgocfslide=\skip58
+\algowidth=\dimen262
+\inoutsize=\dimen263
+\inoutindent=\dimen264
+\interspacetitleruled=\dimen265
+\interspacealgoruled=\dimen266
+\interspacetitleboxruled=\dimen267
+\algocf@ruledwidth=\skip59
+\algocf@inoutbox=\box44
+\algocf@inputbox=\box45
+\AlCapSkip=\skip60
+\AlCapHSkip=\skip61
+\algoskipindent=\skip62
+\algocf@nlbox=\box46
+\algocf@hangingbox=\box47
+\algocf@untilbox=\box48
+\algocf@skipuntil=\skip63
+\algocf@capbox=\box49
+\algocf@lcaptionbox=\skip64
+\algoheightruledefault=\skip65
+\algoheightrule=\skip66
+\algotitleheightruledefault=\skip67
+\algotitleheightrule=\skip68
+\c@algocfline=\count137
+\c@algocfproc=\count138
+\c@algocf=\count139
+\algocf@algoframe=\box50
+\algocf@algobox=\box51
 ) (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
-) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/main.aux)
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip69
+\bibsep=\skip70
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count140
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-07-25 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-07-25 L3 programming layer (code)
+\c_max_int=\count141
+\l_tmpa_int=\count142
+\l_tmpb_int=\count143
+\g_tmpa_int=\count144
+\g_tmpb_int=\count145
+\g__kernel_prg_map_int=\count146
+\c__ior_term_ior=\count147
+\c_log_iow=\count148
+\l_iow_line_count_int=\count149
+\l__iow_line_target_int=\count150
+\l__iow_one_indent_int=\count151
+\l__iow_indent_int=\count152
+\c_zero_dim=\dimen268
+\c_max_dim=\dimen269
+\l_tmpa_dim=\dimen270
+\l_tmpb_dim=\dimen271
+\g_tmpa_dim=\dimen272
+\g_tmpb_dim=\dimen273
+\c_zero_skip=\skip71
+\c_max_skip=\skip72
+\l_tmpa_skip=\skip73
+\l_tmpb_skip=\skip74
+\g_tmpa_skip=\skip75
+\g_tmpb_skip=\skip76
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count153
+\l__intarray_loop_int=\count154
+\c__intarray_sp_dim=\dimen274
+\g__intarray_font_int=\count155
+\c__fp_leading_shift_int=\count156
+\c__fp_middle_shift_int=\count157
+\c__fp_trailing_shift_int=\count158
+\c__fp_big_leading_shift_int=\count159
+\c__fp_big_middle_shift_int=\count160
+\c__fp_big_trailing_shift_int=\count161
+\c__fp_Bigg_leading_shift_int=\count162
+\c__fp_Bigg_middle_shift_int=\count163
+\c__fp_Bigg_trailing_shift_int=\count164
+\c__kernel_randint_max_int=\count165
+\g__fp_array_int=\count166
+\l__fp_array_loop_int=\count167
+\l__sort_length_int=\count168
+\l__sort_min_int=\count169
+\l__sort_top_int=\count170
+\l__sort_max_int=\count171
+\l__sort_true_max_int=\count172
+\l__sort_block_int=\count173
+\l__sort_begin_int=\count174
+\l__sort_end_int=\count175
+\l__sort_A_int=\count176
+\l__sort_B_int=\count177
+\l__sort_C_int=\count178
+\l__str_internal_int=\count179
+\c__str_replacement_char_int=\count180
+\l__tl_analysis_normal_int=\count181
+\l__tl_analysis_index_int=\count182
+\l__tl_analysis_nesting_int=\count183
+\l__tl_analysis_type_int=\count184
+\l__regex_internal_a_int=\count185
+\l__regex_internal_b_int=\count186
+\l__regex_internal_c_int=\count187
+\l__regex_balance_int=\count188
+\l__regex_group_level_int=\count189
+\l__regex_mode_int=\count190
+\c__regex_cs_in_class_mode_int=\count191
+\c__regex_cs_mode_int=\count192
+\l__regex_catcodes_int=\count193
+\l__regex_default_catcodes_int=\count194
+\c__regex_catcode_D_int=\count195
+\c__regex_catcode_S_int=\count196
+\c__regex_catcode_L_int=\count197
+\c__regex_catcode_O_int=\count198
+\c__regex_catcode_A_int=\count199
+\c__regex_all_catcodes_int=\count266
+\l__regex_show_lines_int=\count267
+\l__regex_min_state_int=\count268
+\l__regex_max_state_int=\count269
+\l__regex_left_state_int=\count270
+\l__regex_right_state_int=\count271
+\l__regex_capturing_group_int=\count272
+\l__regex_min_pos_int=\count273
+\l__regex_max_pos_int=\count274
+\l__regex_curr_pos_int=\count275
+\l__regex_start_pos_int=\count276
+\l__regex_success_pos_int=\count277
+\l__regex_curr_char_int=\count278
+\l__regex_curr_catcode_int=\count279
+\l__regex_last_char_int=\count280
+\l__regex_case_changed_char_int=\count281
+\l__regex_curr_state_int=\count282
+\l__regex_step_int=\count283
+\l__regex_min_active_int=\count284
+\l__regex_max_active_int=\count285
+\l__regex_replacement_csnames_int=\count286
+\l__regex_match_count_int=\count287
+\l__regex_min_submatch_int=\count288
+\l__regex_submatch_int=\count289
+\l__regex_zeroth_submatch_int=\count290
+\g__regex_trace_regex_int=\count291
+\c_empty_box=\box52
+\l_tmpa_box=\box53
+\l_tmpb_box=\box54
+\g_tmpa_box=\box55
+\g_tmpb_box=\box56
+\l__box_top_dim=\dimen275
+\l__box_bottom_dim=\dimen276
+\l__box_left_dim=\dimen277
+\l__box_right_dim=\dimen278
+\l__box_top_new_dim=\dimen279
+\l__box_bottom_new_dim=\dimen280
+\l__box_left_new_dim=\dimen281
+\l__box_right_new_dim=\dimen282
+\l__box_internal_box=\box57
+\l__coffin_internal_box=\box58
+\l__coffin_internal_dim=\dimen283
+\l__coffin_offset_x_dim=\dimen284
+\l__coffin_offset_y_dim=\dimen285
+\l__coffin_x_dim=\dimen286
+\l__coffin_y_dim=\dimen287
+\l__coffin_x_prime_dim=\dimen288
+\l__coffin_y_prime_dim=\dimen289
+\c_empty_coffin=\box59
+\l__coffin_aligned_coffin=\box60
+\l__coffin_aligned_internal_coffin=\box61
+\l_tmpa_coffin=\box62
+\l_tmpb_coffin=\box63
+\g_tmpa_coffin=\box64
+\g_tmpb_coffin=\box65
+\l__coffin_bounding_shift_dim=\dimen290
+\l__coffin_left_corner_dim=\dimen291
+\l__coffin_right_corner_dim=\dimen292
+\l__coffin_bottom_corner_dim=\dimen293
+\l__coffin_top_corner_dim=\dimen294
+\l__coffin_scaled_total_height_dim=\dimen295
+\l__coffin_scaled_width_dim=\dimen296
+\c__coffin_empty_coffin=\box66
+\l__coffin_display_coffin=\box67
+\l__coffin_display_coord_coffin=\box68
+\l__coffin_display_pole_coffin=\box69
+\l__coffin_display_offset_dim=\dimen297
+\l__coffin_display_x_dim=\dimen298
+\l__coffin_display_y_dim=\dimen299
+\g__file_internal_ior=\read2
+\l__seq_internal_a_int=\count292
+\l__seq_internal_b_int=\count293
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2019-04-06 v L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count294
+\l__pdf_internal_box=\box70
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2019-05-28 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count295
+\g__xparse_grabber_int=\count296
+\l__xparse_m_args_int=\count297
+\l__xparse_v_nesting_int=\count298
+)
+Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box71
+\l__siunitx_tmp_dim=\dimen300
+\l__siunitx_tmp_int=\count299
+\l__siunitx_number_mantissa_length_int=\count300
+\l__siunitx_number_uncert_length_int=\count301
+\l__siunitx_round_int=\count302
+\l__siunitx_process_decimal_int=\count303
+\l__siunitx_process_uncertainty_int=\count304
+\l__siunitx_process_fixed_int=\count305
+\l__siunitx_process_integer_min_int=\count306
+\l__siunitx_process_precision_int=\count307
+\l__siunitx_group_min_int=\count308
+\l__siunitx_angle_marker_box=\box72
+\l__siunitx_angle_unit_box=\box73
+\l__siunitx_angle_marker_dim=\dimen301
+\l__siunitx_angle_unit_dim=\dimen302
+\l__siunitx_unit_int=\count309
+\l__siunitx_unit_denominator_int=\count310
+\l__siunitx_unit_numerator_int=\count311
+\l__siunitx_unit_prefix_int=\count312
+\l__siunitx_unit_prefix_base_int=\count313
+\l__siunitx_unit_prefix_gram_int=\count314
+\l__siunitx_number_product_int=\count315
+\c__siunitx_one_fill_skip=\skip77
+\l__siunitx_table_unit_align_skip=\skip78
+\l__siunitx_table_exponent_dim=\dimen303
+\l__siunitx_table_integer_dim=\dimen304
+\l__siunitx_table_mantissa_dim=\dimen305
+\l__siunitx_table_marker_dim=\dimen306
+\l__siunitx_table_result_dim=\dimen307
+\l__siunitx_table_uncert_dim=\dimen308
+\l__siunitx_table_fill_pre_dim=\dimen309
+\l__siunitx_table_fill_post_dim=\dimen310
+\l__siunitx_table_fill_mid_dim=\dimen311
+\l__siunitx_table_pre_box=\box74
+\l__siunitx_table_post_box=\box75
+\l__siunitx_table_mantissa_box=\box76
+\l__siunitx_table_result_box=\box77
+\l__siunitx_table_number_align_skip=\skip79
+\l__siunitx_table_text_align_skip=\skip80
+ (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+)) (/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -599,17 +724,17 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count295
-\scratchdimen=\dimen285
-\scratchbox=\box68
-\nofMPsegments=\count296
-\nofMParguments=\count297
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count298
-\MPscratchDim=\dimen286
-\MPnumerator=\count299
-\makeMPintoPDFobject=\count300
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count316
+\scratchdimen=\dimen312
+\scratchbox=\box78
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen313
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -724,37 +849,58 @@ Dictionary: translator-basic-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
- (/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/files/Task.tex
-<files/Gloves.png, id=4, 1614.03pt x 1152.305pt>
-File: files/Gloves.png Graphic file (type png)
-<use files/Gloves.png>
-Package pdftex.def Info: files/Gloves.png  used on input line 21.
-(pdftex.def)             Requested size: 375.80544pt x 268.29497pt.
- [1
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/files/Part1.tex
+PGFPlots: reading {data/Q1.dat}
+PGFPlots: reading {data/Q1.dat}
+PGFPlots: reading {data/Q2.dat}
+PGFPlots: reading {data/Q2.dat}
+) [1
 
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/jj/Documents/Assignments/Design and tech skills/Preliminary research/files/Gloves.png>]) (/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/main.bbl [3] [4
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] (/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/files/Part2.tex
+<images/Q3B-TBI.png, id=13, 668.4975pt x 581.17125pt>
+File: images/Q3B-TBI.png Graphic file (type png)
+<use images/Q3B-TBI.png>
+Package pdftex.def Info: images/Q3B-TBI.png  used on input line 5.
+(pdftex.def)             Requested size: 328.82707pt x 285.87602pt.
+ [2
 
-]) [5] (/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/main.aux) ) 
+ </home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/images/Q3B-TBI.png>]
+<images/Q3C-Normal.png, id=17, 675.52374pt x 583.17876pt>
+File: images/Q3C-Normal.png Graphic file (type png)
+<use images/Q3C-Normal.png>
+Package pdftex.def Info: images/Q3C-Normal.png  used on input line 16.
+(pdftex.def)             Requested size: 211.38832pt x 182.49207pt.
+<images/Q3C-TBI.png, id=18, 672.5125pt x 579.16376pt>
+File: images/Q3C-TBI.png Graphic file (type png)
+<use images/Q3C-TBI.png>
+Package pdftex.def Info: images/Q3C-TBI.png  used on input line 21.
+(pdftex.def)             Requested size: 211.38832pt x 182.0487pt.
+)
+No file main.bbl.
+[3
+
+ </home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/images/Q3C-Normal.png> </home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/images/Q3C-TBI.png>] (/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/main.aux) ) 
 Here is how much of TeX's memory you used:
- 35196 strings out of 492667
- 854339 string characters out of 6134096
- 947411 words of memory out of 5000000
- 38670 multiletter control sequences out of 15000+600000
- 537746 words of font info for 43 fonts, out of 8000000 for 9000
+ 37970 strings out of 492667
+ 910549 string characters out of 6134096
+ 1050402 words of memory out of 5000000
+ 41378 multiletter control sequences out of 15000+600000
+ 540719 words of font info for 57 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 73i,6n,127p,802b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "/home/jj/Documents/Assignments/Design and tech skills/Preliminary research/main.pdf" (5 pages, 355853 bytes).
+ 73i,20n,127p,818b,2306s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "/home/jj/Documents/Assignments/Physics of the Human body/Brain Simulator/main.pdf" (3 pages, 68763 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

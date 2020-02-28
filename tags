@@ -1,0 +1,173 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$Ei 100 rho	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{$Ei(100^{\\rho}) + Ei(100^{\\bar{\\rho}})$}\\label{tb:EiValuesFor100}$/;"	b
+$Li 100 rho	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{$Li(100^{\\rho}) + Li(100^{\\bar{\\rho}})$}\\label{tb:LiValuesFor100}$/;"	b
+Acidified Ferrous Ammonium Sulphate	IB/Chemistry/IA/files/Procedure.tex	/^\\subsection{Acidified Ferrous Ammonium Sulphate}$/;"	b
+Acidified Potassium Dichromate	IB/Chemistry/IA/files/Procedure.tex	/^\\subsection{Acidified Potassium Dichromate}$/;"	b
+Aim	Engineering Challenge 2/files/Summary/Introduction.tex	/^\\subsection{Aim}$/;"	b
+Alcohol before oxidation	IB/Chemistry/IA/files/Analysis.tex	/^\\paragraph{Alcohol before oxidation}$/;"	P
+Algorithms	IB/Extended Essay/files/Appendix.tex	/^\\subsection{Algorithms}$/;"	b
+Analysis	Cardiac Engineering/Pacemaker/main.tex	/^\\section{Analysis}$/;"	s
+Analysis	IB/Chemistry/IA/main.tex	/^\\section{Analysis}$/;"	s
+Analysis	IB/Chemistry/Redox Titration/main.tex	/^\\section{Analysis}$/;"	s
+Analysis	IB/Chemistry/new IA/main.tex	/^\\section{Analysis}$/;"	s
+Analysis	IB/Physics/IA/main.tex	/^\\section{Analysis}$/;"	s
+Analysis	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\section*{Analysis}$/;"	s
+Analyte before titration	IB/Chemistry/IA/files/Analysis.tex	/^\\paragraph{Analyte before titration}$/;"	P
+Appendix	Engineering Challenge 2/main.tex	/^	\\chapter{Appendix}$/;"	c
+Appendix	IB/Mathematics/IA/main.tex	/^\\section{Appendix}$/;"	s
+Assignment	IB/Danish/Written Task/main.tex	/^\\section{Assignment}$/;"	s
+Background Knowledge	IB/Physics/IA/main.tex	/^\\section{Background Knowledge}$/;"	s
+Background knowledge	Engineering Challenge 2/files/Impedance/Introduction.tex	/^\\subsubsection{Background knowledge}$/;"	b
+Background knowledge	IB/Chemistry/IA/main.tex	/^\\section{Background knowledge}$/;"	s
+Background knowledge	IB/Chemistry/new IA/main.tex	/^\\section{Background knowledge}$/;"	s
+Bibliography	IB/Mathematics/IA/main.tex	/^\\section{Bibliography}$/;"	s
+Bibliography	IB/Physics/IA/main.tex	/^\\section{Bibliography}$/;"	s
+Calculations	Engineering Challenge 2/files/Heating/ResultsAndDiscussion.tex	/^\\subsubsection{Calculations}$/;"	b
+Calculations	IB/Chemistry/IA/files/Analysis.tex	/^\\subsection{Calculations}$/;"	b
+Calculations	IB/Chemistry/Steel Wool/Steel Wool Content.tex	/^\\subsection*{Calculations}$/;"	b
+Calculations	IB/Extended Essay/files/PeriodicTerm.tex	/^\\subparagraph{Calculations} Despite the need for infinitely many terms, for the sake of demonstration we will take only the first forty zeros \\citep{UMNZetaZeros} and their conjugates for the first element of the periodic term. The calculations are done through Mathematica.$/;"	G
+Complex plain zeta function	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{Complex plain zeta function}$/;"	b
+Concerns	Engineering Challenge 2/main.tex	/^    \\section{Concerns}$/;"	s
+Conclusion	Engineering Challenge 2/main.tex	/^    \\subsection{Conclusion}$/;"	b
+Conclusion	IB/Chemistry/new IA/main.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	IB/Mathematics/IA/main.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	IB/Physics/IA/main.tex	/^\\section{Conclusion}$/;"	s
+Conclusion	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\section*{Conclusion}$/;"	s
+Conclusion and reflection	IB/Chemistry/IA/main.tex	/^\\section{Conclusion and reflection}$/;"	s
+Conclusion and reflection	IB/Chemistry/Redox Titration/main.tex	/^\\section{Conclusion and reflection}$/;"	s
+Considerations	IB/Chemistry/Steel Wool/Steel Wool Content.tex	/^\\subsection*{Considerations}$/;"	b
+Control Variables	IB/Chemistry/new IA/files/Procedure.tex	/^\\paragraph{Control Variables} Power output of kettle: \\SI{1900 \\pm 150}{\\watt}. Mass of water: \\SI{766\\pm70}{\\gram}. $/;"	P
+Country profile	Engineering Challenge 2/files/Summary/Introduction.tex	/^\\subsection{Country profile}$/;"	b
+Data	IB/Chemistry/IA/main.tex	/^\\section{Data}$/;"	s
+Data	IB/Chemistry/Redox Titration/main.tex	/^\\section{Data}$/;"	s
+Data	IB/Chemistry/new IA/main.tex	/^\\section{Data}$/;"	s
+Data	IB/Extended Essay/files/Appendix.tex	/^\\subsection{Data} \\label{Data}$/;"	b
+Data Analysis	IB/Physics/Factors Affecting Resistance/main.tex	/^\\section{Data Analysis}$/;"	s
+Data Collection	IB/Physics/Factors Affecting Resistance/main.tex	/^\\section{Data Collection}$/;"	s
+Data Collection	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\section*{Data Collection}$/;"	s
+Definitions	IB/Physics/Notes/Astrophysics.tex	/^\\section{Definitions}$/;"	s
+Dependent	IB/Chemistry/new IA/files/Procedure.tex	/^\\paragraph{Dependent} Change in temperature over change in time. (\\si{\\celsius\\per\\second}).$/;"	P
+Design of the bioreactor	Engineering Challenge 2/main.tex	/^    \\section{Design of the bioreactor}$/;"	s
+Design process	Engineering Challenge 2/main.tex	/^    \\section{Design process}$/;"	s
+Discuss whether or not the endings conclusions of the two works you have studied are satisfactory	IB/English/Mock Paper 2/main.tex	/^\\section{Discuss whether or not the endings\/conclusions of the two works you have studied are  satisfactory.}$/;"	s
+Ei	IB/Extended Essay/files/Appendix.tex	/^\\paragraph{Ei} \\label{ap:MathematicaEi}$/;"	P
+Equations	IB/Extended Essay/files/Appendix.tex	/^\\subsection{Equations} \\label{Equations}$/;"	b
+Evaluate the importance of technology and strategy in the outcome of two 20th century wars	IB/History/WW2 WW1 comparison/main.tex	/^\\section*{Evaluate the importance of technology and strategy in the outcome of two 20th century wars.}$/;"	s
+Evaluation	IB/Chemistry/new IA/main.tex	/^\\section{Evaluation}$/;"	s
+Evaluation	IB/Physics/IA/main.tex	/^\\section{Evaluation}$/;"	s
+Evaluation	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\section*{Evaluation}$/;"	s
+Executive summary	Engineering Challenge 2/main.tex	/^    \\chapter{Executive summary}$/;"	c
+Experiment	Cardiac Engineering/RLC/main.tex	/^	\\section{Experiment}$/;"	s
+Experiment	IB/Chemistry/IA/files/Procedure.tex	/^\\subsection{Experiment}$/;"	b
+General procedures	Engineering Challenge 2/files/Heating/MaterialsAndMethods.tex	/^\\paragraph{General procedures:}$/;"	P
+Heating	Engineering Challenge 2/main.tex	/^        \\section{Heating}$/;"	s
+How do we know that it s multiple harmonics Note that each point represents one of the peaks in the FFT graph	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\subsection*{How do we know that it's a quarter wave resonator?}$/;"	b
+Impedance	Engineering Challenge 2/main.tex	/^	\\section{Impedance}$/;"	s
+In the production of knowledge traditions of areas of knowledge offer correctives for ways of knowing To what extent do you agree with this statement	IB/TOK/Mock/Mock.tex	/^\\section*{“In the production of knowledge, traditions of areas of knowledge offer correctives for ways of knowing.” To what extent do you agree with this statement?}$/;"	s
+Independent	IB/Chemistry/new IA/files/Procedure.tex	/^\\paragraph{Independent} Salinity of solution (\\si{\\gram\\per\\litre})$/;"	P
+Integral Term	IB/Extended Essay/files/RemainderTerm.tex	/^\\subparagraph{Integral Term}$/;"	G
+Introduction	Cardiac Engineering/Pacemaker/main.tex	/^\\section{Introduction}$/;"	s
+Introduction	Engineering Challenge 2/main.tex	/^    \\section{Introduction}$/;"	s
+Introduction	Engineering Challenge 2/main.tex	/^    \\subsection{Introduction}$/;"	b
+Introduction	IB/Chemistry/IA/main.tex	/^\\section{Introduction}$/;"	s
+Introduction	IB/Chemistry/Redox Titration/main.tex	/^\\section{Introduction}$/;"	s
+Introduction	IB/Chemistry/new IA/main.tex	/^\\section{Introduction}$/;"	s
+Introduction	IB/Extended Essay/Extended Essay.tex	/^\\section{Introduction}$/;"	s
+Introduction	IB/Mathematics/IA/main.tex	/^\\section{Introduction}$/;"	s
+Introduction	IB/Physics/IA/main.tex	/^\\section{Introduction}$/;"	s
+Introduction	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\section*{Introduction}$/;"	s
+Investigation	IB/History/IA/IA.tex	/^\\section{Investigation}$/;"	s
+Li	IB/Extended Essay/files/Appendix.tex	/^\\paragraph{Li} \\label{ap:MathematicaLi}$/;"	P
+Log term	IB/Extended Essay/files/RemainderTerm.tex	/^\\subparagraph{Log term}$/;"	G
+Materials	Engineering Challenge 2/files/Heating/MaterialsAndMethods.tex	/^\\subsubsection{Materials}$/;"	b
+Materials	Engineering Challenge 2/files/Impedance/MaterialsAndMethods.tex	/^\\subsubsection{Materials}$/;"	b
+Materials and Methods	Engineering Challenge 2/main.tex	/^    \\subsection{Materials and Methods}$/;"	b
+Mathematica	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{Mathematica}$/;"	b
+Method	Engineering Challenge 2/files/Heating/MaterialsAndMethods.tex	/^\\subsubsection{Method} \\label{sec:Heating-method}$/;"	b
+Methods	Engineering Challenge 2/files/Impedance/MaterialsAndMethods.tex	/^\\subsubsection{Methods} \\label{sec:Impedance-Method}$/;"	b
+Mixing	Engineering Challenge 2/main.tex	/^        \\section{Mixing}$/;"	s
+Motivation and target audience	Scenario 1/main.tex	/^\\paragraph{Motivation and target audience}$/;"	P
+Periodic Term	IB/Extended Essay/files/PeriodicTerm.tex	/^\\subparagraph{Periodic Term} \\label{Periodic Term}$/;"	G
+Preparation of Samples	IB/Chemistry/IA/files/Procedure.tex	/^\\subsection{Preparation of Samples}$/;"	b
+Prime Number Theorem	IB/Extended Essay/files/PNT.tex	/^\\subsection{Prime Number Theorem} \\label{Prime Number Theorem}$/;"	b
+Primes up to $10 8$	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{Primes up to $10^8$} \\label{data:PrimesUpTo10^8}$/;"	b
+Principal term	IB/Extended Essay/files/RemainderTerm.tex	/^\\subparagraph{Principal term}$/;"	G
+Procedural concerns	IB/Chemistry/new IA/files/Procedure.tex	/^\\subsection{Procedural concerns}$/;"	b
+Procedure	Cardiac Engineering/Pacemaker/main.tex	/^\\section{Procedure}$/;"	s
+Procedure	IB/Chemistry/IA/main.tex	/^\\section{Procedure}$/;"	s
+Procedure	IB/Chemistry/Redox Titration/main.tex	/^\\section{Procedure}$/;"	s
+Procedure	IB/Chemistry/new IA/main.tex	/^\\section{Procedure}$/;"	s
+Procedure	IB/Physics/Factors Affecting Resistance/main.tex	/^\\section{Procedure}$/;"	s
+Procedure	IB/Physics/IA/main.tex	/^\\section{Procedure}$/;"	s
+Procedure and data	IB/Chemistry/Steel Wool/Steel Wool Content.tex	/^\\subsection*{Procedure and data}$/;"	b
+Purpose	Scenario 1/main.tex	/^\\paragraph{Purpose}$/;"	P
+Question 1	Medical Imaging/Ultrasound/main.tex	/^\\section*{Question 1}$/;"	s
+Question 2	Medical Imaging/Ultrasound/main.tex	/^\\section*{Question 2}$/;"	s
+Question 3	Medical Imaging/Ultrasound/main.tex	/^\\section*{Question 3}$/;"	s
+Question 4	Medical Imaging/Ultrasound/main.tex	/^\\section*{Question 4}$/;"	s
+Question 5	Medical Imaging/Ultrasound/main.tex	/^\\section*{Question 5}$/;"	s
+Rationale	IB/Danish/Written Task/main.tex	/^\\section{Rationale}$/;"	s
+Raw Data	IB/Physics/IA/main.tex	/^\\section{Raw Data}$/;"	s
+Raw data	Cardiac Engineering/Pacemaker/main.tex	/^\\section{Raw data}$/;"	s
+Reflection	IB/History/IA/IA.tex	/^\\section{Reflection}$/;"	s
+Requirements	Cardiac Engineering/ECG/files/BackgroundKnowledge.tex	/^\\subsection{Requirements}$/;"	b
+Results and Discussion	Engineering Challenge 2/main.tex	/^    \\subsection{Results and Discussion}$/;"	b
+Scale up	Engineering Challenge 2/main.tex	/^    \\section{Scale up}$/;"	s
+Scale up and feasibility	Engineering Challenge 2/main.tex	/^    \\section{Scale-up and feasibility}$/;"	s
+Secondary term	IB/Extended Essay/files/RemainderTerm.tex	/^\\subparagraph{Secondary term}$/;"	G
+Sieve of Erathosthenes	IB/Extended Essay/files/SieveOfErathosthenes.tex	/^\\subsection{Sieve of Erathosthenes} \\label{Sieve of Erastothenes}$/;"	b
+Sieve of Eratosthenes in Typescript	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{Sieve of Eratosthenes in Typescript} \\label{ap:Sieve}$/;"	b
+Soft robots imitating life	Design and tech skills/Preliminary research/files/Task.tex	/^\\paragraph{Soft robots imitating life}$/;"	P
+Solution	IB/Mathematics/IA/main.tex	/^\\section{Solution}$/;"	s
+Source Evaluation	IB/History/IA/IA.tex	/^\\section{Source Evaluation}$/;"	s
+Sum of forty zeros of $Ei ln 100 rho	IB/Extended Essay/files/Appendix.tex	/^\\paragraph{Sum of forty zeros of $Ei(\\ln 100^{\\rho})$ to $Ei(\\ln 100^\\frac{\\rho}{6})$.} \\label{ap:MathematicaSumOfEi}$/;"	P
+Summary	Engineering Challenge 2/main.tex	/^    \\subsection{Summary}$/;"	b
+The Weighted Prime Counting Function	IB/Extended Essay/files/RemainderTerm.tex	/^\\subsection{The Weighted Prime Counting Function} \\label{The Weighted Prime Counting Function}$/;"	b
+The Zeta Function	IB/Extended Essay/files/zetaFunction.tex	/^\\subsection{The Zeta Function} \\label{The Zeta Function}$/;"	b
+The elephant vanishes	IB/English/Mock Paper 2/main.tex	/^\\subsection{The elephant vanishes}$/;"	b
+Theory	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\subsection*{Theory}$/;"	b
+Titration	IB/Chemistry/IA/files/Analysis.tex	/^\\paragraph{Titration}$/;"	P
+To add	IB/Chemistry/new IA/files/Conclusion.tex	/^\\paragraph{To add:} Comparison to table value and how off our found result is. Sources of uncertainty/;"	P
+To what extent can a wearable robot aid a patient who has lost motor skills	Design and tech skills/Preliminary research/files/Task.tex	/^\\section*{To what extent can a wearable robot aid a patient who has lost motor skills?}$/;"	s
+Trial and error	IB/Extended Essay/files/TrialAndError.tex	/^\\subsection{Trial and error} \\label{Trial And Error}$/;"	b
+Variables	IB/Chemistry/new IA/files/Procedure.tex	/^\\subsection{Variables}$/;"	b
+Variables	IB/Physics/IA/files/Procedure.tex	/^\\subsection{Variables}$/;"	b
+Variables	IB/Physics/Standing Waves in pipe/Standing Waves.tex	/^\\subsection*{Variables}$/;"	b
+Weighted prime counting function	IB/Extended Essay/files/Appendix.tex	/^\\subsubsection{Weighted prime counting function}$/;"	b
+a	Mathematics/Topic1-4/files/Topic1.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic1-4/files/Topic2.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic1-4/files/Topic3.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic1-4/files/Topic4.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic5-10/files/topic5.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic5-10/files/topic6.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic5-10/files/topic8.tex	/^\\subsection{a}$/;"	b
+a	Mathematics/Topic5-10/files/topic9.tex	/^\\subsection{a}$/;"	b
+b	Mathematics/Topic1-4/files/Topic1.tex	/^\\subsection{b}$/;"	b
+b	Mathematics/Topic1-4/files/Topic2.tex	/^\\subsection{b}$/;"	b
+b	Mathematics/Topic1-4/files/Topic3.tex	/^\\subsection{b}$/;"	b
+b	Mathematics/Topic5-10/files/topic5.tex	/^\\subsection{b}$/;"	b
+b	Mathematics/Topic5-10/files/topic8.tex	/^\\subsection{b}$/;"	b
+b	Mathematics/Topic5-10/files/topic9.tex	/^\\subsection{b}$/;"	b
+c	Mathematics/Topic1-4/files/Topic1.tex	/^\\subsection{c}$/;"	b
+c	Mathematics/Topic1-4/files/Topic3.tex	/^\\subsection{c}$/;"	b
+c	Mathematics/Topic5-10/files/topic5.tex	/^\\subsection{c}$/;"	b
+c	Mathematics/Topic5-10/files/topic8.tex	/^\\subsection{c}$/;"	b
+d	Mathematics/Topic1-4/files/Topic1.tex	/^\\subsection{d}$/;"	b
+d	Mathematics/Topic1-4/files/Topic3.tex	/^\\subsection{d}$/;"	b
+d	Mathematics/Topic5-10/files/topic5.tex	/^\\subsection{d}$/;"	b
+e	Mathematics/Topic1-4/files/Topic1.tex	/^\\subsection{e}$/;"	b
+f	Mathematics/Topic1-4/files/Topic1.tex	/^\\subsection{f}$/;"	b
+f	Mathematics/Topic5-10/files/topic5.tex	/^\\subsection{f}$/;"	b
+i	Medical Imaging/Ultrasound/files/1.tex	/^\\paragraph{i}$/;"	P
+i	Medical Imaging/Ultrasound/files/5.tex	/^\\paragraph{i}$/;"	P
+ii	Medical Imaging/Ultrasound/files/1.tex	/^\\paragraph{ii}$/;"	P
+ii	Medical Imaging/Ultrasound/files/5.tex	/^\\paragraph{ii}$/;"	P
+iii	Medical Imaging/Ultrasound/files/5.tex	/^\\paragraph{iii}$/;"	P
+iv	Medical Imaging/Ultrasound/files/5.tex	/^\\paragraph{iv}$/;"	P
+process	Materials and Mechanics/Material tests/processData.m	/^function process(allParameters, i, filename, filepath)$/;"	f
+quad Passive Filters Datasheet	Filters Datasheet/main.tex	/^	\\section*{\\quad Passive Filters Datasheet}$/;"	s

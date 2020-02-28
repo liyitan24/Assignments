@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable, booktabs, array}
+\pgfplotsset{compat=1.16}
+\usepackage{amssymb, amsmath}
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{import}
+
+\usepackage[authoryear, round, comma]{natbib} %Bibliography style
+\bibliographystyle{unsrtnat} %Bibliography style
+
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage[T1]{fontenc}
+\lstset{
+	style              = Matlab-editor,
+	basicstyle         = \fontsize{10}{9}\mlttfamily,
+	escapechar         = ",
+	mlshowsectionrules = true,
+}
+
+%% Not required packages. Read description!
+\usepackage[europeanresistors]{circuitikz} %Electric circuits
+\usepackage{siunitx} %SI units formatting
+
+\begin{document}
+\section{Filters}
+	\subimport{files/}{filters}
+\section{Methods and Results}
+	\subimport{files/}{methods}
+	\bibliography{bibliography}
+\end{document}

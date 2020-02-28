@@ -1,0 +1,11 @@
+# Fdb version 3
+["pdflatex"] 1578880621 "task.tex" "task.pdf" "task" 1578880621
+  "/home/jj/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1574885207 3704430 ec1cc20c50cdb5b521082f510218a2c7 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1574088520 35594 9aef19174c178978f61d14961262af5d ""
+  "task.aux" 1578880621 8 a94a2480d3289e625eea47cd1b285758 ""
+  "task.tex" 1578880592 2486 7fcc09e672daf9f037a9aadcac3ebb78 ""
+  (generated)
+  "task.pdf"
+  "task.log"

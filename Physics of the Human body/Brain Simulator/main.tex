@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable, booktabs, array}
+\pgfplotsset{compat=1.16}
+\usepackage{amssymb, amsmath}
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{import}
+
+\usepackage[authoryear, round, comma]{natbib} %Bibliography style
+\bibliographystyle{unsrtnat} %Bibliography style
+
+%% Not required packages. Read description!
+%\usepackage{circuitikz} %Electric circuits
+\usepackage{siunitx} %SI units formatting
+
+\begin{document}
+\section*{Part 1}
+	\subimport{files/}{Part1}
+\section*{Part 2}
+	\subimport{files/}{Part2}
+	
+	\bibliography{bibliography}
+\end{document}

@@ -1,0 +1,54 @@
+\subsection*{Q1}
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[axis x line = bottom, axis y line=left,
+                title={CBF-MAP}, ylabel= {Cerebral Blood Flow (\si{ml.s^{-1}}) } , xlabel={Mean Arterial Pressure (\si{mmHg})},
+                legend pos = north west, ymin=0,
+                ]
+                \addplot[] table{data/Q1.dat};
+            \end{axis}
+        \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[axis x line = bottom, axis y line=left,
+                title={ICP-MAP}, ylabel= {Intracranial pressure (\si{mmHg}) } , xlabel={Mean Arterial Pressure (\si{mmHg})},
+                legend pos = north west, ymin=0, ymax=16,
+                ]
+                \addplot[] table[x index = 0, y index=2]{data/Q1.dat};
+            \end{axis}
+        \end{tikzpicture}
+    \end{minipage}
+    \caption{Normal cerebral blood flow and intracranial pressure}
+\end{figure}
+
+
+\subsection*{Q2b}
+
+By changing kGaut to zero, we get the following graphs.
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[axis x line = bottom, axis y line=left,
+                title={CBF-MAP}, ylabel= {Cerebral Blood Flow (\si{ml.s^{-1}}) } , xlabel={Mean Arterial Pressure (\si{mmHg})},
+                legend pos = north west, ymin=0,
+                ]
+                \addplot[] table{data/Q2.dat};
+            \end{axis}
+        \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[axis x line = bottom, axis y line=left,
+                title={ICP-MAP}, ylabel= {Intracranial pressure (\si{mmHg}) } , xlabel={Mean Arterial Pressure (\si{mmHg})},
+                legend pos = north west, ymin=0, ymax=16,
+                ]
+                \addplot[] table[x index = 0, y index=2]{data/Q2.dat};
+            \end{axis}
+        \end{tikzpicture}
+    \end{minipage}
+    \caption{Cerebral blood flow and intracranial pressure without autoregulation}
+\end{figure}
