@@ -1,0 +1,106 @@
+Manually measured heart rate is the count of beats felt against the carotid artery (MPR) in the period of 10 seconds, therefore the following calculation is performed:
+\begin{equation}
+    \text{PR (BPM)} = \frac{\text{MPR}}{\SI{10}{s}} \cdot \SI{60}{s.min^{-1}}
+\end{equation}
+
+Considerations regarding the two subjects
+\begin{itemize}
+    \item Subject 1:
+    \begin{itemize}
+        \item Male; Age: 26
+        \item Out of shape, though experienced with the gym.
+        \item Barbell mass during last set: 130 kg
+    \end{itemize}
+    \item Subject 2:
+    \begin{itemize}
+        \item Female; Age: 19
+        \item Avid gym goer
+        \item Barbell mass during last set: 80 kg
+    \end{itemize}
+\end{itemize}
+The variation of machine measured pulse rates seen in Figures 1 and 2 is within expectation.
+On the other hand, using the chronometer to measure 10 seconds in which beats would be counted, it was decided that the trailing milliseconds would simply be disregarded.
+Not only did the long measurement period exacerbate the variation in the values, but, in reflection, it may have been beneficial to record the times as well, allowing for heart rates which are not multiples of 6. 
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis} [
+            axis lines = left,
+            ymin=0, ymax=200, xmin=-1,
+            xlabel={Workout progress}, ylabel={Pulse rate (BPM)},
+            ytick = {70, 125, 180},
+            xtick={0,8}, xticklabels={Rest, Fatigue},
+            title = {Subject 1. Pulse rate along workout}, clip mode = individual,
+            % legend pos = south west,
+            legend pos = outer north east,
+        ]
+            \addplot[only marks] table [y index = 2] {data/J.dat};
+            \addlegendentry{Machine measured};
+            \addplot[only marks, blue!50] table [y index = 4] {data/J.dat};
+            \addlegendentry{Manually measured};
+            \addplot[dashed, domain=0:12] {70}; \node [right] at (axis cs:12.5,70){Base};
+            \addplot[dashed, domain=0:12] {125};
+            \draw [dashed] (8,0) -- (8,180);
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,125) -- ++ (-1,-55) node [right, black,midway,xshift=0.4cm] {After approx. 2 min rest};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Note that each dot represents a set and its subsequent rest period. Furthermore, fatigue is determined after the set completion, as reported by the subject.}
+    \label{fig:PR-1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis} [
+            axis lines = left,
+            ymin=0, ymax=200, xmin=-1,
+            xlabel={Workout progress}, ylabel={Pulse rate (BPM)},
+            ytick = {68, 96, 168},
+            xtick = {0, 8}, xticklabels={Rest, Fatigue},
+            title = {Subject 2. Pulse rate along workout}, clip mode = individual,
+            legend pos = outer north east,
+        ]
+            \addplot[only marks] table [y index = 2] {data/R.dat};
+            \addlegendentry{Machine measured};
+            \addplot[only marks, blue!50] table [y index = 4] {data/R.dat};
+            \addlegendentry{Manually measured};
+            \addplot[dashed, domain=0:12] {68}; \node [bottom] at (axis cs:12.5,60){Base};
+            \addplot[dashed, domain=0:12] {96};
+            \draw [dashed] (8,0) -- (8,180);
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,96) -- ++ (-1,-28) node [right, black,midway,xshift=0.4cm] {After approx. 2 min rest};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Note that subject 2 reported fatigue on the second set. This was determined to be emotional fatigue based on the subject's (subjective) lack of strain during the exercise.}
+    \label{fig:PR-2}
+\end{figure}
+
+Focusing on the muscular fatigue of Subject 1, we see a mean ($\mu$) pulse rate of 176 and a standard deviation ($\sigma$) of 4.
+This is generally much higher than those achieved during lighter loads and aerobic exercise, which lumped together have $\mu = 159.75$ -- ultimately falsifying our hypothesis. 
+
+Surprisingly, oxygen saturation was kept largely constant across all sets as can be seen in Figure 3. Indeed, the graph clearly shows the central tendency for each subject.
+There is, however, one interesting exception, when subject 1 felt light-headed after a set, the lowest oxygen saturation was measured – 93\%.
+This was accompanied by the highest pulse rate, 180 BPM (machine)/168 BPM (manual).
+Approximately 5 seconds later, the light-headedness was gone, blood oxygenation shot to 97\% and pulse rate 166 BPM (machine).
+This is not represented in the graph, as it is somewhat qualitative.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = left,
+            ymin=90, ymax=100, xmin=-1,
+            legend pos = outer north east,
+            xlabel={Workout progress}, ylabel={Oxygen saturation (\%)},
+            xtick = {0, 8}, ytick = {93, 95, 96, 97, 98},
+            xticklabels={Rest, Fatigue},
+            title={Blood oxygenation along workout}
+        ]
+            \draw[dashed] (8,0) -- (8,100);
+            \addplot[only marks, blue!50] table [y index = 1] {data/J.dat};
+            \addlegendentry{Subject 1}
+            \addplot[only marks] table [y index = 1] {data/R.dat};
+            \addlegendentry{Subject 2}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{The first point shows base oxygenation, and every pair of subsequent points is a set and its break.}
+    \label{fig:BloodOxygenation}
+\end{figure}
