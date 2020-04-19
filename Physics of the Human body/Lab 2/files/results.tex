@@ -4,20 +4,19 @@ Manually measured heart rate is the count of beats felt against the carotid arte
 \end{equation}
 
 Considerations regarding the two subjects
-\begin{itemize}
-    \item Subject 1:
-    \begin{itemize}
-        \item Male; Age: 26
-        \item Out of shape, though experienced with the gym.
-        \item Barbell mass during last set: 130 kg
-    \end{itemize}
-    \item Subject 2:
-    \begin{itemize}
-        \item Female; Age: 19
-        \item Avid gym goer
-        \item Barbell mass during last set: 80 kg
-    \end{itemize}
-\end{itemize}
+
+\begin{table} [h]
+    \centering
+    \begin{tabular} {ccc}
+        & Subject 1 & Subject 2 \\ \hline
+        Gender & Male & Female \\
+        Age & 26 & 19\\
+        Description & Out of shape/Experienced & Avid gym goer\\
+        Barbell mass & 130 kg & 80 kg\\
+        \hline
+    \end{tabular}
+    \caption{Subjects summary}
+\end{table}
 The variation of machine measured pulse rates seen in Figures 1 and 2 is within expectation.
 On the other hand, using the chronometer to measure 10 seconds in which beats would be counted, it was decided that the trailing milliseconds would simply be disregarded.
 Not only did the long measurement period exacerbate the variation in the values, but, in reflection, it may have been beneficial to record the times as well, allowing for heart rates which are not multiples of 6. 
@@ -32,7 +31,7 @@ Not only did the long measurement period exacerbate the variation in the values,
             xtick={0,8}, xticklabels={Rest, Fatigue},
             title = {Subject 1. Pulse rate along workout}, clip mode = individual,
             % legend pos = south west,
-            legend pos = outer north east,
+            legend pos = outer north east, legend style = {xshift = 0.5cm, yshift = 0.5cm},
         ]
             \addplot[only marks] table [y index = 2] {data/J.dat};
             \addlegendentry{Machine measured};
@@ -41,7 +40,9 @@ Not only did the long measurement period exacerbate the variation in the values,
             \addplot[dashed, domain=0:12] {70}; \node [right] at (axis cs:12.5,70){Base};
             \addplot[dashed, domain=0:12] {125};
             \draw [dashed] (8,0) -- (8,180);
-            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,125) -- ++ (-1,-55) node [right, black,midway,xshift=0.4cm] {After approx. 2 min rest};
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,125) -- ++ (-1,-55) node [right, black,midway,xshift=0.4cm] {Following approx. 2 min rest};
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,180) -- ++ (-1,-55) node [right, black,midway,xshift=0.4cm] {After a set};
+            \addplot[dashed, domain=0:12] {180};
         \end{axis}
     \end{tikzpicture}
     \caption{Note that each dot represents a set and its subsequent rest period. Furthermore, fatigue is determined after the set completion, as reported by the subject.}
@@ -58,7 +59,7 @@ Not only did the long measurement period exacerbate the variation in the values,
             ytick = {68, 96, 168},
             xtick = {0, 8}, xticklabels={Rest, Fatigue},
             title = {Subject 2. Pulse rate along workout}, clip mode = individual,
-            legend pos = outer north east,
+            legend pos = outer north east, legend style = {xshift = 0.5cm, yshift = 0.5cm},
         ]
             \addplot[only marks] table [y index = 2] {data/R.dat};
             \addlegendentry{Machine measured};
@@ -67,7 +68,9 @@ Not only did the long measurement period exacerbate the variation in the values,
             \addplot[dashed, domain=0:12] {68}; \node [bottom] at (axis cs:12.5,60){Base};
             \addplot[dashed, domain=0:12] {96};
             \draw [dashed] (8,0) -- (8,180);
-            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,96) -- ++ (-1,-28) node [right, black,midway,xshift=0.4cm] {After approx. 2 min rest};
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,168) -- ++ (-1,-72) node [right, black,midway,xshift=0.4cm] {After a set};
+            \addplot[dashed, domain=0:12] {168};
+            \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt] (axis cs:12.3,96) -- ++ (-1,-28) node [right, black,midway,xshift=0.4cm] {Following approx. 2 min rest};
         \end{axis}
     \end{tikzpicture}
     \caption{Note that subject 2 reported fatigue on the second set. This was determined to be emotional fatigue based on the subject's (subjective) lack of strain during the exercise.}
@@ -75,7 +78,7 @@ Not only did the long measurement period exacerbate the variation in the values,
 \end{figure}
 
 Focusing on the muscular fatigue of Subject 1, we see a mean ($\mu$) pulse rate of 176 and a standard deviation ($\sigma$) of 4.
-This is generally much higher than those achieved during lighter loads and aerobic exercise, which lumped together have $\mu = 159.75$ -- ultimately falsifying our hypothesis. 
+This is generally much higher than those achieved during lighter loads and aerobic exercise, which lumped together have $\mu = 160$ -- ultimately falsifying our hypothesis. 
 
 Surprisingly, oxygen saturation was kept largely constant across all sets as can be seen in Figure 3. Indeed, the graph clearly shows the central tendency for each subject.
 There is, however, one interesting exception, when subject 1 felt light-headed after a set, the lowest oxygen saturation was measured – 93\%.
