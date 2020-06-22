@@ -1,0 +1,45 @@
+\subsection*{i}
+    \begin{itemize}
+        \item Heat gain: Metabolism (see item iii (1)) and radiation
+    \end{itemize}
+\begin{equation}
+    \begin{split}
+        &Q_{radiation} = k_r A_{eff} \epsilon \left( T_{amb.} - T_{skin} \right) \\
+        &Q_{gain} = \SI{12}{min} \left(
+            \SI{6101}{J\per min} + \SI{60}{min\per s} \cdot 8 \cdot 0.97 \cdot [0.8\cdot1.8]\cdot [37-35] 
+        \right) \\
+        &Q_{gain} = \SI{105394}{J}
+    \end{split}
+\end{equation}
+\begin{itemize}
+    \item Heat loss: diffusion of water through skin ($\approx \SI{400}{mL \per day}$) and convection of sweat
+\end{itemize}
+\begin{equation}\begin{split}
+    Q_{lost} &= Q_{diffusion} + Q_{sweat} \\
+    Q_{lost} &= \SI{12}{min} \cdot \SI{2260}{kJ.kg^{-1}} \cdot \left(
+        \SI{0.4}{kg \per day} +
+        \SI{0.2}{kg.h^{-1}}
+    \right) \\
+    Q_{lost} &= \SI{7533}{J} + \SI{90400}{J} = \SI{97933}{J} 
+\end{split}
+\end{equation}
+
+\subsection*{ii}
+\begin{equation}
+    \begin{split}
+        \Delta T &= \frac{Q}{mc} \\
+        \Delta T &= \frac{(105394-97933) \si{J}}{\SI{75}{kg} \cdot \SI{3500}{J.kg^{-1}.K^{-1}}} \\
+        \Delta T &= 0.028423 = \SI{0.028}{\celsius}
+    \end{split}
+\end{equation}
+Provided that no injury disabled John's ability to sweat, there is no reason to expect a significant change in temperature over such a short period of time, and while wearing clothes that provide little insulation. Indeed, had the number been considerably larger, the value for assumption (3) would have been revised.
+
+\subsection*{iii}
+
+\paragraph{}
+
+    (1) Despite an expected metabolic rate increase due to the accident (and the consequent release of hormones), it is really hard to quantify it. However, if we assume John is 25 and sedentary and couple this metabolic increase with other stresses of a normal day, we can expect an average metabolic rate of around \SI{2100}{kcal\per day} = \SI{6101}{J\per min}. 
+
+    (2) Assume conduction with floor is negligible because of small area for conduction and temperature difference between skin and floor.
+
+    (3) The temperature is high enough that we can assume that despite being cooled by the breeze while riding the motorcycle, John would start to sweat as he lied on the floor. Presumably the portion of his body against the floor would lead to sweat building up (instead of vapour), therefore it is estimated that \SI{0.2}{kg.h^{-1}} is turning to vapour.
