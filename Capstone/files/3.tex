@@ -10,7 +10,7 @@ We can use a band-pass filter or a combination of high-pass and low-pass in seri
 
 \subsubsection*{ii}
 
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \begin{circuitikz}
         \draw
@@ -57,7 +57,7 @@ Consider that for $\alpha, \beta, \gamma, \delta$ being above the threshold = 1,
     \caption{Truth table where $f$ is our required function, yielding 1 when at least two indicators are below the threshold.}
  \end{table}
 
-\begin{figure}[h] \centering
+\begin{figure}[h!] \centering
 \begin{Karnaugh}
     \contingut{1,1,1,1,1,1,1,0,1,1,1,0,1,0,0,0}
     \implicant{0}{2}{red}
@@ -76,9 +76,9 @@ As an example, by looking at the green group, we observe that a change in $\delt
 \end{equation}
 From which we can draw the digital circuit
 
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
-    \begin{circuitikz}
+    \begin{circuitikz}[scale=0.8]
         \node (a) at (0,0) {$\alpha$};
         \node (b) at (1,0) {$\beta$};
         \node (c) at (2,0) {$\gamma$};
@@ -115,3 +115,5 @@ From which we can draw the digital circuit
     \end{circuitikz}
     \caption{Digital circuit following the description of $f$.}
 \end{figure}
+
+\clearpage

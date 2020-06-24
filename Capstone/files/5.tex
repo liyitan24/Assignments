@@ -30,7 +30,6 @@ Acuity is distance of test / distance at which the optotype was resolved. The si
 \end{table}
 
 \subsection*{(b)}
-
 Considering that the farthest John can see is 0.4 m, he is myopic. This is corrected with diverging lenses, which we would expect to be of negative meniscus (concave + convex surface) or biconcave shape. 
 
 We calculate the focal length, $f$, by using the thin lens equation and assuming a distance of 2 cm between the eyes and the glasses:
@@ -42,7 +41,7 @@ We calculate the focal length, $f$, by using the thin lens equation and assuming
 \end{equation}
 From which we may also deduce the lens power: $\frac{1}{f} = -\SI{2.6316}{m^{-1}}$
 
-\begin{figure}[h]\centering
+\begin{figure}[h!]\centering
     \begin{tikzpicture}[bullet/.style={circle,black,fill,inner sep=1.8pt},
     every label/.append style={black},
     declare function={lensf(\n,\d,\Rone,\Rtwo)=1/(
@@ -76,7 +75,6 @@ From which we may also deduce the lens power: $\frac{1}{f} = -\SI{2.6316}{m^{-1}
   \end{tikzpicture}
   \caption{Representation of lens as biconcave for simplicity's sake}
 \end{figure}
-
 Using the lens maker's equation and the following assumptions:
 \begin{itemize}
     \item The refractive index of glass/air is 1.5;
@@ -92,7 +90,6 @@ Using the lens maker's equation and the following assumptions:
     R = -\SI{38.00}{cm}
 \end{split}
 \end{equation}
-
 Finally, reflection only accounts for about 4\% loss in light transmission, so there is little concern about the glass lenses themselves:
 \begin{equation}
     \text{Reflectivity} = {\left( \frac{n_2-n_1}{n_2+n_1} \right)}^2 = {\left( \frac{1.5-1}{1.5+1} \right)}^2 = 0.04 = 4\%
