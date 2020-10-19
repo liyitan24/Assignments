@@ -1,7 +1,7 @@
 
 // -------- Functions --------- //
 static inline void initTimer(void) {
-  /*Write code to initialize Timer 1*/
+  TCNT1 = 63973;
 }
 
 static inline void initIOPorts(void) {
@@ -11,18 +11,15 @@ static inline void initIOPorts(void) {
 }
 
 static inline void initADC(void) {
-  cli();
   ADMUX |= (1 << REFS0);
   ADCSRA |= (1 << ADPS1) | (1 << ADPS0); //ADC Prescaler: 8
   ADCSRA |= (1 << ADIE); // Interrupt enabled
   ADCSRA |= (1 << ADEN); // ADC Enable
-  sei();
 }
 
 // ------ Interrupt Service Routine ------ //
 ISR(TIMER1_OVF_vect) {
   /*This is the interrupt service routine for Timer 1 Overflow*/
-  TCNT1 = 63973;
   ADCSRA |= (1 << ADSC); //Start Conversion
 }
 
