@@ -1,3 +1,5 @@
+//As it stands, the LED blinks every 5 seconds, but if I change the prescaler to 64, I get the right timing. I can't figure out why.
+
 #include <avr/io.h>
 #include <util/delay.h>
 
@@ -11,11 +13,12 @@ static inline void initIOPorts(void) {
   TIMSK1 |= (1 << TOIE1); // overflow interrupt enable 
 }
 ISR(TIMER1_OVF_vect) {
-  if(PORTB == 0b00100000){
-    PORTB = 0b00000000;
-  } else {
-    PORTB = 0b00100000;
-  }
+//  if(PORTB == 0b00100000){
+//    PORTB = 0b00000000;
+//  } else {
+//    PORTB = 0b00100000;
+//  }
+  PORTB ^= 0b00100000;
 }
 int main(void) {
   noInterrupts();           
