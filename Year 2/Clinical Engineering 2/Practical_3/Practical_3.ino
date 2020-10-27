@@ -7,6 +7,7 @@ static inline void initADC0(void) {
   ADCSRA |= (1 << ADIE);
   ADCSRA |= (1 << ADEN);
   ADCSRA |= (1 << ADSC);
+  ADCSRA |= (1 << ADATE);
 }
 
 void setup() {
@@ -18,7 +19,6 @@ ISR (ADC_vect) {
   if(ADC > 512) {
   PORTB = 0b00100000;
   } else {PORTB = 0b00000000;}
-  ADCSRA |= (1 << ADSC);
 }
 
 void loop() {
