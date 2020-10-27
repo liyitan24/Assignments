@@ -1,16 +1,16 @@
 #include <avr/io.h>
 
-int x;
-int cyclesBeforeOF = 3906;
-
+int cyclesBeforeOverflow = 3906;
+int _adc;
+int doPrint=0;
 static inline void initTimer(void) {
-    TCNT1=65536-cyclesBeforeOF;
+    TCNT1=65536-cyclesBeforeOverflow;
     TCCR1B = 0b00000101; //prescaler: 1024
     TIMSK1 |= (1 << TOIE1); // overflow interrupt enable 
 }
 
 static inline void initIOPorts(void) {
-  DDRB |= 0b00100000; //Port 13 as output
+    DDRB |= 0b00100000; //Port 13 as output
 }
 
 static inline void initADC(void) {
@@ -24,16 +24,17 @@ static inline void initADC(void) {
 // ------ Interrupt Service Routine ------ //
 ISR(TIMER1_OVF_vect) {
     ADCSRA |= (1 << ADSC); //Start Conversion
-    TCNT1=65536-cyclesBeforeOF;//Reset timer
+    TCNT1=65536-cyclesBeforeOverflow;//Reset timer
 }
 
 ISR(ADC_vect) {
-    x = ADC;
+    _adc = ADC;
     if(ADC > 0) { //Let me know something is happening
         PORTB = 0b00100000;
     } else {
         PORTB = 0b00000000;
     }
+    doPrint=1;
 }
 
 int main(void) {
@@ -46,10 +47,10 @@ int main(void) {
   
     while(1) {
         Serial.flush();
-        Serial.println(x);
-        // You will have to add code here to send x through the serial port
-        // At its  most basic the code will be Serial.println(x) though you
-        // may need some more.
+        if(doPrint==1){
+            Serial.println(_adc);
+            doPrint=0;
+        }
     }
     return (0);
 }
