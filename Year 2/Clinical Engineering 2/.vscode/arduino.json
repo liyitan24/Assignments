@@ -1,5 +1,6 @@
 {
     "board": "arduino:avr:uno",
-    "programmer": "AVR ISP",
-    "sketch": "Week 3/Practical.ino"
+    "programmer": "AVRISP mkII",
+    "sketch": "Week 3/Practical/Practical.ino",
+    "port": "/dev/tty.usbmodem14101"
 }
