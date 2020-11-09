@@ -3,12 +3,7 @@
 long int cyclesPerSample{79}; //200 Hz; 2x maximum frequency of ECG
 int _adc{0};
 int shouldPrint{0}; //controlled printing. requires truthy value for print
-static inline void doPrint(int content, bool shouldPrint) {
-    if(shouldPrint){
-        Serial.println(content);
-        shouldPrint = 0;
-    }
-}
+
 static inline void initSampler(void) {
     TCCR0B = 0b00000101; //prescaler: 1024
     TIMSK0 |= (1 << TOIE1); // overflow interrupt enable 
@@ -51,8 +46,11 @@ int main(void) {
     interrupts();
   
      while(TCNT1 > 0) {
-         Serial.flush();
-         doPrint(_adc, shouldPrint);
+        Serial.flush();
+        if(shouldPrint){
+            Serial.println(_adc);
+            shouldPrint = 0;
+        }
      }
     return (0);
 }
