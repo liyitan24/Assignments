@@ -1,8 +1,0 @@
-Separate article into three distinct sections: Anatomy+Physiology, Pathology and Engineering design
-Maybe only have 2 sections and "Engineering Design" is discussed throughout the whole thing, and a section for the examples of anatomy affecting choices?
-
-Introduction to the organs which it affects. Both healthy and pathological anatomy/phisiology 
-How far in does the catheter go? Which organs does it go through? What happens if it goes farther/not far enough? How does this affect design?
-What pathology(ies) is it dealing with?
-Material and considerations about urethra's musculature
-Short and long term challenges that come from its use
