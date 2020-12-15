@@ -1,6 +1,7 @@
 int timePassed = 0;        // increases every 4 seconds have passed for sustained pressure
 int fsrADC = 0;            // global variable to store ADCvalue
 int newAdcValue = 0;              // to implement main loop after every ADC conversion
+int stepCounter = 0;           // increases every step taken (repetitive pressure)
 const int forceThreshold {130};
 const int healthyStandingTime {0};
 const int healthyNumberOfSteps {0};
@@ -11,6 +12,7 @@ float calculateForce(int voltage) {
     const float fsrV = voltage*VCC/1023.0;
     const float fsrR = R_DIV * (VCC/fsrV - 1.0);
     const float fsrG = 1.0/fsrR;
+    float force{0};
     
     if (fsrR <= 600) { 
     force = (fsrG - 0.00075) / 0.00000032639;
@@ -29,7 +31,7 @@ void stopCounting() {
     TIMSK0 |= (0 << TOIE0);         // Disable Timer0 Overflow
     timePassed = 0;                 // reset time count for sustained pressure
 }
-void warnuser(int _timePassed, int _stepCounter) {
+void warnUser(int _timePassed, int _stepCounter) {
   if (_timePassed >= healthyStandingTime || _stepCounter > healthyNumberOfSteps) {
       //do something
     }
@@ -93,7 +95,7 @@ int main(void) {
   interrupts();
   Serial.begin(9600);
 
-  int stepCounter = 0;           // increases every step taken (repetitive pressure)
+
   float force = 0;
 
   while(1) {
