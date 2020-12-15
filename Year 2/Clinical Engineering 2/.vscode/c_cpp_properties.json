@@ -4,10 +4,13 @@
             "name": "Mac",
             "includePath": [
                 "/Applications/Arduino.app/Contents/Java/tools/**",
-                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/**"
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/**",
+                "/home/jj/.arduino15/packages/arduino/hardware/avr/1.8.3/**",
+                "/home/jj/.arduino15/packages/arduino/tools/**"
             ],
             "forcedInclude": [
-                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h"
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h",
+                "/home/jj/.arduino15/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h"
             ],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",

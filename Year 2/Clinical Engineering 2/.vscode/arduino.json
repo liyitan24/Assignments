@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:uno",
     "programmer": "AVRISP mkII",
-    "sketch": "Week 3/Practical/Practical.ino",
+    "sketch": "Assignments/ECG_Sampling/ECG_Sampling.ino",
     "port": "/dev/tty.usbmodem14101"
 }

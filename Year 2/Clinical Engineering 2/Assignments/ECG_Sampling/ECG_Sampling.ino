@@ -31,12 +31,11 @@ ISR(ADC_vect) {
 }
 
 int main(void) {
-    Serial.begin(250000);
+    Serial.begin(115200);
     noInterrupts();           
     initADC();
     initSampler();
     interrupts();
-  
      while(1) {
         Serial.flush();
         if(shouldPrint){

@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace} \doublespacing
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable, booktabs, array}
+\pgfplotsset{compat=1.16}
+\usepackage{amssymb, amsmath}
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{import}
+
+\usepackage[authoryear, round, comma]{natbib} %Bibliography style
+\bibliographystyle{unsrtnat} %Bibliography style
+
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage{listings}
+\usepackage[scaled]{beramono}
+
+\usepackage{color}
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.9,0,0}
+\usepackage[T1]{fontenc}
+\lstset{
+	style              = Matlab-editor,
+	basicstyle         = \fontsize{10}{9}\mlttfamily,
+	language=C,
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	escapeinside={(*@}{@*)},
+	commentstyle=\color{greencomments},
+	keywordstyle=\color{bluekeywords}\bfseries,
+	stringstyle=\color{redstrings},
+}
+
+%% Not required packages. Read description!
+%\usepackage{circuitikz} %Electric circuits
+\usepackage{siunitx} %SI units formatting
+
+\begin{document}
+	\tableofcontents
+\section{Introduction}
+	\subimport{files/}{Introduction}
+\section{Methods - Circuit}
+	\subimport{files/}{Circuit}
+\section{Methods - Program}
+	\subimport{files/}{Program}
+\section{Results}
+	\subimport{files/}{Results}
+\section{Conclusion}
+	\subimport{files/}{Conclusion}
+\section{Appendix}
+	\subimport{files/}{Appendix.tex}
+	\bibliography{bibliography}
+
+\end{document}
